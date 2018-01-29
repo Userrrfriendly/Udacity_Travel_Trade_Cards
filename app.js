@@ -31,7 +31,18 @@ const data = [
     latLong:[44.09749, 43.02235],
     imgUrl:'./img/beshtau.jpg',
     country:'Russia'
-  }
+  },
+  {
+    userName: 'Thomas Zegos',
+    udacityForumUserName: "ThomasZ",
+    placeName: "Serres, Upper Poroia",
+    altPlaceName: "Σέρρες, Άνω Πορόια",
+    description: "Upper Poroia is a large settlement of Serres in Macedonia. It is built on the foot of Mount Belles northwest of Lake Kerkini. It 's an alternative and homely place for relaxion. Horseback riding and hiking are remarkable entertaining activities you couldn't lose.",
+    latLong:[41.285892, 23.035583],
+    imgUrl: "./img/Ano-Poroia.jpg",
+    country: "Greece"
+  },
+
 ];
 /****************************
 Leaflet - Initialize map
@@ -98,4 +109,3 @@ function onMapClick(e) {
 function getLatLong() {
   mymap.on('click', onMapClick);
 };
-
