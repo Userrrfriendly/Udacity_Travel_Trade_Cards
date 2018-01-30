@@ -48,8 +48,8 @@ Default Styles
   .card {
     background-color: #fff;
     background-clip: border-box;
-    /* border: none; changed */
-    /* border-radius: 0; changed */
+    border: none; 
+    border-radius: 4px; 
   }
   
   .card-body {
@@ -401,6 +401,11 @@ nav a:hover, dropdown-item:hover, ul li:hover {
     border-radius: 4px;
 }
 
+.card-block {
+    background: #fff;
+    padding: 20px 20px;
+    text-align: justify;
+}
 
 
 
