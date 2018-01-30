@@ -15,20 +15,41 @@
     <title>Hello, map! :p </title>
   </head>
   <body>
-    <h1 class='text-center'>Hello, map! ;) </h1>
+    <h1 class='text-center'>Hello, map! ;) <button type="button" id = 'xyButton' class="btn btn-success">Get Coordinates from map</button> </h1>
     <div class='container'>
       <div class='row'>
-        <div class='col-md-8'>
+        <div class='col-md-7'>
             <div class='mx-auto' id="mapid"></div>
         </div>  
-        <div class='col-md-4'>
-          <div class="card mx-auto  bg-warning mb-3 text-center" style="width: 20rem;">
+        <div class='col-md-5'>
+          <!-- Card Start -->
+          <!-- <div class="card mx-auto  bg-warning mb-3 text-center" style="width: 20rem;">
             <img class="card-img-top" id='cardImage' src="./img/udacity.png" alt="Card image cap">
               <div class="card-block">
                 <h4 class="card-title" id='cardTitle'>Travel - Trading Card</h4>
                 <p class="card-text" id = 'cardText'>This is an open source project made by students of Google Challenge Scholarship: Front-End Web Dev. The purpose of this project is to further develop our skills by contributing to this project ;P. <br> Click on a marker on the map to expand the holiday trading card!<br> You can contribute to this Open Source project on <a href='https://github.com/' target='blank'>https://github.com/</></p>
               </div>
+          </div> -->
+
+          <div id="card" class="card mb-4 style9">
+              <a class="card-switch" href="#">
+                <h2 class="card-title">Ozzie(my dog)</h2>
+                <img class="card-img" src="https://preview.ibb.co/cwKWUm/Poza.jpg" alt="Ozzie">
+                <div class="card-body">
+                  <h3 class="card-subtitle">During this summer a wire from my electric box started smelling awkward but I did not notice till Ozzie managed to make me know that there was something wrong. If it was not for his help during that day my house would have burned down. Is strange to see how a dog so small can save your life in a hard situation.</h3>
+                  <ul class="card-list-group">
+                    <li><span class="card-list-group-item">Diet:</span> He eats all sort of things from Ice cream to Beef</li>
+                    <li><span class="card-list-group-item">Attitude:</span> He loves everyone</li>
+                    <li><span class="card-list-group-item">Toys:</span> Balls mostly but also he has a little Teddy bear</li>
+                    <li><span class="card-list-group-item">Friends:</span> All the possible dogs but also all the friendly humans</li>
+                  </ul>
+                  <p class="card-text">The Bichon Frise (pronounced BEE-shawn FREE-say; the plural is Bichons Frises) is a cheerful, small dog breed with a love of mischief and a lot of love to give. With his black eyes and fluffy white coat, the Bichon looks almost like a child’s toy. And it doesn’t take long to realize that the Bichon can be your happiest and most enthusiastic companion.</p>
+                </div><!-- /.card-body -->
+              </a><!-- /.card-switch -->
             </div>
+
+
+          <!-- Card End -->
         </div> 
       </div>
     </div> <!--end container  -->

@@ -1,3 +1,1438 @@
 #mapid { 
     height: 400px;
 }
+
+/******************
+Default Styles
+************************/
+
+body {
+    padding-top: 54px;
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+    }
+  }
+  
+  /* Bootstrap Card styling overide */
+  
+  .card {
+    background-color: #fff;
+    background-clip: border-box;
+    border: none; /* changed */
+    border-radius: 0; /* changed */
+  }
+  
+  .card-body {
+    padding: 0; /* changed */
+  }
+  
+  .card-title {
+    margin-bottom: 0; /* changed */
+  }
+  
+  .card-subtitle {
+    margin-top: 0; /* changed */
+    margin-bottom: 0;
+  }
+  
+  .card-link:hover {
+    text-decoration: none;
+  }
+  
+  .card-link + .card-link {
+    margin-left: 0; /* changed */
+  }
+  
+  .card-img {
+    width: 100%;
+    border-radius: 0; /* changed */
+  }
+  
+  ul {
+    margin-top: 0;
+    margin-bottom: 0; /* changed */
+  }
+  
+  /* Number of columns for different screen widths */
+  
+  @media (min-width: 576px) {
+      .card-columns {
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+      }
+  }
+  
+  @media (min-width: 768px) {
+      .card-columns {
+          -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+      }
+  }
+  
+  @media (min-width: 992px) {
+      .card-columns {
+          -webkit-column-count: 3;
+          -moz-column-count: 3;
+          column-count: 3;
+      }
+  }
+  
+  
+
+  /* Add your card styles here,
+  please don't change or add any class selectors */
+  
+  #card-100.card {
+    font-family: ;
+  }
+  
+  #card-100 .card-title {
+    padding: ;
+    font-size: ;
+  }
+  
+  /* if you have a second line on the card title,
+  use this class */
+  #card-100 .second-title {
+  
+  }
+  
+  #card-100 img.card-img {
+  
+  }
+  
+  #card-100 .card-body {
+    padding: ;
+    font-size: ;
+  }
+  
+  #card-100 .card-subtitle {
+    font-size: ;
+  }
+  
+  #card-100 .card-list-group {
+    padding: ;
+    line-height: ;
+  }
+  
+  #card-100 .card-list-group span {
+  
+  }
+  
+  #card-100 .card-text {
+    line-height: ;
+  }
+  
+  /* If you have a link in your card, add the styles here
+  If you don't have a link, leave it as it is */
+  #card-100 .card-link {
+   display: none;
+  }
+  
+  
+  
+  /* Making any card linkable without changing the styling, please don't change */
+  
+  .card-switch {
+  color: inherit;
+  text-decoration: none;
+  }
+  
+  .card-switch:hover {
+  color: inherit;
+  text-decoration: none;
+  }
+
+  /* sample stolen data */
+  /* Card no 1  */
+.style1 {
+    background-color: #fafbfc;
+    padding: 15px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    color: #303030;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #dbe2e9;
+    border-radius: 7px;
+  }
+  
+  .style1 .card-title {
+    margin: 18px;
+      font-size: 1.5em;
+    font-weight: bold;
+      text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .style1 img.card-img {
+      border: 1px solid #dbe2e9;
+      border-radius: 7px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .style1 .card-body {
+    margin-top: 18px;
+    padding: 5px 15px;
+    border: 1px solid #dbe2e9;
+      border-radius: 7px;
+  }
+  
+  .style1 .card-subtitle {
+    margin: 18px 0;
+    text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
+      color: #90b4d6;
+      border-bottom: 1px solid #dbe2e9;
+    padding-bottom: 18px;
+  }
+  
+  .style1 .card-list-group {
+      list-style: none;
+    padding-left: 0;
+    border-bottom: 1px solid #dbe2e9;
+    padding-bottom: 18px;
+  }
+  
+  .style1 .card-list-group span {
+      font-weight: bold;
+  }
+  
+  .style1 .card-text {
+    padding: 18px 0;
+  
+  }
+
+  /* Card no 2  */
+.style2 {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 6px #ccc;
+    background-image: url(https://s26.postimg.org/lpbpvvcxl/glitter_background.jpg);
+}
+
+.style2 .card-title {
+    font-family: 'Lato', sans-serif;
+    padding-left: 5px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+
+.style2 img.card-img {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.style2 .card-body {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+}
+
+.style2 .card-subtitle {
+    font-style: italic;
+    font-size: 0.8em;
+    margin: 1em 0;
+}
+
+.style2 .card-list-group {
+    font-family: 'Catamaran', sans-serif;
+    font-size: small;
+    list-style-type: none;
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.style2 .card-list-group span {
+    font-weight: bold;
+}
+
+.style2 .card-text {
+    font-family: 'Catamaran', sans-serif;
+    font-size: small;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 1em 0;
+}
+
+.style2 .card-link {
+  display: none;
+}
+
+
+/* Card no 3  */
+.tsigourof_ben6oqe {
+  border: 1px solid #BEBEBE;
+  padding:10px;
+  background-color: #F0E68C;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2)
+}
+
+.tsigourof_ben6oqe .card-title {
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+
+.tsigourof_ben6oqe img.card-img {
+  background: white;
+}
+
+.tsigourof_ben6oqe .card-body {
+  margin-top: 5px;
+  border:1px solid #D3D3D3;
+  padding: 25px 10px;
+  background-color: #f3eba5;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2)
+}
+
+.tsigourof_ben6oqe .card-subtitle {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.tsigourof_ben6oqe .card-list-group {
+  list-style-type: none;
+  padding-left: 3em;
+  margin: 1em 0;
+}
+
+.tsigourof_ben6oqe .card-list-group span {
+  font-weight: bold;
+}
+
+.tsigourof_ben6oqe3 .card-text {
+  font-size: 0.9em;
+}
+
+.tsigourof_ben6oqe .card-link {
+   display: none;
+}
+
+
+/* Card no 4  */
+.style4 {
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #D3D3D3;
+  border-radius: 4px;
+  box-shadow: 7px 7px 7px #D3D3D3;
+}
+
+.style4 .card-title {
+  margin: 20px;
+  padding-top: 5px;
+  letter-spacing: 1px;
+  font-size: 2em;
+  border-bottom: 1px dashed #D3D3D3;
+  border-top: 1px dashed #D3D3D3;
+}
+
+.style4 img.card-img {
+  padding: 0px 20px;
+}
+
+.style4 .card-body {
+  margin: 20px;
+  border: 1px solid #D3D3D3;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: rgba(211,211,211,0.3);
+}
+
+.style4 .card-subtitle {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-top: 15px;
+}
+
+.style4 .card-list-group {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.style4 .card-list-group span {
+  font-weight: 800;
+}
+
+.style4 .card-text {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.style4 .card-link {
+  display: none;
+}
+
+
+/* Card no 5  */
+.style5 {
+  font-family: helvetica, sans-serif;
+  border: 1px solid rgb(197, 197, 197);
+  box-shadow: 3px 3px 10px 1px rgba(184,184,184,1);
+  padding: 0px 10px 10px 10px;
+  color: #ffffff;
+  text-align: justify;
+  border-radius: 7px;
+  background: -webkit-linear-gradient(left, #414166, #cc7474);
+  background: -o-linear-gradient(left, #414166, #cc7474);
+  background: linear-gradient(to right, #414166, #cc7474);
+}
+
+.style5 .card-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 270%;
+  font-weight: 800;
+  margin: 18px 0px 10px 0px;
+}
+
+.style5 img.card-img {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+}
+
+.style5 .card-body {
+  border: 1px solid #ffffff;
+  padding: 15px 10px;
+  background:#414166;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  background: -webkit-linear-gradient(right, #303066, #cc6363);
+  background: -o-linear-gradient(right, #303066, #cc6363);
+  background: linear-gradient(to left, #303066, #cc6363);
+
+}
+
+.style5 .card-subtitle {
+  font-style: italic;
+  font-size: 1em;
+}
+
+.style5 .card-list-group {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 20px 0;
+}
+
+.style5 .card-list-group span {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 0.5em;
+}
+
+.style5 .card-text {
+  padding-right: 10px;
+  line-height: 1.2em;
+
+}
+
+.style5 .card-link {
+  display: none;
+}
+
+
+/* Card no 6  */
+.style6 {
+  background-image: url("https://s5.postimg.org/x4gqozzfr/vector-repeating-whippet-dog-icon-pattern.jpg");
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 6px 6px 3px #e6e6e6;
+  background-color: #595959;
+  font-family: Arapey;
+}
+
+.style6 .card-title {
+  color: #f2f2f2;
+  font-size: 1.2em;
+  padding: 1em 0;
+}
+
+.style6 .second-title {
+
+}
+
+.style6 img.card-img {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.style6 .card-body {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 30px 10px 10px 10px;
+  background-color: #ffffff;
+  text-align: justify;
+}
+
+.style6 .card-subtitle {
+  font-style: italic;
+  font-size: 1em;
+}
+
+.style6 .card-list-group {
+  list-style-type: none;
+  font-size: 0.95em;
+  margin: 1.2em 0;
+  padding: 0;
+  line-height: 1.2em;
+}
+
+.style6 .card-list-group span {
+  font-weight: bold;
+
+}
+
+.style6 .card-text {
+    font-size: 0.95em;
+  line-height: 1.2em;
+}
+
+.style6 .card-link {
+ display: none;
+}
+
+
+/* Card no 7  */
+.style7 {
+  font-family: "Arial";
+  border-style: solid;
+  border-color: #1e2f2f;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #333333;
+  background-clip: border-box;
+  background-color: #1e2f2f;
+  padding: 18px;
+}
+
+.style7 .card-title {
+  margin-bottom: 1em;
+  padding: 5px 0px 0px 20px;
+  font-family: "Verdana";
+  font-weight: 700;
+  color: #051414;
+  font-size: 1.3em;
+  text-shadow: #adebeb 1px 0 10px;
+}
+.style7 .second-title {
+  color: #476b6b;
+  font-weight: 600;
+  text-shadow: #051414 1px 0 10px;
+}
+
+.style7 img.card-img {
+  margin-bottom: 15px;
+  border-radius: 20px 20px 0px 0px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-color: #334d4d;
+  box-shadow: -5px -5px 5px  #bcb9a9;
+}
+
+.style7 .card-body {
+  margin-bottom: 5px;
+  padding: 20px 10px;
+  background-color:  #476b6b;
+  border-radius: 0px 0px 10px 10px;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-color: #334d4d;
+  box-shadow: -5px 5px 5px #9b977d;
+}
+
+.style7 .card-subtitle {
+  font-style: italic;
+  color: #bcb9a9;
+  font-size: 1em;
+}
+
+.style7 .card-list-group {
+  list-style-type: none;
+  padding: 20px 0;
+  line-height: 1.1em;
+}
+
+.style7 .card-list-group span {
+  font-weight: bold;
+  text-align: left;
+}
+
+.style7 .card-text {
+  color: #051414;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1.1em;
+  padding: 5px;
+}
+
+.style7 .card-link {
+ display: none;
+}
+
+
+/* Card no 8  */
+.style8 {
+  border-style: solid 0.5px #DCDCDC;
+  padding: 1em;
+  font-family: "helvetica", "arial", sans-serif;
+  box-shadow: 4px 6px 5px #DCDCDC;
+}
+
+.style8 .card-title {
+  padding: 0.5em 0;
+  font-weight: 700;
+}
+
+.style8 .second-title {
+
+}
+
+.style8 img.card-img {
+  border: solid 1px grey;
+}
+
+.style8 .card-body {
+  border: solid;
+  border-color: #DCDCDC;
+  border-width: 0.5px;
+  padding: 0.5em;
+  margin-top: 5px;
+}
+
+.style8 .card-subtitle {
+  font-size: 0.95em;
+  font-style: italic;
+  padding-top: 1em;
+}
+
+.style8 .card-list-group {
+  margin: 1em 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.95em;
+  line-height: 1.2em;
+}
+
+.style8 .card-list-group span {
+  font-weight: bold;
+}
+
+.style8 .card-text {
+  font-size: 0.95em;
+  line-height: 1.2em;
+}
+
+.style8 .card-link {
+ display: none;
+}
+
+
+/* Card no 9  */
+.style9 {
+  background-color:#3CB371;
+  border: dotted red;
+  border-radius: 20px;
+  box-shadow: 3px 7px 7px 7px rgba(0,0,0,0.75);
+  font-family: Arial;
+}
+
+.style9 .card-title {
+  font-size: 2em;
+  padding: 0.7em 0;
+  margin: 1em 0;
+  text-align: center;
+  background-color: #255d00;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.style9 .second-title {
+
+}
+
+.style9 img.card-img {
+  padding: 0 20px;
+}
+
+.style9 .card-body {
+  margin: 20px;
+  padding: 20px 3px;
+  background-color:#F08080;
+  border: groove #a8aba6;
+  box-shadow:  7px 11px 58px 2px rgba(0,0,0,0.75);
+}
+
+.style9 .card-subtitle {
+  font-style: italic;
+  text-align: center;
+  font-size: 1em;
+}
+
+.style9 .card-list-group {
+  list-style-type: none;
+  font-size: 0.9em;
+  padding: 20px 0;
+}
+
+.style9 .card-list-group span {
+  font-weight: bold;
+  color: #8001ff;
+}
+
+.style9 .card-text {
+  font-size: 0.9em;
+}
+
+.style9 .card-link {
+ display: none;
+}
+
+
+/* Card no 10  */
+.style10 {
+  font-family: opens-sans, sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  background-color: #778344;
+  border: 2px dashed white;
+  border-radius: 4px;
+  padding: 10px 10px 10px 10px;
+}
+
+.style10 .card-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.3em;
+  padding: 15px 0;
+}
+
+.style10 .second-title {
+
+}
+
+.style10 img.card-img {
+  border-radius: 4px;
+  margin: 10px 0 15px 0;
+}
+
+.style10 .card-body {
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 26px 10px 6px 10px;
+  background-color: #cfd6cd;
+}
+
+.style10 .card-subtitle {
+  font-style: italic;
+  font-size: 1em;
+  padding-bottom: 13px;
+}
+
+.style10 .card-list-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2em;
+}
+.style10 .card-list-group:before {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding-bottom: 7px;
+  border-top: 1px solid #000;
+}
+.style10 .card-list-group:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 7px;
+  border-bottom: 1px solid #000;
+}
+
+.style10 .card-list-group span {
+  font-weight: bold;
+}
+
+.style10 .card-text {
+  padding-top: 13px;
+  line-height: 1.2em;
+}
+
+.style10 .card-link {
+ display: none;
+}
+
+
+/* Card no 11  */
+.style11 {
+  font-size: 15px;
+  box-shadow: 5px 4px 4px gray;
+  border: 1px solid silver;
+  border-radius: 5px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px;
+  text-align: justify;
+}
+
+.style11 .card-title {
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 15px 0 5px 0;
+}
+
+.style11 .second-title {
+
+}
+
+.style11 img.card-img {
+  border: 1px solid silver;
+  border-radius: 5px;
+}
+
+.style11 .card-body {
+  margin-top: 10px;
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 15px 10px;
+}
+
+.style11 .card-subtitle {
+  font-style: italic;
+  font-size: 1em;
+  text-indent: 20px;
+}
+
+.style11 .card-list-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0;
+  line-height: 1.2em;
+}
+
+.style11 .card-list-group span {
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.style11 .card-text {
+  text-indent: 20px;
+  line-height: 1.2em;
+}
+
+.style100 .card-link {
+ display: none;
+}
+
+
+/* Card no 12  */
+.style12 {
+  font-family: "Times New Roman", Georgia, Serif;
+  border-radius: 2px;
+  padding: 10px;
+  border: solid 1px grey;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.style12 .card-title {
+  font-weight: bold;
+  padding: 0.9em 0;
+  font-size: 1.2em;
+}
+
+.style12 .second-title {
+
+}
+
+.style12 img.card-img {
+
+}
+
+.style12 .card-body {
+  margin-top: 5px;
+  padding: 25px 10px;
+  border: solid 1px grey;
+  line-height: 1.2em;
+}
+
+.style12 .card-subtitle {
+  font-style: italic;
+  font-size: 1em;
+}
+
+.style12 .card-list-group {
+  padding: 15px 10px;
+  list-style: none;
+}
+
+.style12 .card-list-group span {
+  font-weight: bold;
+}
+
+.style12 .card-text {
+}
+
+.style12 .card-link {
+ display: none;
+}
+
+
+/* Card no 13  */
+.style13 {
+  font-family: Times New Roman, serif;
+  border-radius: 15px;
+  padding: 10px 15px;
+  border: 5px solid #94ad8f;
+  background: linear-gradient(#c8d8c3 ,#7c9974 );
+  box-shadow: 10px 7px 15px #596856;
+}
+
+.style13 .card-title {
+  margin: 1em 0;
+  border:5px solid #94ad8f;
+  border-radius: 5px;
+  padding:10px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  box-shadow: 5px 7px 15px #596856;
+  color:#2b3829;
+  text-shadow: 2px 2px 10px #495e43;
+  background: linear-gradient(#a6c99f,#85a37f);
+}
+.style13 .second-title {
+
+}
+
+.style13 img.card-img {
+  border-radius: 5px;
+}
+
+.style13 .card-body {
+  margin-top: 5px;
+  padding: 17px 0;
+  font-size: ;
+  line-height: 1.2em;
+  border:2px solid #94ad8f;
+  box-shadow: 3px 3px 15px #596856;
+}
+
+.style13 .card-subtitle {
+  font-size: 1em;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px 10px #495e43;
+  color:#493818;
+  background-color: #e5d1c3;
+  margin-bottom: 17px;
+}
+
+.style13 .card-list-group {
+  list-style-type: none;
+  border-radius: 5px;
+  border:2px solid #94ad8f;
+  box-shadow: 3px 3px 15px #596856;
+  background-color: #aec9a7;
+
+}
+
+.style13 .card-list-group span {
+  font-weight: bold;
+}
+
+.style13 .card-text {
+  margin-top: 17px;
+  background-color: #e5d1c3;
+}
+
+.style13 .card-link {
+ display: none;
+}
+
+
+/* Card no 14  */
+.ThomasZ {
+ font-family: 'Great Vibes', black, cursive;
+  border-radius: 15px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  background-image: url("https://n6-img-fp.akamaized.net/free-photo/grunge-paper-background_1048-6689.jpg?size=338&ext=jpg");
+  box-shadow: 5px 7px 20px #dda04f;
+}
+
+.ThomasZ .card-title {
+  margin: 1em 0;
+  padding:10px;
+  text-align: center;
+  font-size: 45px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px black;
+  color:black;
+  text-shadow: 2px 2px 10px #dda04f;
+  background: url("https://image.freepik.com/free-photo/grunge-paper-background_1048-6689.jpg");
+}
+
+.ThomasZ .second-title {
+}
+
+.ThomasZ img.card-img {
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px #fcb455;
+}
+
+.ThomasZ .card-body {
+  background: url("https://image.freepik.com/free-photo/grunge-paper-background_1048-6689.jpg");
+  margin: 25px 0;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 2px 2px 10px #dda04f;
+  line-height: 1.2em;
+  box-shadow: 0px 2px 15px black;
+}
+
+.ThomasZ .card-subtitle {
+  text-align: center;
+  text-shadow: 2px 2px 10px #dda04f;
+  font-size: 20px;
+}
+
+.ThomasZ .card-list-group {
+  padding: 20px 0;
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+.ThomasZ .card-list-group span {
+  font-weight: bold;
+}
+
+.ThomasZ .card-text {
+}
+
+.ThomasZ .card-link {
+ display: none;
+}
+
+
+/* Card no 15  */
+.style15 {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 10px 5px #ccc;
+  background-image: url(https://st.depositphotos.com/2942061/4028/i/950/depositphotos_40289037-stock-photo-skating-ice-background.jpg);
+}
+
+.style15 .card-title {
+  padding: 5px 0 10px 0;
+  text-align: center;
+  font-family: : 'Anton', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px #aaa;
+}
+
+.style15 .second-title {
+}
+
+.style15 img.card-img {
+  border-radius: 10px;
+}
+
+.style15 .card-body {
+  margin-top: 1em;
+  border: 2px solid #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.style15 .card-subtitle {
+  font-size: 1em;
+  font-style: italic;
+  text-align: justify;
+}
+
+.style15 .card-list-group {
+  padding: 0.5em 0;
+  list-style: none;
+  padding-left: 0px;
+  line-height: 2em;
+}
+
+.style15 .card-list-group span {
+  font-weight: 900;
+}
+
+.style15 .card-text {
+  text-align: justify;
+  line-height: 1.2em;
+  padding-bottom: 0.7em;
+}
+
+.style15 .card-link {
+ display: none;
+}
+
+
+/* Card no 16  */
+.style16 {
+  font-family: sans-serif;
+
+  border: large grey;
+  border-style: inset;
+  padding:20px;
+  border-radius:20px;
+}
+
+.style16 .card-title {
+  padding: ;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.style16 .second-title {
+}
+
+.style16 img.card-img {
+}
+
+.style16 .card-body {
+  font-family: serif;
+  line-height: 1.2em;
+}
+
+.style16 .card-subtitle {
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.style16 .card-list-group {
+  list-style-type: none;
+  padding: 0px;
+  font-size: 1.1em;
+}
+
+.style16 .card-list-group span {
+  font-weight: bold;
+  font-family: serif;
+  font:bold;
+}
+
+.style16 .card-text {
+}
+
+.style16 .card-link {
+ display: none;
+}
+
+
+/* Card no 17  */
+.style17 {
+  font-family: serif;
+  border-style: solid;
+  border-width: thin;
+  box-shadow: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+.style17 .card-title {
+  font-size: 1.8em;
+  font-weight: 600;
+  padding: 0.8em 0;
+  text-align: center;
+}
+
+#card-017 .second-title {
+}
+
+#card-017 img.card-img {
+  border-style: solid;
+  border-width: thin;
+}
+
+#card-017 .card-body {
+  padding: 20px 0 15px 0;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  margin-top: 15px;
+  border-style: solid;
+  border-width: thin;
+}
+
+#card-017 .card-subtitle {
+  font-size: 1em;
+  font-style: italic;
+}
+
+#card-017 .card-list-group {
+  padding: 15px 0 15px 40px;
+  list-style-type: none;
+}
+
+#card-017 .card-list-group span {
+  font-weight: bold;
+}
+
+#card-017 .card-text {
+}
+
+#card-017 .card-link {
+ display: none;
+}
+
+
+/* Card no 18  */
+.style18 {
+  font-family: serif;
+  border: 1px solid #AAAAAA;
+  padding: 10px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.style18 .card-title {
+  padding: 1em 0;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.style18 .second-title {
+}
+
+.style18 img.card-img {
+}
+
+.style18 .card-body {
+  padding: 25px 5px 20px 5px;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  border: 1px solid #AAAAAA;
+  margin-top: 15px;
+}
+
+.style18 .card-subtitle {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.style18 .card-list-group {
+  padding: 20px 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.style18 .card-list-group span {
+  font-weight: bold;
+}
+
+.style18 .card-text {
+  text-align: justify;
+}
+
+.style18 .card-link {
+ display none;
+}
+
+
+/* Card no 19  */
+.style19 {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(250, 250, 250);
+  display: inline-block;
+  padding: 16px 22px 22px 22px;
+  background-color: rgb(241, 241, 241);
+  background-image: url("http://u.hgtm.de/gfewd-pj2-animal-trading-card/underwater.png");
+  background-size: cover;
+  border: 2px solid rgb(39, 46, 44);
+  border-radius: 22px;
+  box-shadow: 6px 6px 22px rgb(177, 177, 177);
+}
+
+.style19 .card-title {
+  font-family: 'Bangers', cursive;
+  font-size: 45px;
+  letter-spacing: 1.2px;
+  text-shadow: 2px 2px 8px #000000;
+  text-align: center;
+  margin: 0px 0px 12px 0px;
+  text-transform: uppercase;
+  padding: ;
+  font-size: ;
+}
+
+.style19 .second-title {
+}
+
+.style19 img.card-img {
+  margin: 0px;
+  border: 1px solid rgba(39, 46, 44, 0.4);
+  border-radius: 12px 12px 0px 0px;
+  box-shadow: 0px 0px 14px rgba(153, 194, 186, 0.2);
+}
+
+.style19 .card-body {
+  line-height: 1.3;
+  font-size: 15px;
+  margin-top: -5px;
+  padding: 14px;
+  background-color: rgba(0, 0, 0, 0.42);
+  border: 1px solid rgba(39, 46, 44, 0.4);
+  border-radius: 0px 0px 12px 12px;
+  box-shadow: 0px 0px 14px rgba(153, 194, 186, 0.2);
+  padding: ;
+  font-size: ;
+  line-height: ;
+}
+
+.style19 .card-subtitle {
+  font-size: 15px;
+  font-style: italic;
+  padding-top: 10px
+}
+
+.style19 .card-list-group {
+  padding: 20px 0;
+  list-style-type: none;
+  text-align: right;
+}
+
+.style19 li:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.42);
+  padding: 4px 6px;
+}
+
+.style19 li:nth-child(even) {
+  background-color: rgba(125, 125, 125, 0.42);
+  padding: 4px 6px;
+}
+
+.style19 .card-list-group span {
+  font-weight: bold;
+  float: left;
+}
+
+.style19 .card-text {
+  margin: 1px;
+  text-align: justify;
+}
+
+.style19 .card-link {
+ display: none;
+}
+
+
+/* Card no 20  */
+.style20 {
+  font-family:'Rosarivo', serif;
+  background-image: url("http://res.cloudinary.com/ninaw/image/upload/v1516990043/card-bg-bigger_wsz3e1.jpg");
+  border-top: 4px solid #3c364e;
+  border-right: 5px solid #3c364e;
+  border-bottom: 7px solid #3c364e;
+  border-left: 5px solid #3c364e;
+  border-radius: 25px;
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.2);
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.2);
+  margin: 30px auto;
+  padding: 15px;
+  color: #3c364e;
+}
+
+.style20 .card-title {
+  padding: 10px 0;
+  font-size: 28px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.style20 .second-title {
+}
+
+.style20 img.card-img {
+  padding: 18px 0;
+}
+
+.style20 .card-body {
+  padding: 15px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-top: 1px solid #f2ecdd;
+  border-right: 2px solid #f2ecdd;
+  border-bottom: 3px solid #f2ecdd;
+  border-left: 2px solid #f2ecdd;
+  border-radius: 0 0 15px 15px;
+  padding: 15px;
+  font-family:'Rosarivo', serif;
+}
+
+.style20 .card-subtitle {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.style20 .card-list-group {
+  padding: 0;
+  line-height: ;
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.style20 .card-list-group span {
+  font-weight: bold;
+}
+
+.style20 .card-text {
+}
+
+.style20 .card-link {
+ display: none;
+}
+
+
+/* Card no 021  */
+
+/* Card no 022  */
+
+/* Card no 023  */
+
+/* Card no 024  */
+
+/* Making any card linkable without changing the styling */
+
+.card-switch {
+color: inherit;
+text-decoration: none;
+}
+
+.card-switch:hover {
+color: inherit;
+text-decoration: none;
+}
+
+
+
