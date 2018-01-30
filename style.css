@@ -7,7 +7,7 @@
 }
 
 .header {
-    font-family:monospace;
+    font-family: monospace;
     background-color: #3f7aa2;
     color: #fff;
     font-size: 28px;
@@ -17,9 +17,11 @@ body {
     background-color: #f5f5f5;
 }
 
+/*
 .nav-link:hover {
     text-shadow: 0px 0px 30px rgba(104, 104, 104, 1);
 }
+*/
 
 .hidden {
     display: none;
@@ -49,7 +51,6 @@ Default Styles
     background-color: #fff;
     background-clip: border-box;
     border: none; 
-    border-radius: 4px; 
   }
   
   .card-body {
@@ -108,11 +109,7 @@ Default Styles
           column-count: 3;
       }
   }
-  
-  
-  
-  
-  
+
   /* Making any card linkable without changing the styling, please don't change */
   
   .card-switch {
@@ -386,6 +383,10 @@ nav a, ul li {
 nav a:hover, dropdown-item:hover, ul li:hover {
     background-color: #242021 !important;
     color: #fff !important;
+}
+
+.bg-warning {
+    background-color: #fff !important;
 }
 
 .nav-pills .show > .nav-link {
