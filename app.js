@@ -83,6 +83,18 @@ const data = [
   // imgUrl: "./img/placeholder.jpg",
   // country: "Greece"
 ];
+
+/***************************
+*    Show Contributors     *
+***************************/
+function addContributor() {
+    for( i=0; i < data.length; i++) {
+            document.getElementsByClassName('contributor')[i].innerHTML = data[i].userName;
+    }
+}
+addContributor();
+
+
 /****************************
 Leaflet - Initialize map
 ***************************/
