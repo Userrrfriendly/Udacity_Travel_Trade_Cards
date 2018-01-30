@@ -17,12 +17,6 @@ body {
     background-color: #f5f5f5;
 }
 
-/*
-.nav-link:hover {
-    text-shadow: 0px 0px 30px rgba(104, 104, 104, 1);
-}
-*/
-
 .hidden {
     display: none;
 }
@@ -408,24 +402,13 @@ nav a:hover, dropdown-item:hover, ul li:hover {
     text-align: justify;
 }
 
+#footer {
+    height: 30px;
+    background-color: #2b516b;
+    color: #fff;
+    text-align: center
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.wrap {
+  min-height: calc(100vh - 30px);
+}
