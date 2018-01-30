@@ -1,3 +1,374 @@
 #mapid { 
-    height: 400px;
+    height: 100%;
+    min-height: 40em;
+}
+#animalCard {
+    display:none;
+}
+
+.header {
+    background-color:cornflowerblue;
+}
+
+body {
+    background-color: rgba(180, 180, 233, 0.459)  ;
+}
+
+.nav-link:hover {
+    text-shadow: 0px 0px 30px rgba(104, 104, 104, 1);
+}
+
+.hidden {
+    display: none;
+}
+
+.list-group-item:hover {
+    cursor: pointer;
+}
+
+/******************
+Default Styles
+************************/
+
+/* body {
+    padding-top: 54px;
+  }
+  
+  @media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+    }
+  } */
+  
+  /* Bootstrap Card styling overide */
+  
+  .card {
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: none; changed */
+    /* border-radius: 0; changed */
+  }
+  
+  .card-body {
+    padding: 0; /* changed */
+  }
+  
+  .card-title {
+    margin-bottom: 0; /* changed */
+  }
+  
+  .card-subtitle {
+    margin-top: 0; /* changed */
+    margin-bottom: 0;
+  }
+  
+  .card-link:hover {
+    text-decoration: none;
+  }
+  
+  .card-link + .card-link {
+    margin-left: 0; /* changed */
+  }
+  
+  .card-img {
+    width: 100%;
+    /* border-radius: 0; changed */
+  }
+  
+  ul {
+    margin-top: 0;
+    margin-bottom: 0; /* changed */
+  }
+  
+  /* Number of columns for different screen widths */
+  
+  @media (min-width: 576px) {
+      .card-columns {
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+      }
+  }
+  
+  @media (min-width: 768px) {
+      .card-columns {
+          -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+      }
+  }
+  
+  @media (min-width: 992px) {
+      .card-columns {
+          -webkit-column-count: 3;
+          -moz-column-count: 3;
+          column-count: 3;
+      }
+  }
+  
+  
+  
+  
+  
+  /* Making any card linkable without changing the styling, please don't change */
+  
+  .card-switch {
+  color: inherit;
+  text-decoration: none;
+  }
+  
+  .card-switch:hover {
+  color: inherit;
+  text-decoration: none;
+  }
+
+  /* sample stolen data */
+  /* Card no 1  */
+.style1 {
+    background-color: #fafbfc;
+    padding: 15px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    color: #303030;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid #dbe2e9;
+    border-radius: 7px;
+  }
+  
+  .style1 .card-title {
+    margin: 18px;
+      font-size: 1.5em;
+    font-weight: bold;
+      text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .style1 img.card-img {
+      border: 1px solid #dbe2e9;
+      border-radius: 7px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .style1 .card-body {
+    margin-top: 18px;
+    padding: 5px 15px;
+    border: 1px solid #dbe2e9;
+      border-radius: 7px;
+  }
+  
+  .style1 .card-subtitle {
+    margin: 18px 0;
+    text-align: center;
+    font-size: 1.1em;
+    font-style: italic;
+      color: #90b4d6;
+      border-bottom: 1px solid #dbe2e9;
+    padding-bottom: 18px;
+  }
+  
+  .style1 .card-list-group {
+      list-style: none;
+    padding-left: 0;
+    border-bottom: 1px solid #dbe2e9;
+    padding-bottom: 18px;
+  }
+  
+  .style1 .card-list-group span {
+      font-weight: bold;
+  }
+  
+  .style1 .card-text {
+    padding: 18px 0;
+  
+  }
+
+  /* Card no 2  */
+.style2 {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 6px #ccc;
+    background-image: url(https://s26.postimg.org/lpbpvvcxl/glitter_background.jpg);
+}
+
+.style2 .card-title {
+    font-family: 'Lato', sans-serif;
+    padding-left: 5px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3em;
+    margin: 1em 0;
+}
+
+.style2 img.card-img {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.style2 .card-body {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #E0E0E0;
+}
+
+.style2 .card-subtitle {
+    font-style: italic;
+    font-size: 0.8em;
+    margin: 1em 0;
+}
+
+.style2 .card-list-group {
+    font-family: 'Catamaran', sans-serif;
+    font-size: small;
+    list-style-type: none;
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.style2 .card-list-group span {
+    font-weight: bold;
+}
+
+.style2 .card-text {
+    font-family: 'Catamaran', sans-serif;
+    font-size: small;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 1em 0;
+}
+
+.style2 .card-link {
+  display: none;
+}
+/* Card no 14  */
+.ThomasZ {
+ font-family: 'Great Vibes', black, cursive;
+  border-radius: 15px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  background-image: url("https://n6-img-fp.akamaized.net/free-photo/grunge-paper-background_1048-6689.jpg?size=338&ext=jpg");
+  box-shadow: 5px 7px 20px #dda04f;
+}
+
+.ThomasZ .card-title {
+  margin: 1em 0;
+  padding:10px;
+  text-align: center;
+  font-size: 45px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px black;
+  color:black;
+  text-shadow: 2px 2px 10px #dda04f;
+  background: url("https://image.freepik.com/free-photo/grunge-paper-background_1048-6689.jpg");
+}
+
+.ThomasZ .second-title {
+}
+
+.ThomasZ img.card-img {
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px #fcb455;
+}
+
+.ThomasZ .card-body {
+  background: url("https://image.freepik.com/free-photo/grunge-paper-background_1048-6689.jpg");
+  margin: 25px 0;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 2px 2px 10px #dda04f;
+  line-height: 1.2em;
+  box-shadow: 0px 2px 15px black;
+}
+
+.ThomasZ .card-subtitle {
+  text-align: center;
+  text-shadow: 2px 2px 10px #dda04f;
+  font-size: 20px;
+}
+
+.ThomasZ .card-list-group {
+  padding: 20px 0;
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+.ThomasZ .card-list-group span {
+  font-weight: bold;
+}
+
+.ThomasZ .card-text {
+}
+
+.ThomasZ .card-link {
+ display: none;
+}
+
+/* Card no 3  */
+.tsigourof_ben6oqe {
+  border: 1px solid #BEBEBE;
+  padding:10px;
+  background-color: #F0E68C;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2)
+}
+
+.tsigourof_ben6oqe .card-title {
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+
+.tsigourof_ben6oqe img.card-img {
+  background: white;
+}
+
+.tsigourof_ben6oqe .card-body {
+  margin-top: 5px;
+  border:1px solid #D3D3D3;
+  padding: 25px 10px;
+  background-color: #f3eba5;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2)
+}
+
+.tsigourof_ben6oqe .card-subtitle {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.tsigourof_ben6oqe .card-list-group {
+  list-style-type: none;
+  padding-left: 3em;
+  margin: 1em 0;
+}
+
+.tsigourof_ben6oqe .card-list-group span {
+  font-weight: bold;
+}
+
+.tsigourof_ben6oqe3 .card-text {
+  font-size: 0.9em;
+}
+
+.tsigourof_ben6oqe .card-link {
+   display: none;
+}
+
+
+.card-switch {
+color: inherit;
+text-decoration: none;
+}
+
+.card-switch:hover {
+color: inherit;
+text-decoration: none;
+}
+
+@media screen and (max-width: 769px) {
+    .card {
+        margin-top: 5em;
+    }
 }
