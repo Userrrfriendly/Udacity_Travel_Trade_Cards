@@ -1,6 +1,8 @@
 const mymap = L.map('mapid').setView([39.00496, 22.9248], 6);
 const $animalCard = $('#animalCard');
 const $defaultCard = $('#defaultCard');
+const $listOfContributors = $('#listOfContributors');
+const contributors = {};
 let markers = {};
 let defaultClass = 'tsigourof_ben6oqe';
 let xyOnClick = false;
@@ -57,7 +59,8 @@ const data = [
     cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
     animalCard: false
   },
-  //To add a new pin on the map Uncomment lines 46 to 53 and change the values
+  //To add a new pin on the map (with default-bootstrap-style-card) 
+  //Uncomment the following lines and change the values
   // userName: 'Your Real Name', //not required but will probably added somewher in the page in a latter update
   // udacityForumUserName: "ThomasZ",
   // placeName: "Serres, Upper Poroia",
@@ -156,13 +159,29 @@ $('#xyButton').on('click', function() {
   if (!xyOnClick) {
     xyOnClick = !xyOnClick;
     mymap.on('click', onMapClick);
-    $('#xyButton').text('Disable Coordinates onClick').removeClass('btn-success').addClass('btn-warning');
+    $('#xyButton').text('Disable Coordinates on click').toggleClass('active'); //.removeClass('btn-success').addClass('btn-warning');
   } else {
     xyOnClick = !xyOnClick;
     mymap.off('click', onMapClick);
-    $('#xyButton').text('Get Coordinates from the map').removeClass('btn-warning').addClass('btn-success');
+    $('#xyButton').text('Get Coordinates from the map').toggleClass('active'); //.removeClass('btn-warning').addClass('btn-success');
   }
 });
+//Toggle List of Contributors
+$('#toggleContributorsBtn').on('click', function() {
+  $listOfContributors.slideToggle(500,"swing");
+});
+//populate list of contributors
+// function getContributors(obj) {
+//   let myList = [];
+//   Object.keys(markers).forEach(function(key) {
+//     myList.push(key)}); //got the keys
+//     contributors[obj[key].udacityForumUserName] = [].push(key);
+// } 
 
+// const contributors = {
+//   ben : [0,4,6],
+//   thomas : [2]
+// } 
 //known bugs
 //Fix gitHub link anchor it seems to duplicate or smth
+//can put a small number next to the contributors name so we know how many pins he has created

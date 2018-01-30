@@ -14,11 +14,48 @@
     <link rel="stylesheet" href="style.css">
     <title>Hello, map! :p </title>
   </head>
+
   <body>
-    <h1 class='text-center'>Hello, map! ;) <button id='xyButton' type="button" class="btn btn-success">Get Coordinates from map</button></h1>
-    <div class='container'>
+    <!-- <div class="jumbotron jumbotron-fluid fixed-top">
+      <div class="container">
+        <h1 class="display-4">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div> -->
+    <h1 class='text-center header mb-2 pb-1'>Wellcome to the #Greek-Team Udacity Travelling Card Project </h1>
+    <div class='.container-fluid'>
       <div class='row'>
-        <div class='col-md-8'>
+        <div class='col-md-2'>
+          <!-- <button id='xyButton' type="button" class="btn btn-success">Get Coordinates<br> from map</button> -->
+          <!-- start of madness -->
+            <nav class="nav flex-column nav-pills">
+                <a class="nav-link text-center" id='xyButton' href="#">Get Coordinates From Map</a>
+                <li class="nav-item dropdown text-center">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Change Skin</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item disabled" href="#">Comming Soon...</a>
+                      <a class="dropdown-item disabled" href="#">Comming Soon...</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Default Skin</a>
+                    </div>
+                  </li>
+                <a class="nav-link text-center" href="#">About</a>
+                <a id="toggleContributorsBtn" class="nav-link text-center" href="#">List of Contributors</a>
+            </nav>
+            <hr>
+            <ul id="listOfContributors" class="list-group text-center hidden">
+                <li class="list-group-item list-group-item-primary">Get XY from map</li>
+                <li class="list-group-item list-group-item-secondary">Change Skin</li>
+                <li class="list-group-item list-group-item-success">contributor1</li>
+                <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
+                <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
+                <li class="list-group-item list-group-item-info">This is a info list group item</li>
+                <li class="list-group-item list-group-item-light">This is a light list group item</li>
+                <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
+            </ul>
+          <!-- /end of madness -->
+        </div>
+        <div class='col-md-6'>
             <div class='mx-auto' id="mapid"></div>
         </div>  
         <!-- Default Style Card -->
