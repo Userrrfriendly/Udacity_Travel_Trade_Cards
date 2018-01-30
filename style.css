@@ -7,11 +7,14 @@
 }
 
 .header {
-    background-color:cornflowerblue;
+    font-family:monospace;
+    background-color: #3f7aa2;
+    color: #fff;
+    font-size: 28px;
 }
 
 body {
-    background-color: rgba(180, 180, 233, 0.459)  ;
+    background-color: #f5f5f5;
 }
 
 .nav-link:hover {
@@ -375,3 +378,48 @@ text-decoration: none;
       margin-top: 2em;
     }
 }
+
+nav a, ul li {
+    color: #242021;
+}
+/*****  scss overrides  *****/
+nav a:hover, dropdown-item:hover, ul li:hover {
+    background-color: #242021 !important;
+    color: #fff !important;
+}
+
+.nav-pills .show > .nav-link {
+    background-color: #242021 !important;
+}
+
+.header {
+    padding: 20px 0px !important;
+}
+
+.nav {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
