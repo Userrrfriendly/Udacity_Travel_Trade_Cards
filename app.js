@@ -71,6 +71,19 @@ const data = [
     cardText: 'Additionally, the ancient dorp is of great archaeological interest. On the highest spot, there are the remnants of two palaeo-Christian basilicas of the 5th century that where places that welcomed the worshipers until the pre-Christian years. In the sanctum many sailors had been frequent visitors because they had been travelling to the island in order to transfer marble. The sailors used to engrave on the stepping-stones the names of their beloved ones and theirs, too.',
     cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
     animalCard: false
+  },
+  {
+    userName: 'Athanasios Markou',
+    udacityForumUserName: "TheLastMoikan",
+    placeName: "Mytilene",
+    altPlaceName: "Μυτιλήνη",
+    description: "Mytilene is a city founded in 11th century BC, also it is the capital and port of island Lesbos. Mytilene is built on the southeast edge of the island and it is the seat of metropolitan bishop of the Orthodox church. The city has a port with ferries that serves some nearby islands and the mainland cities of Pireaus, Athens and Thessaloniki. Besides, there are more than 15 commercial producers that produce ouzo (an alcholic drink).",
+    latLong:[39.1041231, 26.5585513],
+    imgUrl: "https://preview.ibb.co/mw4AeR/Mytilene.jpg",
+    country: "Greece",
+    cardText: 'The town of Mytilene has a large number of neoclassical buildings, public and private houses. Some of them are the building of the Lesbos Prefecture, the old City Hall, the Experimental Lyceum and various mansions and hotels all over the town. The Baroque church of Saint Therapon dominates at the port with its impressive style.',
+    cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
+    animalCard: false
   }
   //To add a new pin on the map (with default-bootstrap-style-card) 
   //Uncomment the following lines and change the values
