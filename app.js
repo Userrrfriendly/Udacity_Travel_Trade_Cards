@@ -3,12 +3,15 @@ const $animalCard = $('#animalCard');
 const $defaultCard = $('#defaultCard');
 const $listOfContributors = $('#listOfContributors');
 const contributors = {};
+const arrOfObjectsContributors = []; //arrayOfObjects
+const arrOfContributors = [];
 let markers = {};
 let defaultClass = 'tsigourof_ben6oqe';
 let xyOnClick = false;
+const $pinButton = $('<button type="button" class="btn btn-outline-dark mb-1 mt-1">xalkidiki den exei</button>');
 const data = [
   {
-    userName:'Veniamin Tsigourof',
+    userName:'Babis Sougias',
     udacityForumUserName:'style1',
     placeName:'Thassos, Ancient Quarries',
     altPlaceName:'Αλυκή Θάσσου, Αρχαία Λατομεία',
@@ -21,7 +24,7 @@ const data = [
     animalCard: false
   },
   {
-    userName:'Veniamin Tsigourof',
+    userName:'Andreas Papandreou',
     udacityForumUserName:'style2',
     placeName:'Patmos, Xora',
     altPlaceName:'Πάτμος, Χώρα',
@@ -77,7 +80,7 @@ const data = [
     udacityForumUserName: "TheLastMoikan",
     placeName: "Mytilene",
     altPlaceName: "Μυτιλήνη",
-    description: "Mytilene is a city founded in 11th century BC, also it is the capital and port of island Lesbos. Mytilene is built on the southeast edge of the island and it is the seat of metropolitan bishop of the Orthodox church. The city has a port with ferries that serves some nearby islands and the mainland cities of Pireaus, Athens and Thessaloniki. Besides, there are more than 15 commercial producers that produce ouzo (an alcholic drink).",
+    description: "Mytilene is a city founded in 11th century BC, also it is the capital and port of island Lesbos. Mytilene is built on the southeast edge of the island and it is the seat of metropolitan bishop of the Orthodox church. The city has a port with ferries that serves some nearby islands and the mainland cities of Pireaus, Athens and Thessaloniki. Besides, there are more than 15 commercial producers that produce ouzo (an alcholic drink)." + '<hr>' + 'The town of Mytilene has a large number of neoclassical buildings, public and private houses. Some of them are the building of the Lesbos Prefecture, the old City Hall, the Experimental Lyceum and various mansions and hotels all over the town. The Baroque church of Saint Therapon dominates at the port with its impressive style.',
     latLong:[39.1041231, 26.5585513],
     imgUrl: "https://preview.ibb.co/mw4AeR/Mytilene.jpg",
     country: "Greece",
@@ -111,12 +114,12 @@ const data = [
 /***************************
 *    Show Contributors     *
 ***************************/
-function addContributor() {
-    for( i=0; i < data.length; i++) {
-            document.getElementsByClassName('contributor')[i].innerHTML = data[i].userName;
-    }
-}
-addContributor();
+// function addContributor() {
+//     for( i=0; i < data.length; i++) {
+//             document.getElementsByClassName('contributor')[i].innerHTML = data[i].userName;
+//     }
+// }
+// addContributor();
 
 
 /****************************
@@ -220,17 +223,70 @@ $('#toggleContributorsBtn').on('click', function() {
   $listOfContributors.slideToggle(500,"swing");
 });
 //populate list of contributors
-// function getContributors() {
-//   let myList = [];
-//   Object.keys(markers).forEach(function(key) {
-//     tempKey = key; //got the keys
-//     contributors[markers[key].udacityForumUserName] = key;
-// });
+function getContributors() {
+  Object.keys(markers).forEach(function(key) {
+    //Loops through the object snippet from https://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object
+    if (contributors[markers[key].udacityForumUserName] == null) {
+        // checks if undefined or null. code snippet from https://stackoverflow.com/questions/2647867/how-to-determine-if-variable-is-undefined-or-null
+        contributors[markers[key].udacityForumUserName] = [key];
+    } else {
+        contributors[markers[key].udacityForumUserName].push(key);
+    }
+  });
+};
+getContributors();
+function  contrToArray() {
+  Object.keys(contributors).forEach(function(key) {
+    let temp = {};
+    temp[key] = contributors[key];
+    arrOfObjectsContributors.push(temp);
+    arrOfContributors.push(key);
+  });
+};
+contrToArray();
+//remember to get rid of the 'children' that you create when you will add more contributors
+$('.contributor').on('click', function(){
+  switch ($(this).attr('data-state')) {
+    case 'idle':
+      let arrayOfPins = contributors[$(this).attr('data-forum-name')];
+      $('<div class="pins"></div>').clone().insertAfter(this);
+      const $pins = $(this).next('div.pins');
+      for (let i = 0; i< arrayOfPins.length; i++) {
+        let placeName = markers[contributors[$(this).attr('data-forum-name')][i]].placeName;
+        tempButton = $('<button type="button" class="btn btn-outline-dark mb-1 mt-1">' + placeName + '</span></button>');
+        // console.log(arrayOfPins[i]);
+        $(this).next('div.pins').append(tempButton);
+        // tempButton.clone().append($pins);
+      };
+      $(this).attr('data-state','expanded'); 
+      break;
+    case 'expanded':
+      $(this).next('div.pins').toggleClass('hidden');
+      $(this).attr('data-state','collapsed'); 
+      break;
+    case 'collapsed':
+      $(this).next('div.pins').toggleClass('hidden');
+      $(this).attr('data-state','expanded'); 
+      break;
+    };
+});
 
-// const contributors = {
-//   ben : [0,4,6],
-//   thomas : [2]
-// } 
+function showContributors() { //fills only the first 5 cards so far
+  //Object.keys(obj).length //number of keys( contributors)
+  for (let i = 0; i < 5; i++ ) {
+    var $badge = $('<span class="badge badge-light ml-1">' + contributors[arrOfContributors[i]].length + '</span>')    
+    document.getElementsByClassName('contributor')[i].innerHTML = markers[contributors[arrOfContributors[i]][0]].userName;
+    $($('.contributor')[i]).attr('data-forum-name', arrOfContributors[i]).attr('data-state','idle').append($badge);
+  };
+};
+showContributors();
+
 //known bugs
 //Fix gitHub link anchor it seems to duplicate or smth
-//can put a small number next to the contributors name so we know how many pins he has created
+//can put a small number next to the contributors name so we know how many pins...
+//... he has created
+//Maybe add a feaure so that a user can place two images in a single pin...
+//...by clicking on the card image the next one will toggle
+//list of contributors need to populate it
+//bind a click event that will expand the list of pins
+//clicking on an expanded pin will zoom to it on the map
