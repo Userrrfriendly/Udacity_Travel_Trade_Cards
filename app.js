@@ -99,6 +99,19 @@ const data = [
     country: "Greece",
     animalCard:false
   },
+    {
+    userName: 'Christina-Angeliki Antoniou',
+    udacityForumUserName: "xrisaant",
+    placeName: "Trikala",
+    altPlaceName: "Τρίκαλα",
+    description: "Trikala (Greek: Τρίκαλα) is a city in northwestern Thessaly, Greece. The region of Trikala has been inhabited since prehistoric times, with the first indications of permanent settlement been uncovered in the cave of Theopetra, and dating back to approx. 49,000 BC!",
+    latLong:[39.555634, 21.766896],
+    imgUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Lithaiosrivertrikala.jpg",
+    country: "Greece",
+	cardText: 'The city of Trikala is built on the ancient city of Trikka or Trikke, which was founded around the 3rd millennium BC . The city straddles the Lithaios river,which is a tributary of Pineios and took its name from the nymph Trikke, daughter of Penaeus, or according to others, daughter of the river god Asopus. It was considered to be the birthplace and main residence of the healing god Asclepius and is mentioned in Homers Iliad as having participated in the Trojan War.'</br> 'Trikala region has a distinctive geology including Meteora, an UNESCO World Heritage Site home to 24 ancient Orthodox Christian monasteries precariously perched on top of a complex network of sandstone boulders,the Forests of Pili,the Pindus mountain villages and the ski resorts of Pertouli.'</br> 'Nowdays Trikala has the distinction of being the first smart city in Greece, integrating technology-powered solutions into the daily life of the municipality and delivering government services to citizens through e-governance',
+    cardList: [["Population: ","81,355"],["Area: ","T607.59 km2"],["Administrative region: ","Thessaly"],["Sights: ","Temble Asklepieion of Trikke, Byzantine Castle build by Justinian,Osman Shah Mosque designed by Mimar Sinan ,Old City of Trikala, Meteora, Lithaios river and the Central Bridge"]],
+    animalCard:true
+  },
   //To add a new pin on the map (with default-bootstrap-style-card) 
   //Uncomment the following lines and change the values
   // userName: 'Your Real Name', //not required but will probably added somewher in the page in a latter update
