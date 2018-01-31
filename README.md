@@ -2,6 +2,9 @@
 A project started by the #greek community of Google Challenge Scholarship: Front-End Web Dev. The goal is to put in use some of the concepts that we learned at the Udacity classrooms &amp; to further develop our skills by contributing to this project. All contributions are welcome! 
 
 ***********
+**Early Preview:**
+![preview](https://preview.ibb.co/bGvrKR/Capture.png)
+***********
 To create a new pin and a new card just add a new entry in the const data that is in app.js
 To add a new entry just put a comma at the end of line 34 and paste the following code
 and follow the comments:

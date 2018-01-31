@@ -14,25 +14,83 @@
     <link rel="stylesheet" href="style.css">
     <title>Hello, map! :p </title>
   </head>
+
   <body>
-    <h1 class='text-center'>Hello, map! ;) </h1>
-    <div class='container'>
+    <!-- <div class="jumbotron jumbotron-fluid fixed-top">
+      <div class="container">
+        <h1 class="display-4">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div> -->
+      <div class="wrap">
+    <h1 class='text-center header mb-2 pb-1'>Wellcome to the <strong>#Greek-Team Udacity</strong> Travelling Card Project </h1>
+    <div class='container-fluid'>
       <div class='row'>
-        <div class='col-md-8'>
+        <div class='col-md-2'>
+          <!-- <button id='xyButton' type="button" class="btn btn-success">Get Coordinates<br> from map</button> -->
+          <!-- start of madness -->
+            <nav class="nav flex-column nav-pills">
+                <a class="nav-link text-center" id='xyButton' href="#">Get Coordinates From Map</a>
+                <li class="nav-item dropdown text-center">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Change Skin</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item disabled" href="#">Comming Soon...</a>
+                      <a class="dropdown-item disabled" href="#">Comming Soon...</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Default Skin</a>
+                    </div>
+                  </li>
+                <a class="nav-link text-center" href="#">About</a>
+                <a id="toggleContributorsBtn" class="nav-link text-center" href="#">List of Contributors</a>
+            </nav>
+            <hr>
+            <ul id="listOfContributors" class="list-group text-center hidden">
+                <li class="list-group-item contributor"></li>
+                <li class="list-group-item contributor"></li>
+                <li class="list-group-item contributor"></li>
+                <li class="list-group-item contributor"></li>
+                <li class="list-group-item contributor"></li>
+            </ul>
+          <!-- /end of madness -->
+        </div>
+        <div class='col-md-6'>
             <div class='mx-auto' id="mapid"></div>
         </div>  
-        <div class='col-md-4'>
+        <!-- Default Style Card -->
+        <div id='defaultCard' class='col-md-4'>
           <div class="card mx-auto  bg-warning mb-3 text-center" style="width: 20rem;">
             <img class="card-img-top" id='cardImage' src="./img/udacity.png" alt="Card image cap">
               <div class="card-block">
                 <h4 class="card-title" id='cardTitle'>Travel - Trading Card</h4>
-                <p class="card-text" id = 'cardText'>This is an open source project made by students of Google Challenge Scholarship: Front-End Web Dev. The purpose of this project is to further develop our skills by contributing to this project ;P. <br> Click on a marker on the map to expand the holiday trading card!<br> You can contribute to this Open Source project on <a href='https://github.com/' target='blank'>https://github.com/</></p>
+                <p class="card-text" id = 'cardText'>This is an open source project made by students of Google Challenge Scholarship: Front-End Web Dev. The purpose of this project is to further develop our skills by contributing to this project ;P. <br> Click on a marker on the map to expand the holiday trading card!<br> You can contribute to this Open Source project on <a href='https://github.com/' target='blank'>https://github.com/<a/></p>
               </div>
             </div>
         </div> 
+        <!-- end  Default Style -->
+        <!-- Start Animal Card -->
+        <div id="animalCard" class="card mb-4 col-md-4 tsigourof_ben6oqe">
+          <a class="card-switch" href="#">
+            <h2 class="card-title">Mount Beshtau</h2>
+            <img class="card-img" src="http://photos.wikimapia.org/p/00/01/23/04/79_big.jpg" alt="Beshtau">
+            <div class="card-body">
+              <h3 class="card-subtitle">Бешта́у — изолированная пятиглавая гора — лакколит, высочайшая из 17 останцовых магматических гор Пятигорья на Кавказских Минеральных Водах. Высота 1400м. Памятник природы. Дала название окружающей местности (Пятигорье) и городу Пятигорску.</h3>
+              <ul class="card-list-group">
+                <li><span class="card-list-group-item">Text from &lt;span&gt; Element: </span>Text from &lt;li&gt; element</li>
+                <li><span class="card-list-group-item">Text from &lt;span&gt; Element: </span>Text from &lt;li&gt; Element</li>
+                <li><span class="card-list-group-item">Text from &lt;span&gt; Element: </span>Text from &lt;li&gt; lement</li>
+                <li><span class="card-list-group-item">Text from &lt;span&gt; Element: </span>Text from &lt;li&gt; element</li>
+              </ul>
+              <p class="card-text">Additionally, the ancient dorp is of great archaeological interest. On the highest spot, there are the remnants of two palaeo-Christian basilicas of the 5th century that where places that welcomed the worshipers until the pre-Christian years. In the sanctum many sailors had been frequent visitors because they had been travelling to the island in order to transfer marble. The sailors used to engrave on the stepping-stones the names of their beloved ones and theirs, too.</p>
+            </div><!-- /.card-body -->
+          </a><!-- /.card-switch -->
+        </div>
+        <!-- /End Animal Card  -->
       </div>
     </div> <!--end container  -->
-     
+    </div>
+    <div id="footer">
+        <span>Greek-Team Udacity - Front-end Developer Challenge 2017</span>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script
