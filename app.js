@@ -84,7 +84,18 @@ const data = [
     cardText: 'The town of Mytilene has a large number of neoclassical buildings, public and private houses. Some of them are the building of the Lesbos Prefecture, the old City Hall, the Experimental Lyceum and various mansions and hotels all over the town. The Baroque church of Saint Therapon dominates at the port with its impressive style.',
     cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
     animalCard: false
-  }
+  },
+    {
+    userName: 'Thomas Zegos',
+    udacityForumUserName: "ThomasZ",
+    placeName: "Chalkidiki, Afytos",
+    altPlaceName: "Χαλκιδική, Άφυτος",
+    description: "Afytos is a village in Chalkidiki, northern Greece. It is one of the most beautiful places for vacation. You can take a lot of pictures near the sea, eat good seafood and of course, you can take a dip in the sea. And, if you 're lucky you will see dolphins, too. This place is highly recommended for couples.",
+    latLong:[40.098651,23.436987],
+    imgUrl: "./img/Afytos.jpg",
+    country: "Greece",
+    animalCard:false
+  },
   //To add a new pin on the map (with default-bootstrap-style-card) 
   //Uncomment the following lines and change the values
   // userName: 'Your Real Name', //not required but will probably added somewher in the page in a latter update
