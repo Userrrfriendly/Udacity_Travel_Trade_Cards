@@ -139,11 +139,14 @@ Default Styles
       color: #242021;
   }
   /*****  scss overrides  *****/
-  nav a:hover, dropdown-item:hover, ul li:hover {
+  /* nav a:hover, dropdown-item:hover, ul li:hover {
       background-color: #242021 !important;
       color: #fff !important;
+  } */
+  nav a:hover, dropdown-item:hover, ul li.list-group-item:hover {
+    background-color: #242021 !important;
+    color: #fff !important;
   }
-
   .bg-warning {
       background-color: #fff !important;
   }
