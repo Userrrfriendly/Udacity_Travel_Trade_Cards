@@ -12,21 +12,21 @@ let xyOnClick = false;
 const $pinButton = $('<button type="button" class="btn btn-outline-dark mb-1 mt-1">xalkidiki den exei</button>'); //currently has no point of existance - probably will be removed
 const data = [
   {
-    userName:'Babis Sougias',
-    udacityForumUserName:'style1',
+    userName:'Veniamin Tsigourof',
+    udacityForumUserName:'tsigourof_ben6oqe',
     placeName:'Thassos, Ancient Quarries',
     altPlaceName:'Αλυκή Θάσσου, Αρχαία Λατομεία',
     description:'Alykes is a peninsula of archaeological interest where the ancient quarry of marble is situated. The quarry of marble was used from the ancient to byzantine years. Huge marble rocks are discernible under the surface of the sea.',
     latLong:[40.60436,24.74364],
-    imgUrl:'http://www.archaiologia.gr/wp-content/uploads/2017/03/Thasos_kionas.jpg',
+    imgUrl:'./img/thassos_aliki.jpg',
     country:'Greece',
     cardText: 'Additionally, the ancient dorp is of great archaeological interest. On the highest spot, there are the remnants of two palaeo-Christian basilicas of the 5th century that where places that welcomed the worshipers until the pre-Christian years. In the sanctum many sailors had been frequent visitors because they had been travelling to the island in order to transfer marble. The sailors used to engrave on the stepping-stones the names of their beloved ones and theirs, too.',
     cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
     animalCard: false
   },
   {
-    userName:'Andreas Papandreou',
-    udacityForumUserName:'style2',
+    userName:'Veniamin Tsigourof',
+    udacityForumUserName:'tsigourof_ben6oqe',
     placeName:'Patmos, Xora',
     altPlaceName:'Πάτμος, Χώρα',
     description:'Η Πάτμος είναι ελληνικό νησί του Αιγαίου Πελάγους υπαγόμενο, κατά τους αρχαίους Έλληνες, στις Νότιες Σποράδες, κατά δε τη σύγχρονη πολιτική διαίρεση της χώρας στη Δωδεκάνησο.',
@@ -35,7 +35,7 @@ const data = [
     country:'Greece',
     cardText: 'Additionally, the ancient dorp is of great archaeological interest. On the highest spot, there are the remnants of two palaeo-Christian basilicas of the 5th century that where places that welcomed the worshipers until the pre-Christian years. In the sanctum many sailors had been frequent visitors because they had been travelling to the island in order to transfer marble. The sailors used to engrave on the stepping-stones the names of their beloved ones and theirs, too.',
     cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
-    animalCard: true
+    animalCard: false
   },
   {
     userName:'Veniamin Tsigourof',
@@ -44,7 +44,7 @@ const data = [
     altPlaceName:'Бештау',
     description:'Бешта́у — изолированная пятиглавая гора — лакколит, высочайшая из 17 останцовых магматических гор Пятигорья на Кавказских Минеральных Водах. Высота 1400м. Памятник природы. Дала название окружающей местности (Пятигорье) и городу Пятигорску.',
     latLong:[44.09749, 43.02235],
-    imgUrl:'http://photos.wikimapia.org/p/00/01/23/04/79_big.jpg',
+    imgUrl:'./img/beshtau.jpg',
     country:'Russia',
     cardText: 'Additionally, the ancient dorp is of great archaeological interest. On the highest spot, there are the remnants of two palaeo-Christian basilicas of the 5th century that where places that welcomed the worshipers until the pre-Christian years. In the sanctum many sailors had been frequent visitors because they had been travelling to the island in order to transfer marble. The sailors used to engrave on the stepping-stones the names of their beloved ones and theirs, too.',
     cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
