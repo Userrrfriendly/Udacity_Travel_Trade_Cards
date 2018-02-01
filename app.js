@@ -113,6 +113,18 @@ const data = [
     cardList: [["Population: ","81,355"],["Area: ","T607.59 km2"],["Administrative region: ","Thessaly"],["Sights: ","Temble Asklepieion of Trikke, Byzantine Castle build by Justinian,Osman Shah Mosque designed by Mimar Sinan ,Old City of Trikala, Meteora, Lithaios river and the Central Bridge"]],
     animalCard:false //originally true will ask christina about style
   },
+   {
+     userName: 'Anastasios Agathaggelou', //not required but will probably added somewher in the page in a latter update
+     udacityForumUserName: "Tagathag",
+     placeName: "Thessaloniki",
+     altPlaceName: "Θεσσαλονίκη",
+     description: "The city was founded around 315 BC by the King Cassander of Macedon, on or near the site of the ancient town of Therma and 26 other local villages. He named it after his wife Thessalonike, a half-sister of Alexander the Great and princess of Macedon as daughter of Philip II. Under the kingdom of Macedon the city retained its own autonomy and parliament and evolved to become the most important city in Macedon",
+     latLong:[40.623156, 22.945599],
+     imgUrl: "./img/thessaloniki.jpg",
+     country: "Greece"
+     animalCard:false
+    },	
+	
   //To add a new pin on the map (with default-bootstrap-style-card) 
   //Uncomment the following lines and change the values
   // userName: 'Your Real Name', //not required but will probably added somewher in the page in a latter update
@@ -121,7 +133,7 @@ const data = [
   // altPlaceName: "Σέρρες, Άνω Πορόια",
   // description: "this text goes for descritption.",
   // latLong:[43.285892, 22.035583],
-  // imgUrl: "./img/placeholder.jpg",
+  // imgUrl: "./img/plaaceholder.jpg",
   // country: "Greece"
 ];
 
