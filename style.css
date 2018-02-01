@@ -323,9 +323,6 @@ Default Styles
   background: url("https://image.freepik.com/free-photo/grunge-paper-background_1048-6689.jpg");
 }
 
-.ThomasZ .second-title {
-}
-
 .ThomasZ img.card-img {
   border-radius: 5px;
   box-shadow: 0px 2px 15px #fcb455;
@@ -356,9 +353,6 @@ Default Styles
 
 .ThomasZ .card-list-group span {
   font-weight: bold;
-}
-
-.ThomasZ .card-text {
 }
 
 .ThomasZ .card-link {
