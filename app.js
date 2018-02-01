@@ -1,5 +1,5 @@
 const mymap = L.map('mapid').setView([39.00496, 22.9248], 6);
-const $animalCard = $('#animalCard');
+const $styling = $('#styling');
 const $defaultCard = $('#defaultCard');
 const $listOfContributors = $('#listOfContributors');
 const contributors = {};
@@ -7,7 +7,7 @@ const arrOfObjectsContributors = []; //arrayOfObjects - currently has no point o
 const arrOfContributors = [];
 let contDropDownList =[]; // [ ['User Name',badge, 'data-foum-name','data-state']]; //array of arrays
 let markers = {};
-let defaultClass = 'tsigourof_ben6oqe';
+let defaultClass = 'default';
 let xyOnClick = false;
 const $pinButton = $('<button type="button" class="btn btn-outline-dark mb-1 mt-1">xalkidiki den exei</button>'); //currently has no point of existance - probably will be removed
 const data = [
@@ -23,10 +23,9 @@ const data = [
    // latLong:[43.285892, 22.035583],
    // imgUrl: "./img/placeholder.jpg",
    // country: "Greece"
-   //cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
-   //animalCard: false
+   //styling: false
    //},
-   
+
     userName:'Veniamin Tsigourof',
     udacityForumUserName:'tsigourof_ben6oqe',
     placeName:'Thassos, Ancient Quarries',
@@ -35,9 +34,7 @@ const data = [
     latLong:[40.60436,24.74364],
     imgUrl:'./img/thassos_aliki.jpg',
     country:'Greece',
-    cardText: 'Additionally, the ancient dorp is of great archaeological interest. On the highest spot, there are the remnants of two palaeo-Christian basilicas of the 5th century that where places that welcomed the worshipers until the pre-Christian years. In the sanctum many sailors had been frequent visitors because they had been travelling to the island in order to transfer marble. The sailors used to engrave on the stepping-stones the names of their beloved ones and theirs, too.',
-    cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
-    animalCard: false
+    styling: false
   },
   {
     userName:'Veniamin Tsigourof',
@@ -48,9 +45,7 @@ const data = [
     latLong:[37.30903, 26.54765],
     imgUrl:'http://www.discovergreece.com/~/media/images/highlight-large-images/az/p/patmos/panoramic-view-patmos.ashx?w=820&h=483&crop=1',
     country:'Greece',
-    cardText: 'Additionally, the ancient dorp is of great archaeological interest. On the highest spot, there are the remnants of two palaeo-Christian basilicas of the 5th century that where places that welcomed the worshipers until the pre-Christian years. In the sanctum many sailors had been frequent visitors because they had been travelling to the island in order to transfer marble. The sailors used to engrave on the stepping-stones the names of their beloved ones and theirs, too.',
-    cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
-    animalCard: false
+    styling: false
   },
   {
     userName:'Veniamin Tsigourof',
@@ -61,9 +56,7 @@ const data = [
     latLong:[44.09749, 43.02235],
     imgUrl:'./img/beshtau.jpg',
     country:'Russia',
-    cardText: 'Additionally, the ancient dorp is of great archaeological interest. On the highest spot, there are the remnants of two palaeo-Christian basilicas of the 5th century that where places that welcomed the worshipers until the pre-Christian years. In the sanctum many sailors had been frequent visitors because they had been travelling to the island in order to transfer marble. The sailors used to engrave on the stepping-stones the names of their beloved ones and theirs, too.',
-    cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
-    animalCard: true
+    styling: true
   },
   {
     userName: 'Thomas Zegos',
@@ -74,9 +67,7 @@ const data = [
     latLong:[41.285892, 23.035583],
     imgUrl: "https://image.ibb.co/m1PiUR/Ano_Poroia.jpg", //"./img/Ano-Poroia.jpg",
     country: "Greece",
-    cardText: 'Additionally, the ancient dorp is of great archaeological interest. On the highest spot, there are the remnants of two palaeo-Christian basilicas of the 5th century that where places that welcomed the worshipers until the pre-Christian years. In the sanctum many sailors had been frequent visitors because they had been travelling to the island in order to transfer marble. The sailors used to engrave on the stepping-stones the names of their beloved ones and theirs, too.',
-    cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
-    animalCard: false
+    styling: true
   },
   {
     userName: 'Thodoris Pliakas',
@@ -87,9 +78,7 @@ const data = [
     latLong:[39.3630, 22.9408],
     imgUrl: "https://thumb.ibb.co/bY0ig6/volos.jpg",
     country: "Greece",
-    cardText: 'Additionally, the ancient dorp is of great archaeological interest. On the highest spot, there are the remnants of two palaeo-Christian basilicas of the 5th century that where places that welcomed the worshipers until the pre-Christian years. In the sanctum many sailors had been frequent visitors because they had been travelling to the island in order to transfer marble. The sailors used to engrave on the stepping-stones the names of their beloved ones and theirs, too.',
-    cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
-    animalCard: false
+    styling: false
   },
   {
     userName: 'Athanasios Markou',
@@ -100,9 +89,7 @@ const data = [
     latLong:[39.1041231, 26.5585513],
     imgUrl: "https://preview.ibb.co/mw4AeR/Mytilene.jpg",
     country: "Greece",
-    cardText: 'The town of Mytilene has a large number of neoclassical buildings, public and private houses. Some of them are the building of the Lesbos Prefecture, the old City Hall, the Experimental Lyceum and various mansions and hotels all over the town. The Baroque church of Saint Therapon dominates at the port with its impressive style.',
-    cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
-    animalCard: false
+    styling: false
   },
     {
     userName: 'Thomas Zegos',
@@ -113,7 +100,7 @@ const data = [
     latLong:[40.098651,23.436987],
     imgUrl: "./img/Afytos.jpg",
     country: "Greece",
-    animalCard:false
+    styling: false
   },
     {
     userName: 'Christina-Angeliki Antoniou',
@@ -124,9 +111,7 @@ const data = [
     latLong:[39.555634, 21.766896],
     imgUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Lithaiosrivertrikala.jpg",
     country: "Greece",
-	  cardText: 'The city of Trikala is built on the ancient city of Trikka or Trikke, which was founded around the 3rd millennium BC . The city straddles the Lithaios river,which is a tributary of Pineios and took its name from the nymph Trikke, daughter of Penaeus, or according to others, daughter of the river god Asopus. It was considered to be the birthplace and main residence of the healing god Asclepius and is mentioned in Homers Iliad as having participated in the Trojan War.' + '</br>' + 'Trikala region has a distinctive geology including Meteora, an UNESCO World Heritage Site home to 24 ancient Orthodox Christian monasteries precariously perched on top of a complex network of sandstone boulders,the Forests of Pili,the Pindus mountain villages and the ski resorts of Pertouli.' + '</br>' + 'Nowdays Trikala has the distinction of being the first smart city in Greece, integrating technology-powered solutions into the daily life of the municipality and delivering government services to citizens through e-governance',
-    cardList: [["Population: ","81,355"],["Area: ","T607.59 km2"],["Administrative region: ","Thessaly"],["Sights: ","Temble Asklepieion of Trikke, Byzantine Castle build by Justinian,Osman Shah Mosque designed by Mimar Sinan ,Old City of Trikala, Meteora, Lithaios river and the Central Bridge"]],
-    animalCard:false //originally true will ask christina about style
+    styling: false //originally true will ask christina about style
   },
    {
      userName: 'Anastasios Agathaggelou', //not required but will probably added somewher in the page in a latter update
@@ -137,7 +122,7 @@ const data = [
      latLong:[40.623156, 22.945599],
      imgUrl: "./img/thessaloniki.jpg",
      country: "Greece",
-     animalCard:false
+     styling: false
     },
     {
       userName: 'Eleni Nistikaki',
@@ -148,19 +133,9 @@ const data = [
       latLong:[35.516253, 24.018549],
       imgUrl: "http://www.publicdomainpictures.net/pictures/150000/velka/old-venetian-harbor-1454681052DYt.jpg",
       country: "Greece",
-      animalCard:false
-    },	
-	
-  //To add a new pin on the map (with default-bootstrap-style-card) 
-  //Uncomment the following lines and change the values
-  // userName: 'Your Real Name', //not required but will probably added somewher in the page in a latter update
-  // udacityForumUserName: "ThomasZ",
-  // placeName: "Serres, Upper Poroia",
-  // altPlaceName: "Σέρρες, Άνω Πορόια",
-  // description: "this text goes for descritption.",
-  // latLong:[43.285892, 22.035583],
-  // imgUrl: "./img/plaaceholder.jpg",
-  // country: "Greece"
+      styling: false
+    },
+
 ];
 
 /***************************
@@ -222,28 +197,23 @@ Leaflet - map Click Events
 ***************************/
 function markerClick(e) {
   const customId = this.options.customId;
-  if (!markers[customId].animalCard) {
+  if (!markers[customId].styling) {
     $defaultCard.show();
-    $animalCard.hide();
+    $styling.hide();
     $('#cardImage').attr('src', markers[customId].imgUrl);
     $('#cardTitle').html(markers[customId].placeName);
     $('#cardText').html(markers[customId].description);
   } else {
     $defaultCard.hide();
-    $animalCard.show();
+    $styling.show();
     //
     const currentClass = markers[customId].udacityForumUserName;
-    $animalCard.removeClass(defaultClass).addClass(currentClass);
+    $styling.removeClass(defaultClass).addClass(currentClass);
     defaultClass = currentClass;
     $('.card-img').attr('src', markers[customId].imgUrl);
     $('.card-title').html(markers[customId].placeName);
     $('.card-subtitle').html(markers[customId].description);
     $('.card-text').html(markers[customId].cardText);
-    let listItems = $('.card-list-group li');
-    for (let i = 0; i < 4; i++) {
-      const span = $('<span class="card-list-group-item">Diet:</span>').html(markers[customId].cardList[i][0]);//global?
-      $(listItems[i]).html(markers[customId].cardList[i][1]).prepend(span);
-    }
   }
 };
 //Get Coordinates From Map
@@ -308,21 +278,21 @@ $('.contributor').on('click', function(){
         tempButton.attr('data-lat', lat).attr('data-long', long);
         $(this).next('div.pins').append(tempButton);
       };
-      $(this).attr('data-state','expanded'); 
+      $(this).attr('data-state','expanded');
       break;
     case 'expanded':
       $(this).next('div.pins').toggleClass('hidden');
-      $(this).attr('data-state','collapsed'); 
+      $(this).attr('data-state','collapsed');
       break;
     case 'collapsed':
       $(this).next('div.pins').toggleClass('hidden');
-      $(this).attr('data-state','expanded'); 
+      $(this).attr('data-state','expanded');
       break;
     };
 });
 
-function showContributors() { 
-  //Object.keys(obj).length //number of keys( contributors)  
+function showContributors() {
+  //Object.keys(obj).length //number of keys( contributors)
   for (let i=0; i< arrOfContributors.length ; i++) {
     //arrOfContributors[i] //forumname
     let tempElement = [
@@ -343,7 +313,7 @@ function showContributors() {
 };
 showContributors();
 
-//Attach the click on body because the button.btn-outline-dark elements are added dynamically 
+//Attach the click on body because the button.btn-outline-dark elements are added dynamically
 $('body').on('click','button.btn-outline-dark', function() {
   const lat = parseFloat($(this).attr('data-lat'));
   const long = parseFloat($(this).attr('data-long'));
@@ -394,7 +364,7 @@ $('button.up').on('click', function() {
  KNOWN BUGS && IMPROVEMENTS
  ***************************/
 //GET GOORDINATES BUTTON BECOMES BLUE ON CLICK
-//travelling card = postcard 
+//travelling card = postcard
 //Maybe add a feaure so that a user can place two images in a single pin...
 //...by clicking on the card image the next one will toggle
 //list of contributors need to populate it
