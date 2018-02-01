@@ -18,7 +18,7 @@ To add a new entry just paste the following code and follow the comments:
     latLong:[44.09749, 43.02235], // the latitude and longitude of the location
     imgUrl:'./img/beshtau.jpg', //the url or the local path of the immage
     country:'Russia' // Name of the Country where the picture is taken
-    animalCard: false    // set to true if you want to add some style
+    styling: false    // set to true if you want to add some style
     }
 ```
 **********
