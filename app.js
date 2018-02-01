@@ -113,30 +113,7 @@ const data = [
     cardList: [["Population: ","81,355"],["Area: ","T607.59 km2"],["Administrative region: ","Thessaly"],["Sights: ","Temble Asklepieion of Trikke, Byzantine Castle build by Justinian,Osman Shah Mosque designed by Mimar Sinan ,Old City of Trikala, Meteora, Lithaios river and the Central Bridge"]],
     animalCard:false //originally true will ask christina about style
   },
-   {
-     userName: 'Anastasios Agathaggelou', //not required but will probably added somewher in the page in a latter update
-     udacityForumUserName: "Tagathag",
-     placeName: "Thessaloniki",
-     altPlaceName: "Θεσσαλονίκη",
-     description: "The city was founded around 315 BC by the King Cassander of Macedon, on or near the site of the ancient town of Therma and 26 other local villages. He named it after his wife Thessalonike, a half-sister of Alexander the Great and princess of Macedon as daughter of Philip II. Under the kingdom of Macedon the city retained its own autonomy and parliament and evolved to become the most important city in Macedon",
-     latLong:[40.623156, 22.945599],
-     imgUrl: "./img/thessaloniki.jpg",
-     country: "Greece",
-     animalCard:false
-    },
-    {
-      userName: 'Eleni Nistikaki',
-      udacityForumUserName: "elenica99426rl6",
-      placeName: "Chania, Crete",
-      altPlaceName: "Χανιά Κρήτη",
-      description: "<strong>Crete is the place where Zeus, king of gods, was born!</strong><br>Since the ancient times, the city of Chania has faced many conquerors and the influences of many civilizations through time, evident on the city monuments. The beautiful city of Chania managed to preserve its original colors and historical character, despite the fast-growing tourist industry. It is considered as one of the most beautiful cities of Greece and the most picturesque city of Crete. The city of Chania is also characterized by a rich cultural life. A plethora of cultural events are organized every year (exhibitions, festivals, theatrical and musical performances, ect.)",
-      latLong:[35.516253, 24.018549],
-      imgUrl: "http://www.publicdomainpictures.net/pictures/150000/velka/old-venetian-harbor-1454681052DYt.jpg",
-      country: "Greece",
-      animalCard:false
-    },	
-	
-  //To add a new pin on the map (with default-bootstrap-style-card) 
+  //To add a new pin on the map (with default-bootstrap-style-card)
   //Uncomment the following lines and change the values
   // userName: 'Your Real Name', //not required but will probably added somewher in the page in a latter update
   // udacityForumUserName: "ThomasZ",
@@ -144,9 +121,12 @@ const data = [
   // altPlaceName: "Σέρρες, Άνω Πορόια",
   // description: "this text goes for descritption.",
   // latLong:[43.285892, 22.035583],
-  // imgUrl: "./img/plaaceholder.jpg",
+  // imgUrl: "./img/placeholder.jpg",
   // country: "Greece"
 ];
+
+
+
 
 /***************************
 *    Show Contributors     *
@@ -293,21 +273,21 @@ $('.contributor').on('click', function(){
         tempButton.attr('data-lat', lat).attr('data-long', long);
         $(this).next('div.pins').append(tempButton);
       };
-      $(this).attr('data-state','expanded'); 
+      $(this).attr('data-state','expanded');
       break;
     case 'expanded':
       $(this).next('div.pins').toggleClass('hidden');
-      $(this).attr('data-state','collapsed'); 
+      $(this).attr('data-state','collapsed');
       break;
     case 'collapsed':
       $(this).next('div.pins').toggleClass('hidden');
-      $(this).attr('data-state','expanded'); 
+      $(this).attr('data-state','expanded');
       break;
     };
 });
 
-function showContributors() { 
-  //Object.keys(obj).length //number of keys( contributors)  
+function showContributors() {
+  //Object.keys(obj).length //number of keys( contributors)
   for (let i=0; i< arrOfContributors.length ; i++) {
     //arrOfContributors[i] //forumname
     let tempElement = [
@@ -328,7 +308,7 @@ function showContributors() {
 };
 showContributors();
 
-//Attach the click on body because the button.btn-outline-dark elements are added dynamically 
+//Attach the click on body because the button.btn-outline-dark elements are added dynamically
 $('body').on('click','button.btn-outline-dark', function() {
   const lat = parseFloat($(this).attr('data-lat'));
   const long = parseFloat($(this).attr('data-long'));
@@ -379,8 +359,9 @@ $('button.up').on('click', function() {
  KNOWN BUGS && IMPROVEMENTS
  ***************************/
 //GET GOORDINATES BUTTON BECOMES BLUE ON CLICK
-//travelling card = postcard 
+//travelling card = postcard
 //Maybe add a feaure so that a user can place two images in a single pin...
 //...by clicking on the card image the next one will toggle
 //list of contributors need to populate it
+
   
