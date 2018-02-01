@@ -2,7 +2,7 @@
     height: 100%;
     min-height: 40em;
 }
-#animalCard {
+#styling {
     display:none;
 }
 
@@ -223,16 +223,6 @@ Default Styles
     padding-bottom: 18px;
   }
 
-  .style1 .card-list-group {
-      list-style: none;
-    padding-left: 0;
-    border-bottom: 1px solid #dbe2e9;
-    padding-bottom: 18px;
-  }
-
-  .style1 .card-list-group span {
-      font-weight: bold;
-  }
 
   .style1 .card-text {
     padding: 18px 0;
@@ -277,18 +267,6 @@ Default Styles
     margin: 1em 0;
 }
 
-.style2 .card-list-group {
-    font-family: 'Catamaran', sans-serif;
-    font-size: small;
-    list-style-type: none;
-    display: block;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.style2 .card-list-group span {
-    font-weight: bold;
-}
 
 .style2 .card-text {
     font-family: 'Catamaran', sans-serif;
@@ -348,18 +326,6 @@ Default Styles
   font-size: 20px;
 }
 
-.ThomasZ .card-list-group {
-  padding: 20px 0;
-  list-style-type: none;
-  padding-left: 30px;
-}
-
-.ThomasZ .card-list-group span {
-  font-weight: bold;
-}
-
-.ThomasZ .card-text {
-}
 
 .ThomasZ .card-link {
  display: none;
@@ -395,15 +361,6 @@ Default Styles
   font-size: 0.9em;
 }
 
-.tsigourof_ben6oqe .card-list-group {
-  list-style-type: none;
-  padding-left: 3em;
-  margin: 1em 0;
-}
-
-.tsigourof_ben6oqe .card-list-group span {
-  font-weight: bold;
-}
 
 .tsigourof_ben6oqe3 .card-text {
   font-size: 0.9em;
