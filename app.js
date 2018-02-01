@@ -121,8 +121,19 @@ const data = [
      description: "The city was founded around 315 BC by the King Cassander of Macedon, on or near the site of the ancient town of Therma and 26 other local villages. He named it after his wife Thessalonike, a half-sister of Alexander the Great and princess of Macedon as daughter of Philip II. Under the kingdom of Macedon the city retained its own autonomy and parliament and evolved to become the most important city in Macedon",
      latLong:[40.623156, 22.945599],
      imgUrl: "./img/thessaloniki.jpg",
-     country: "Greece"
+     country: "Greece",
      animalCard:false
+    },
+    {
+      userName: 'Eleni Nistikaki',
+      udacityForumUserName: "elenica99426rl6",
+      placeName: "Chania, Crete",
+      altPlaceName: "Χανιά Κρήτη",
+      description: "<strong>Crete is the place where Zeus, king of gods, was born!</strong><br>Since the ancient times, the city of Chania has faced many conquerors and the influences of many civilizations through time, evident on the city monuments. The beautiful city of Chania managed to preserve its original colors and historical character, despite the fast-growing tourist industry. It is considered as one of the most beautiful cities of Greece and the most picturesque city of Crete. The city of Chania is also characterized by a rich cultural life. A plethora of cultural events are organized every year (exhibitions, festivals, theatrical and musical performances, ect.)",
+      latLong:[35.516253, 24.018549],
+      imgUrl: "http://www.publicdomainpictures.net/pictures/150000/velka/old-venetian-harbor-1454681052DYt.jpg",
+      country: "Greece",
+      animalCard:false
     },	
 	
   //To add a new pin on the map (with default-bootstrap-style-card) 
