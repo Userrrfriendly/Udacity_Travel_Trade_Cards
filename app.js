@@ -3,12 +3,13 @@ const $animalCard = $('#animalCard');
 const $defaultCard = $('#defaultCard');
 const $listOfContributors = $('#listOfContributors');
 const contributors = {};
-const arrOfObjectsContributors = []; //arrayOfObjects
+const arrOfObjectsContributors = []; //arrayOfObjects - currently has no point of existance - probably will be removed
 const arrOfContributors = [];
+let contDropDownList =[]; // [ ['User Name',badge, 'data-foum-name','data-state']]; //array of arrays
 let markers = {};
 let defaultClass = 'tsigourof_ben6oqe';
 let xyOnClick = false;
-const $pinButton = $('<button type="button" class="btn btn-outline-dark mb-1 mt-1">xalkidiki den exei</button>');
+const $pinButton = $('<button type="button" class="btn btn-outline-dark mb-1 mt-1">xalkidiki den exei</button>'); //currently has no point of existance - probably will be removed
 const data = [
   {
     userName:'Babis Sougias',
@@ -134,7 +135,6 @@ const data = [
 // }
 // addContributor();
 
-
 /****************************
 Leaflet - Initialize map
 ***************************/
@@ -203,14 +203,12 @@ function markerClick(e) {
     $('.card-text').html(markers[customId].cardText);
     let listItems = $('.card-list-group li');
     for (let i = 0; i < 4; i++) {
-    const span = $('<span class="card-list-group-item">Diet:</span>').html(markers[customId].cardList[i][0]);//global?
-    $(listItems[i]).html(markers[customId].cardList[i][1]).prepend(span);
-    };
-       //
+      const span = $('<span class="card-list-group-item">Diet:</span>').html(markers[customId].cardList[i][0]);//global?
+      $(listItems[i]).html(markers[customId].cardList[i][1]).prepend(span);
+    }
   }
 };
 //Get Coordinates From Map
-//For Now run getLatLong() manually in the console of the browser to use it, latter will add a button
 const popup = L.popup();
 function onMapClick(e) {
     popup
@@ -238,7 +236,7 @@ $('#toggleContributorsBtn').on('click', function() {
 //populate list of contributors
 function getContributors() {
   Object.keys(markers).forEach(function(key) {
-    //Loops through the object snippet from https://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object
+    //Loops through the object. snippet from https://stackoverflow.com/questions/684672/how-do-i-loop-through-or-enumerate-a-javascript-object
     if (contributors[markers[key].udacityForumUserName] == null) {
         // checks if undefined or null. code snippet from https://stackoverflow.com/questions/2647867/how-to-determine-if-variable-is-undefined-or-null
         contributors[markers[key].udacityForumUserName] = [key];
@@ -248,6 +246,7 @@ function getContributors() {
   });
 };
 getContributors();
+
 function  contrToArray() {
   Object.keys(contributors).forEach(function(key) {
     let temp = {};
@@ -257,19 +256,19 @@ function  contrToArray() {
   });
 };
 contrToArray();
-//remember to get rid of the 'children' that you create when you will add more contributors
+
 $('.contributor').on('click', function(){
   switch ($(this).attr('data-state')) {
     case 'idle':
       let arrayOfPins = contributors[$(this).attr('data-forum-name')];
       $('<div class="pins"></div>').clone().insertAfter(this);
-      const $pins = $(this).next('div.pins');
       for (let i = 0; i< arrayOfPins.length; i++) {
         let placeName = markers[contributors[$(this).attr('data-forum-name')][i]].placeName;
+        let lat = markers[contributors[$(this).attr('data-forum-name')][i]].latLong[0];
+        let long = markers[contributors[$(this).attr('data-forum-name')][i]].latLong[1];
         tempButton = $('<button type="button" class="btn btn-outline-dark mb-1 mt-1">' + placeName + '</span></button>');
-        // console.log(arrayOfPins[i]);
+        tempButton.attr('data-lat', lat).attr('data-long', long);
         $(this).next('div.pins').append(tempButton);
-        // tempButton.clone().append($pins);
       };
       $(this).attr('data-state','expanded'); 
       break;
@@ -284,22 +283,81 @@ $('.contributor').on('click', function(){
     };
 });
 
-function showContributors() { //fills only the first 5 cards so far
-  //Object.keys(obj).length //number of keys( contributors)
-  for (let i = 0; i < 5; i++ ) {
-    var $badge = $('<span class="badge badge-light ml-1">' + contributors[arrOfContributors[i]].length + '</span>')    
-    document.getElementsByClassName('contributor')[i].innerHTML = markers[contributors[arrOfContributors[i]][0]].userName;
-    $($('.contributor')[i]).attr('data-forum-name', arrOfContributors[i]).attr('data-state','idle').append($badge);
-  };
+function showContributors() { 
+  //Object.keys(obj).length //number of keys( contributors)  
+  for (let i=0; i< arrOfContributors.length ; i++) {
+    //arrOfContributors[i] //forumname
+    let tempElement = [
+      markers[contributors[arrOfContributors[i]][0]].userName, //User Name
+      '<span class="badge badge-light ml-1">' + contributors[arrOfContributors[i]].length + '</span>',//badge
+      arrOfContributors[i], //data-forum-name
+      'idle' //data-state
+    ];
+    contDropDownList.push(tempElement);
+    if (i<5) {
+      document.getElementsByClassName('contributor')[i].innerHTML = contDropDownList[i][0];
+      $($('.contributor')[i])
+        .attr('data-forum-name', arrOfContributors[i])
+        .attr('data-state','idle')
+        .append($(contDropDownList[i][1]));
+    }
+  }
 };
 showContributors();
 
-//known bugs
-//Fix gitHub link anchor it seems to duplicate or smth
-//can put a small number next to the contributors name so we know how many pins...
-//... he has created
+//Attach the click on body because the button.btn-outline-dark elements are added dynamically 
+$('body').on('click','button.btn-outline-dark', function() {
+  const lat = parseFloat($(this).attr('data-lat'));
+  const long = parseFloat($(this).attr('data-long'));
+  mymap.setView([lat,long],11);
+})
+
+$('button.down').on('click', function() {
+  const lastIndex = $($('.contributor')[4]).attr('data-forum-name'); //last index forumID
+  const firstIndex = $($('.contributor')[0]).attr('data-forum-name'); //first index forumID
+  if (arrOfContributors.indexOf(lastIndex) < arrOfContributors.length-1) {
+    const $firstElement = $($('.contributor')[0]);
+    const $lastElement = $($('.contributor')[4]);
+    $('div.pins').remove();
+    for (let i = 0; i<5; i++) {
+      $($('.contributor')[i]).attr('data-state','idle');
+    }
+    $firstElement
+    .html(contDropDownList[arrOfContributors.indexOf(lastIndex) + 1][0])
+    .attr('data-forum-name', arrOfContributors[arrOfContributors.indexOf(lastIndex) + 1 ])
+    .attr('data-state','idle')
+    .append($(contDropDownList[arrOfContributors.indexOf(lastIndex) + 1][1]));
+    $($lastElement).after($firstElement);
+  }
+}
+);
+
+$('button.up').on('click', function() {
+  const lastIndex = $($('.contributor')[4]).attr('data-forum-name'); //last index forumID
+  const firstIndex = $($('.contributor')[0]).attr('data-forum-name'); //first index forumID
+  if (arrOfContributors.indexOf(firstIndex) -1 >= 0) {
+    const $firstElement = $($('.contributor')[0]);
+    const $lastElement = $($('.contributor')[4]);
+    $('div.pins').remove();
+    for (let i = 0; i<5; i++) {
+      $($('.contributor')[i]).attr('data-state','idle');
+    }
+    $lastElement
+    .html(contDropDownList[arrOfContributors.indexOf(firstIndex) - 1][0])
+    .attr('data-forum-name', arrOfContributors[arrOfContributors.indexOf(firstIndex) -1 ])
+    .attr('data-state','idle')
+    .append($(contDropDownList[arrOfContributors.indexOf(firstIndex) - 1][1]));
+    $($firstElement).before($lastElement);
+  }
+}
+);
+
+/***************************
+ KNOWN BUGS && IMPROVEMENTS
+ ***************************/
+//GET GOORDINATES BUTTON BECOMES BLUE ON CLICK
+//travelling card = postcard 
 //Maybe add a feaure so that a user can place two images in a single pin...
 //...by clicking on the card image the next one will toggle
 //list of contributors need to populate it
-//bind a click event that will expand the list of pins
-//clicking on an expanded pin will zoom to it on the map
+  
