@@ -12,6 +12,21 @@ let xyOnClick = false;
 const $pinButton = $('<button type="button" class="btn btn-outline-dark mb-1 mt-1">xalkidiki den exei</button>'); //currently has no point of existance - probably will be removed
 const data = [
   {
+    //{
+   //To add a new pin on the map (with default-bootstrap-style-card)
+   //Uncomment the following lines and change the values
+   // userName: 'Your Real Name', //not required but will probably added somewher in the page in a latter update
+   // udacityForumUserName: "ThomasZ",
+   // placeName: "Serres, Upper Poroia",
+   // altPlaceName: "Σέρρες, Άνω Πορόια",
+   // description: "this text goes for descritption.",
+   // latLong:[43.285892, 22.035583],
+   // imgUrl: "./img/placeholder.jpg",
+   // country: "Greece"
+   //cardList: [["Text from &ltspan&gt Element: ","Text from &ltli&gt element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt Element"],["Text from &ltspan&gt Element: ","Text from &ltli&gt lement"],["Text from &ltspan&gt Element: ","Text from &ltli&gt element"]],
+   //animalCard: false
+   //},
+   
     userName:'Veniamin Tsigourof',
     udacityForumUserName:'tsigourof_ben6oqe',
     placeName:'Thassos, Ancient Quarries',
