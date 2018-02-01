@@ -18,7 +18,7 @@ To add a new entry just paste the following code and follow the comments:
     latLong:[44.09749, 43.02235], // the latitude and longitude of the location
     imgUrl:'./img/beshtau.jpg', //the url or the local path of the immage
     country:'Russia' // Name of the Country where the picture is taken
-    animalCard: false    // set to true if you want to add some style
+    styling: false    // set to true if you want to add some style
     }
 ```
 **********
@@ -58,7 +58,7 @@ You can use the following code:
 ![preview](https://lh3.googleusercontent.com/Y7VQ2b2qPhlK4a4PTfJqOdzTuxijZAXuy3nt5JWb6zMMKpVSiIBOb3HowylZwZLns6nWcf4pswW0PBwtTyeb_F5dhKY1TjzoLUcNbNj7_7XaoRxU7EiNaU5jWYFDB64tqMnVSfleO0ZQVYF5xc2vkAdER7Ale9uciyCJMjoQ9uEt9zjmhvzSZEb5aXKc5TxI0vaFkd5MdY7oNNKXotmSI-KaYGg5KawXUwuwFwCL7KcoIlfmwfp5HX8P5PY4-PpbrJ_pnc4NN4xnJ9tePV4jt4eiLaUw7vo8ILFW0vhVPyVqNzKexBJ03cUSlZusom5DP9f4IaGv1VU5tDWO4_ZVcHBh1DT9KQxYdyALP2eZU_fhKpr4FoqxcRb1AErJVTsGd9cr9Fp8Ts9IRQZzdywHKQbi1H4-aTPjV2MPZ1fAogmtPZ4UxP4969RKFx5RYPHq_LKN6mGcCAamfUj8AS38EXU_wzlr-45Aau69aHT2bN0FG5mms4cIw6XjUCKmvhrsZPrxkxK9joknBpFsbRd8IBIqWhyXZg0T3xfA2B6FS0apZw0HYlZYd57WBWO9Kuinj0hsA7I4pradTXrk6vgY03Z-wNEi6k8iqptnZ74=w958-h500-no)
 ***********
 
-##Some help with GitHub
+#Some help with GitHub
 
 ### Setup
 
