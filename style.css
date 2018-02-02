@@ -6,6 +6,10 @@
     display:none;
 }
 
+/* #defaultCard {
+  display:none;
+} */
+
 .header {
     font-family: monospace;
     background-color: #3f7aa2;
@@ -302,6 +306,144 @@ Default Styles
  display: none;
 }
 
+/************************
+*****CUSTOM STYLES*******
+************************/
+.customcard {
+ display:none; 
+}
+/* ntina_t - Tsarvouli Konstantina - KAVALA */
+.ntina_t .place-card{
+  font-family: 'Raleway', sans-serif;
+  padding: 0 10px 10px 10px;
+  width:310px;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
+   background-attachment: fixed;
+	/* background-position:center; */
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow: auto;
+}
+.ntina_t .details{
+  border-radius: 25px;
+  padding:1px;
+  border:1px solid #9f9f9f;
+  padding: 0 10px 10px 10px;
+  margin-top: 15px;
+  vertical-align: top;
+  border-radius:0 0 1em 1em;
+  font-size:15px;
+  color:#364b4a;
+ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.64) 47%, rgba(237,237,237,0.24) 100%);
+}
+.ntina_t .polaroid {
+  position: relative;
+  width: 220px;
+}
+.ntina_t h2{
+ text-align: center;
+ font-weight: bold;
+ color: #0e2b3c;
+ font: 400 50px/1'Kaushan Script', cursive;
+}
+.ntina_t .polaroid img {
+  padding: 20px; 
+  width: 290px;
+  height: 200px; 
+  padding:2px;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+.ntina_t .italic{
+  font-style: italic;
+}
+.ntina_t span {
+	font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color:#77804f ;
+}
+.ntina_t ul {
+  color:#364b4a ;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.xrisaant .place-card{
+  font-family: 'Raleway', sans-serif;
+  padding: 0 10px 10px 10px;
+  width:310px;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
+   background-attachment: fixed;
+	/* background-position:center; */
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow: auto;
+
+}
+
+.xrisaant .details{
+  border-radius: 25px;
+  padding:1px;
+  border:1px solid #9f9f9f;
+  padding: 0 10px 10px 10px;
+  margin-top: 15px;
+  vertical-align: top;
+  border-radius:0 0 1em 1em;
+  font-size:15px;
+  color:#364b4a;
+ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.64) 47%, rgba(237,237,237,0.24) 100%);
+}
+
+
+.xrisaant .polaroid {
+  position: relative;
+  width: 220px;
+}
+ 
+
+.xrisaant h2{
+ text-align: center;
+ font-weight: bold;
+ color: #0e2b3c;
+ font: 400 50px/1'Kaushan Script', cursive;
+}
+
+.xrisaant .polaroid img {
+  padding: 20px; 
+  width: 290px;
+  height: 200px; 
+  padding:2px;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+.xrisaant .italic{
+  font-style: italic;
+}
+.xrisaant span {
+	font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color:#77804f ;
+}
+.xrisaant ul {
+  color:#364b4a ;
+  padding: 0;
+  list-style-type: none;
+}
 
 /******************** Add your style here *******************************/
 /* For example:

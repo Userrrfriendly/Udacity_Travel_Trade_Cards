@@ -92,6 +92,7 @@ const data = [
     styling: false
   },
     {
+      //8elei custom html
     userName: 'Thomas Zegos',
     udacityForumUserName: "ThomasZ_2",
     placeName: "Chalkidiki, Afytos",
@@ -100,7 +101,8 @@ const data = [
     latLong:[40.098651,23.436987],
     imgUrl: "./img/Afytos.jpg",
     country: "Greece",
-    styling: true
+    styling: false,
+    customCard:true
   },
     {
     userName: 'Christina-Angeliki Antoniou',
@@ -111,7 +113,8 @@ const data = [
     latLong:[39.555634, 21.766896],
     imgUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Lithaiosrivertrikala.jpg",
     country: "Greece",
-    styling: false //originally true will ask christina about style
+    styling: true, //originally true will ask christina about style
+    customCard:true
   },
    {
      userName: 'Anastasios Agathaggelou', //not required but will probably added somewher in the page in a latter update
@@ -135,7 +138,22 @@ const data = [
       country: "Greece",
       styling: false
     },
-
+    /************************
+    *****CUSTOM STYLES*******
+    ************************/
+    {
+      userName: 'Tsarvouli Konstantina',
+      udacityForumUserName: "ntina_t",
+      placeName: "Kavala",
+      altPlaceName: "Καβάλα",
+      latLong:[40.934914, 24.415186],
+      country: "Greece",
+      styling: true,
+      customCard:true
+    },
+    /************************
+    ***end of CUSTOM STYLES**
+    ************************/
 ];
 
 /***************************
@@ -198,27 +216,39 @@ Leaflet - map Click Events
 function markerClick(e) {
   const customId = this.options.customId;
   if (!markers[customId].styling) {
-    $defaultCard.show();
+    $('.customcard').hide();
     $styling.hide();
+    $defaultCard.show();
     $('#cardImage').attr('src', markers[customId].imgUrl);
     $('#cardTitle').html(markers[customId].placeName);
     $('#cardText').html(markers[customId].description);
   } else {
-    $defaultCard.hide();
-    $styling.show();
+    !markers[customId].customCard ? defaultAnimalCard() : customCard();
+    function defaultAnimalCard() {
+      $defaultCard.hide();
+      $styling.show();
+      $('.customcard').hide();
+      const currentClass = markers[customId].udacityForumUserName;
+      $styling.removeClass(defaultClass).addClass(currentClass);
+      defaultClass = currentClass;
+      $('.card-img').attr('src', markers[customId].imgUrl);
+      $('.card-title').html(markers[customId].placeName);
+      $('.card-subtitle').html(markers[customId].description);
+      $('.card-text').html(markers[customId].cardText);
+      // let listItems = $('.card-list-group li');
+      // for (let i = 0; i < 4; i++) {
+      //   const span = $('<span class="card-list-group-item">Diet:</span>').html(markers[customId].cardList[i][0]);//global?
+      //   $(listItems[i]).html(markers[customId].cardList[i][1]).prepend(span);
+      // }
+    }
+    function customCard() {
+      $('.customcard').hide();
+      $defaultCard.hide();
+      $styling.hide();
+      const cardName ='.' + (markers[customId].udacityForumUserName).toString();
+      $(cardName).show();
+    }
     //
-    const currentClass = markers[customId].udacityForumUserName;
-    $styling.removeClass(defaultClass).addClass(currentClass);
-    defaultClass = currentClass;
-    $('.card-img').attr('src', markers[customId].imgUrl);
-    $('.card-title').html(markers[customId].placeName);
-    $('.card-subtitle').html(markers[customId].description);
-    $('.card-text').html(markers[customId].cardText);
-    // let listItems = $('.card-list-group li');
-    // for (let i = 0; i < 4; i++) {
-    //   const span = $('<span class="card-list-group-item">Diet:</span>').html(markers[customId].cardList[i][0]);//global?
-    //   $(listItems[i]).html(markers[customId].cardList[i][1]).prepend(span);
-    // }
   }
 };
 //Get Coordinates From Map
