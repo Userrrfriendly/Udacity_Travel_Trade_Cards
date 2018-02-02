@@ -214,6 +214,11 @@ function markerClick(e) {
     $('.card-title').html(markers[customId].placeName);
     $('.card-subtitle').html(markers[customId].description);
     $('.card-text').html(markers[customId].cardText);
+    // let listItems = $('.card-list-group li');
+    // for (let i = 0; i < 4; i++) {
+    //   const span = $('<span class="card-list-group-item">Diet:</span>').html(markers[customId].cardList[i][0]);//global?
+    //   $(listItems[i]).html(markers[customId].cardList[i][1]).prepend(span);
+    // }
   }
 };
 //Get Coordinates From Map
