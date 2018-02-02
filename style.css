@@ -32,17 +32,6 @@ body {
 /******************
 Default Styles
 ************************/
-
-/* body {
-    padding-top: 54px;
-  }
-
-  @media (min-width: 992px) {
-    body {
-      padding-top: 56px;
-    }
-  } */
-
   /* Bootstrap Card styling overide */
 
   .card {
@@ -90,6 +79,11 @@ Default Styles
           -moz-column-count: 1;
           column-count: 1;
       }
+     
+        #fotter {
+          height: 10px;
+        }
+      
   }
 
   @media (min-width: 768px) {
@@ -184,7 +178,7 @@ Default Styles
 
  /********************************** Card Styles ***************************/
 
-  /* Card no 1  */
+
 .ThomasZ {
   font-family: 'Great Vibes', black, cursive;
   border-radius: 15px;
@@ -229,43 +223,8 @@ Default Styles
   font-family: "Times New Roman", Times, serif;
 }
 
-
 .ThomasZ .card-link {
  display: none;
-}
-
-/* Card no 2  */
-.tsigourof_ben6oqe {
-  border: 1px solid #BEBEBE;
-  padding:10px;
-  background-color: #F0E68C;
-  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2)
-}
-
-.tsigourof_ben6oqe .card-title {
-  font-size: 1.3em;
-  margin: 1em 0;
-}
-
-.tsigourof_ben6oqe img.card-img {
-  background: white;
-}
-
-.tsigourof_ben6oqe .card-body {
-  margin-top: 5px;
-  border:1px solid #D3D3D3;
-  padding: 25px 10px;
-  background-color: #f3eba5;
-  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2)
-}
-
-.tsigourof_ben6oqe .card-subtitle {
-  font-style: italic;
-  font-size: 0.9em;
-}
-
-.tsigourof_ben6oqe .card-link {
-   display: none;
 }
 
 /* Card no 3 */
@@ -374,6 +333,137 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   padding: 0;
   list-style-type: none;
 }
+/* samothraki */
+.ntina_t2 .place-card{
+  font-family: 'Raleway', sans-serif;
+  padding: 0 10px 10px 10px;
+  width:310px;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
+   background-attachment: fixed;
+	/* background-position:center; */
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow: auto;
+}
+.ntina_t2 .details{
+  border-radius: 25px;
+  padding:1px;
+  border:1px solid #9f9f9f;
+  padding: 0 10px 10px 10px;
+  margin-top: 15px;
+  vertical-align: top;
+  border-radius:0 0 1em 1em;
+  font-size:15px;
+  color:#364b4a;
+ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.64) 47%, rgba(237,237,237,0.24) 100%);
+}
+.ntina_t2 .polaroid {
+  position: relative;
+  width: 220px;
+}
+.ntina_t2 h2{
+ text-align: center;
+ font-weight: bold;
+ color: #0e2b3c;
+ font: 400 50px/1'Kaushan Script', cursive;
+}
+.ntina_t2 .polaroid img {
+  padding: 20px; 
+  width: 290px;
+  height: 200px; 
+  padding:2px;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+.ntina_t2 .italic{
+  font-style: italic;
+}
+.ntina_t2 span {
+	font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color:#77804f ;
+}
+.ntina_t2 ul {
+  color:#364b4a ;
+  padding: 0;
+  list-style-type: none;
+}
+ /* ntina_t2 - Tsarvouli Konstantina - KAVALA */
+ /* .ntina_t2 .place-card{
+  font-family: 'Raleway', sans-serif;
+  padding: 0 10px 10px 10px;
+  width:310px;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
+   background-attachment: fixed;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow: auto;
+
+}
+
+.ntina_t2 .details{
+  border-radius: 25px;
+  padding:1px;
+  border:1px solid #9f9f9f;
+  padding: 0 10px 10px 10px;
+  margin-top: 15px;
+  vertical-align: top;
+  border-radius:0 0 1em 1em;
+  font-size:15px;
+  color:#364b4a;
+ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.64) 47%, rgba(237,237,237,0.24) 100%);
+}
+
+
+.ntina_t2 .polaroid {
+  position: relative;
+  width: 220px;
+}
+ 
+
+.ntina_t2 h2{
+ text-align: center;
+ font-weight: bold;
+ color: #0e2b3c;
+ font: 400 50px/1'Kaushan Script', cursive;
+}
+
+.ntina_t2 .polaroid img {
+  padding: 20px; 
+  width: 290px;
+  height: 200px; 
+  padding:2px;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+.ntina_t2 .italic{
+  font-style: italic;
+}
+.ntina_t2 span {
+	font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color:#77804f ;
+}
+.ntina_t2 ul {
+  color:#364b4a ;
+  padding: 0;
+  list-style-type: none;
+} */
 
 
 .xrisaant .place-card{
@@ -444,6 +534,188 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   padding: 0;
   list-style-type: none;
 }
+/* end xrisaant */
+/*amorgos evigiannakou*/
+
+.evigiannakou .card {
+  width: 400px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 6px;
+  background-image: url(https://image.ibb.co/gVCfeR/DSCN3032.jpg);
+  background-size: 750px;
+  opacity: 0.9;
+  filter: alpha(opacity=40);
+}
+
+.evigiannakou img {
+  margin: auto;
+  display: block;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  border-radius: 18px;
+}
+
+.evigiannakou .item {
+  font-weight: bold;
+}
+
+.evigiannakou .list {
+  list-style-type: none;
+  margin: auto;
+  list-style-position: outside;
+}
+
+.evigiannakou .introduction {
+  font-style: italic;
+}
+
+.evigiannakou .section {
+  box-sizing: border-box;
+  border: 2px solid #ff7f50;
+  margin: auto;
+  border-radius: 10px;
+  border-spacing: 1px 1px;
+  /* width: 400px; */
+  padding: 6px;
+  background-color: #f4d5a5;
+  opacity: 0.8;
+  position: relative;
+  font-family: "Times";
+}
+
+.evigiannakou ul {
+  margin: 0;
+  padding: 0;
+}
+
+.evigiannakou .title {
+  box-sizing: border-box;
+  font-family: "Palatino Linotype";
+  font-size: 40px;
+  color: #1e8a9d;
+  opacity: 0.9;
+  text-align: center;
+}
+/* amorgos second card by evigiannakou2 */
+.evigiannakou2 .card {
+  width: 400px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 6px;
+  background-image: url(https://image.ibb.co/gVCfeR/DSCN3032.jpg);
+  background-size: 750px;
+  opacity: 0.9;
+  filter: alpha(opacity=40);
+}
+
+.evigiannakou2 img {
+  margin: auto;
+  display: block;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  border-radius: 18px;
+}
+
+.evigiannakou2 .item {
+  font-weight: bold;
+}
+
+.evigiannakou2 .list {
+  list-style-type: none;
+  margin: auto;
+  list-style-position: outside;
+}
+
+.evigiannakou2 .introduction {
+  font-style: italic;
+}
+
+
+.evigiannakou2 .section {
+  box-sizing: border-box;
+  border: 2px solid #ff7f50;
+  margin: auto;
+  border-radius: 10px;
+  border-spacing: 1px 1px;
+  padding: 6px;
+  background-color: #f4d5a5;
+  opacity: 0.8;
+  position: relative;
+  font-family: "Times";
+}
+
+.evigiannakou2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.evigiannakou2 .title {
+  box-sizing: border-box;
+  font-family: "Palatino Linotype";
+  font-size: 40px;
+  color: #1e8a9d;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* thessaloniki Tagathag */
+.Tagathag .mycard{
+  width: 325px;
+  margin: auto;
+  background: linear-gradient(black, blue);
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px -4px rgba(0,0,0,0.75);
+  height: auto;
+  padding: 0.5px 0 0.5px 0;
+}
+
+.Tagathag .heading{
+ padding-left: 1em;
+ padding-top: 1em;
+ color: #fff;
+ margin: 12.5px 0 1px 0;
+ border: none;
+}
+
+.Tagathag img {
+  width: 300px;
+  height: auto;
+  border: thin solid #d6d4d4;
+  border-radius: 10px;
+  margin: 12.5px;
+}
+
+.Tagathag .info-border{
+  border: thin solid #d6d4d4;
+  padding: 0 1em 0 1em;
+  margin: 0 12.5px 12.5px 12.5px;
+  border-radius: 10px;
+  background-color: #fff;
+  height:300px;
+  overflow:scroll;
+}
+
+.Tagathag #fact{
+  font-style: italic;
+  text-align: center;
+}
+
+.Tagathag ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.Tagathag span.list {
+  font-weight: bold;
+}
+
 
 /******************** Add your style here *******************************/
 /* For example:
@@ -480,3 +752,13 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 }
 
 *******************************************************************/
+@media (min-width: 250px) {
+  #footer {
+    height: 50px;
+  }
+}
+@media (min-width: 400px) {
+  #footer {
+    height: 30px;
+  }
+}

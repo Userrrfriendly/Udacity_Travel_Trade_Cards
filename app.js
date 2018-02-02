@@ -43,7 +43,7 @@ const data = [
     altPlaceName:'Πάτμος, Χώρα',
     description:'Η Πάτμος είναι ελληνικό νησί του Αιγαίου Πελάγους υπαγόμενο, κατά τους αρχαίους Έλληνες, στις Νότιες Σποράδες, κατά δε τη σύγχρονη πολιτική διαίρεση της χώρας στη Δωδεκάνησο.',
     latLong:[37.30903, 26.54765],
-    imgUrl:'http://www.discovergreece.com/~/media/images/highlight-large-images/az/p/patmos/panoramic-view-patmos.ashx?w=820&h=483&crop=1',
+    imgUrl:'./img/patmos.jpg',
     country:'Greece',
     styling: false
   },
@@ -52,11 +52,11 @@ const data = [
     udacityForumUserName:'tsigourof_ben6oqe',
     placeName:'Mount Beshtau',
     altPlaceName:'Бештау',
-    description:'Бешта́у — изолированная пятиглавая гора — лакколит, высочайшая из 17 останцовых магматических гор Пятигорья на Кавказских Минеральных Водах. Высота 1400м. Памятник природы. Дала название окружающей местности (Пятигорье) и городу Пятигорску.',
+    description:'Clouds Above, clouds below.',
     latLong:[44.09749, 43.02235],
     imgUrl:'./img/beshtau.jpg',
     country:'Russia',
-    styling: true
+    styling: false
   },
   {
     userName: 'Thomas Zegos',
@@ -65,9 +65,9 @@ const data = [
     altPlaceName: "Σέρρες, Άνω Πορόια",
     description: "Upper Poroia is a large settlement of Serres in Macedonia. It is built on the foot of Mount Belles northwest of Lake Kerkini. It 's an alternative and homely place for relaxion. Horseback riding and hiking are remarkable entertaining activities you couldn't lose.",
     latLong:[41.285892, 23.035583],
-    imgUrl: "https://image.ibb.co/m1PiUR/Ano_Poroia.jpg", //"./img/Ano-Poroia.jpg",
+    imgUrl: "./img/Ano-Poroia.JPG", //"./img/Ano-Poroia.jpg", https://image.ibb.co/m1PiUR/Ano_Poroia.jpg
     country: "Greece",
-    styling: true
+    styling: false
   },
   {
     userName: 'Thodoris Pliakas',
@@ -113,7 +113,7 @@ const data = [
     latLong:[39.555634, 21.766896],
     imgUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Lithaiosrivertrikala.jpg",
     country: "Greece",
-    styling: true, //originally true will ask christina about style
+    styling: true,
     customCard:true
   },
    {
@@ -125,7 +125,8 @@ const data = [
      latLong:[40.623156, 22.945599],
      imgUrl: "./img/thessaloniki.jpg",
      country: "Greece",
-     styling: false
+     styling: true,
+     customCard:true
     },
     {
       userName: 'Eleni Nistikaki',
@@ -147,6 +148,36 @@ const data = [
       placeName: "Kavala",
       altPlaceName: "Καβάλα",
       latLong:[40.934914, 24.415186],
+      country: "Greece",
+      styling: true,
+      customCard:true
+    },
+    {
+      userName: 'Tsarvouli Konstantina',
+      udacityForumUserName: "ntina_t2",
+      placeName: "Samothrace",
+      altPlaceName: "Σαμοθράκη",
+      latLong:[40.45316, 25.584357],
+      country: "Greece",
+      styling: true,
+      customCard:true
+    },
+    {
+      userName: 'Evi Giannakou',
+      udacityForumUserName: "evigiannakou",
+      placeName: "Amorgos",
+      altPlaceName: "Αμοργός",
+      latLong:[36.792607, 25.765614],
+      country: "Greece",
+      styling: true,
+      customCard:true
+    },
+    {
+      userName: 'Evi Giannakou',
+      udacityForumUserName: "evigiannakou2",
+      placeName: "Amorgos",
+      altPlaceName: "Αμοργός",
+      latLong:[36.903418, 25.980246],
       country: "Greece",
       styling: true,
       customCard:true
