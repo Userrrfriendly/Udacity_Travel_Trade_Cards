@@ -29,7 +29,7 @@ const data = [
     userName:'Veniamin Tsigourof',
     udacityForumUserName:'tsigourof_ben6oqe',
     placeName:'Thassos, Ancient Quarries',
-    altPlaceName:'Αλυκή Θάσσου, Αρχαία Λατομεία',
+    altPlaceName:'Αλυκή Θάσου, Αρχαία Λατομεία',
     description:'Alykes is a peninsula of archaeological interest where the ancient quarry of marble is situated. The quarry of marble was used from the ancient to byzantine years. Huge marble rocks are discernible under the surface of the sea.',
     latLong:[40.60436,24.74364],
     imgUrl:'./img/thassos_aliki.jpg',
@@ -266,11 +266,11 @@ function markerClick(e) {
       $('.card-title').html(markers[customId].placeName);
       $('.card-subtitle').html(markers[customId].description);
       $('.card-text').html(markers[customId].cardText);
-      // let listItems = $('.card-list-group li');
-      // for (let i = 0; i < 4; i++) {
-      //   const span = $('<span class="card-list-group-item">Diet:</span>').html(markers[customId].cardList[i][0]);//global?
-      //   $(listItems[i]).html(markers[customId].cardList[i][1]).prepend(span);
-      // }
+      let listItems = $('.card-list-group li');
+      for (let i = 0; i < 4; i++) {
+        const span = $('<span class="card-list-group-item">Diet:</span>').html(markers[customId].cardList[i][0]);//global?
+        $(listItems[i]).html(markers[customId].cardList[i][1]).prepend(span);
+      }
     }
     function customCard() {
       $('.customcard').hide();
