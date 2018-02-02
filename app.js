@@ -6,7 +6,7 @@ const contributors = {};
 const arrOfObjectsContributors = []; //arrayOfObjects - currently has no point of existance - probably will be removed
 const arrOfContributors = [];
 let contDropDownList =[]; // [ ['User Name',badge, 'data-foum-name','data-state']]; //array of arrays
-let markers = {};
+let markers = {};rr
 let defaultClass = 'tsigourof_ben6oqe';
 let xyOnClick = false;
 const $pinButton = $('<button type="button" class="btn btn-outline-dark mb-1 mt-1">xalkidiki den exei</button>'); //currently has no point of existance - probably will be removed
@@ -31,7 +31,7 @@ const data = [
     udacityForumUserName:'tsigourof_ben6oqe',
     placeName:'Thassos, Ancient Quarries',
     altPlaceName:'Αλυκή Θάσσου, Αρχαία Λατομεία',
-    description:'Alykes is a peninsula of archaeological interest where the ancient quarry of marble is situated. The quarry of marble was used from the ancient to byzantine years. Huge marble rocks are discernible under the surface of the sea.',
+    description:'Alykes is a peninsula of archaeological inteest where the ancient quarry of marble is situated. The quarry of marble was used from the ancient to byzantine years. Huge marble rocks are discernible under the surface of the sea.',
     latLong:[40.60436,24.74364],
     imgUrl:'./img/thassos_aliki.jpg',
     country:'Greece',
