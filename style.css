@@ -265,6 +265,7 @@ Default Styles
  display: none;
 }
 
+<<<<<<< Updated upstream
 /************************
 *****CUSTOM STYLES*******
 ************************/
@@ -716,6 +717,44 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   font-weight: bold;
 }
 
+.kathrin023 {
+  margin: 0 auto;
+  max-width: 390px;
+  font-family: Helvetica, sans-serif;
+  border: 1px solid;
+  padding: 25px;
+  background-image: url(http://blog.thornyeternity.com/wp-content/uploads/2011/04/flow-blue-2.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 6px 6px 5px 0px #cecece;
+}
+
+.kathrin023 .card-title {
+  font-weight: bold;
+  font-size: xx-large;
+  color: #fffffffa;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 11px;
+}
+
+.kathrin023 img.card-img {
+    border-radius: 5px;
+}
+
+.kathrin023 .card-body {
+  margin-top: 17px;
+  line-height: 18px;
+  border: 1px solid;
+  padding: 25px;
+  border-radius: 3px;
+  background-color: #ffffff8f;
+}
+
+.kathrin023 .card-subtitle {
+    font-size: medium;
+    line-height: 21px;
+}
 
 /******************** Add your style here *******************************/
 /* For example:
