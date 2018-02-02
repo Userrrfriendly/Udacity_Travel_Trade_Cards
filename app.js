@@ -372,5 +372,5 @@ $('button.up').on('click', function() {
 //travelling card = postcard
 //Maybe add a feaure so that a user can place two images in a single pin...
 //...by clicking on the card image the next one will toggle
-//list of contributors need to populate it
+
   
