@@ -2,7 +2,7 @@
     height: 100%;
     min-height: 40em;
 }
-#animalCard {
+#styling {
     display:none;
 }
 
@@ -139,14 +139,11 @@ Default Styles
       color: #242021;
   }
   /*****  scss overrides  *****/
-  /* nav a:hover, dropdown-item:hover, ul li:hover {
+  nav a:hover, dropdown-item:hover, ul li:hover {
       background-color: #242021 !important;
       color: #fff !important;
-  } */
-  nav a:hover, dropdown-item:hover, ul li.list-group-item:hover {
-    background-color: #242021 !important;
-    color: #fff !important;
   }
+
   .bg-warning {
       background-color: #fff !important;
   }
@@ -182,131 +179,10 @@ Default Styles
   }
 
  /********************************** Card Styles ***************************/
-  /* sample stolen data */
+
   /* Card no 1  */
-.style1 {
-    background-color: #fafbfc;
-    padding: 15px;
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 14px;
-    color: #303030;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    border: 1px solid #dbe2e9;
-    border-radius: 7px;
-  }
-
-  .style1 .card-title {
-    margin: 18px;
-      font-size: 1.5em;
-    font-weight: bold;
-      text-transform: uppercase;
-    text-align: center;
-  }
-
-  .style1 img.card-img {
-      border: 1px solid #dbe2e9;
-      border-radius: 7px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  }
-
-  .style1 .card-body {
-    margin-top: 18px;
-    padding: 5px 15px;
-    border: 1px solid #dbe2e9;
-      border-radius: 7px;
-  }
-
-  .style1 .card-subtitle {
-    margin: 18px 0;
-    text-align: center;
-    font-size: 1.1em;
-    font-style: italic;
-      color: #90b4d6;
-      border-bottom: 1px solid #dbe2e9;
-    padding-bottom: 18px;
-  }
-
-  .style1 .card-list-group {
-      list-style: none;
-    padding-left: 0;
-    border-bottom: 1px solid #dbe2e9;
-    padding-bottom: 18px;
-  }
-
-  .style1 .card-list-group span {
-      font-weight: bold;
-  }
-
-  .style1 .card-text {
-    padding: 18px 0;
-
-  }
-
-  /* Card no 2  */
-.style2 {
-    padding: 5px;
-    border: 1px solid white;
-    border-radius: 10px;
-    box-shadow: 0 0 5px 6px #ccc;
-    background-image: url(https://s26.postimg.org/lpbpvvcxl/glitter_background.jpg);
-}
-
-.style2 .card-title {
-    font-family: 'Lato', sans-serif;
-    padding-left: 5px;
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.3em;
-    margin: 1em 0;
-}
-
-.style2 img.card-img {
-    border: 1px solid white;
-    border-radius: 10px;
-}
-
-.style2 .card-body {
-    margin-top: 5px;
-    padding: 5px;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: #E0E0E0;
-}
-
-.style2 .card-subtitle {
-    font-style: italic;
-    font-size: 0.8em;
-    margin: 1em 0;
-}
-
-.style2 .card-list-group {
-    font-family: 'Catamaran', sans-serif;
-    font-size: small;
-    list-style-type: none;
-    display: block;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.style2 .card-list-group span {
-    font-weight: bold;
-}
-
-.style2 .card-text {
-    font-family: 'Catamaran', sans-serif;
-    font-size: small;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 1em 0;
-}
-
-.style2 .card-link {
-  display: none;
-}
-/* Card no 3  */
 .ThomasZ {
- font-family: 'Great Vibes', black, cursive;
+  font-family: 'Great Vibes', black, cursive;
   border-radius: 15px;
   padding: 10px 15px;
   border: 1px solid black;
@@ -315,10 +191,11 @@ Default Styles
 }
 
 .ThomasZ .card-title {
+  font-family: "Times New Roman", Times, serif;
   margin: 1em 0;
   padding:10px;
   text-align: center;
-  font-size: 45px;
+  font-size: 30px;
   border-radius: 5px;
   box-shadow: 0px 2px 15px black;
   color:black;
@@ -328,7 +205,7 @@ Default Styles
 
 .ThomasZ img.card-img {
   border-radius: 5px;
-  box-shadow: 0px 2px 15px #fcb455;
+  box-shadow: 0px 0px 15px #fcb455;
 }
 
 .ThomasZ .card-body {
@@ -344,25 +221,16 @@ Default Styles
 
 .ThomasZ .card-subtitle {
   text-align: center;
-  text-shadow: 2px 2px 10px #dda04f;
-  font-size: 20px;
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.ThomasZ .card-list-group {
-  padding: 20px 0;
-  list-style-type: none;
-  padding-left: 30px;
-}
-
-.ThomasZ .card-list-group span {
-  font-weight: bold;
-}
 
 .ThomasZ .card-link {
  display: none;
 }
 
-/* Card no 4  */
+/* Card no 2  */
 .tsigourof_ben6oqe {
   border: 1px solid #BEBEBE;
   padding:10px;
@@ -392,23 +260,48 @@ Default Styles
   font-size: 0.9em;
 }
 
-.tsigourof_ben6oqe .card-list-group {
-  list-style-type: none;
-  padding-left: 3em;
-  margin: 1em 0;
-}
-
-.tsigourof_ben6oqe .card-list-group span {
-  font-weight: bold;
-}
-
-.tsigourof_ben6oqe3 .card-text {
-  font-size: 0.9em;
-}
-
 .tsigourof_ben6oqe .card-link {
    display: none;
 }
+
+/* Card no 3 */
+.ThomasZ_2 {
+  border-radius: 15px;
+  padding: 10px 15px;
+  background-color: #ccf2ff ;
+}
+
+.ThomasZ_2 .card-title {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 15px;
+  padding: 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.ThomasZ_2 img.card-img {
+  border-radius: 5px;
+}
+
+.ThomasZ_2 .card-body {
+  margin: 25px 0;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.ThomasZ_2 .card-subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-style: italic;
+}
+
+.ThomasZ_2 .card-link {
+ display: none;
+}
+
 
 /******************** Add your style here *******************************/
 /* For example:
@@ -421,6 +314,7 @@ Default Styles
 }
 
 .your-udacityForumUserName .card-title {
+  font-family: "Times New Roman";
   font-size: 1.3em;
   margin: 1em 0;
 }
@@ -438,6 +332,7 @@ Default Styles
 }
 
 .your-udacityForumUserName .card-subtitle {
+  font-family: "Times New Roman";
   font-style: italic;
   font-size: 0.9em;
 }
