@@ -93,14 +93,14 @@ const data = [
   },
     {
     userName: 'Thomas Zegos',
-    udacityForumUserName: "ThomasZ",
+    udacityForumUserName: "ThomasZ_2",
     placeName: "Chalkidiki, Afytos",
     altPlaceName: "Χαλκιδική, Άφυτος",
     description: "Afytos is a village in Chalkidiki, northern Greece. It is one of the most beautiful places for vacation. You can take a lot of pictures near the sea, eat good seafood and of course, you can take a dip in the sea. And, if you 're lucky you will see dolphins, too. This place is highly recommended for couples.",
     latLong:[40.098651,23.436987],
     imgUrl: "./img/Afytos.jpg",
     country: "Greece",
-    styling: false
+    styling: true
   },
     {
     userName: 'Christina-Angeliki Antoniou',
