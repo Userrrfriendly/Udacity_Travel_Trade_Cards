@@ -140,6 +140,37 @@ const data = [
       styling: false
     },
     /************************
+    *****ANIMAL CARD TEMPLATES*******
+    ************************/
+    {
+      userName: "Katerina Makri",
+      udacityForumUserName: "kathrin023",
+      placeName: "Syros, Cyclades",
+      altPlaceName: "Σύρος, Κυκλάδες",
+      description: "Ermoúpoli means “the city of Hermes”",  
+      latLong:[37.4499982, 24.8999964],
+      imgUrl: "http://www.syrostriathlon.gr/images/Syros_Triathlon/Front_Page/front_page_3.jpg",
+      country: "Greece",
+      styling: true,
+      customCard:false,
+      cardText: 'Ermoúpoli is the island’s capital town and has been the first important trade and industrial centre of the country in the 19th century. Evidence of this glorious past can be seen on public buildings (the City Hall, the Customs Office, “Apollo” theatre), on the neoclassical houses and at the beautiful squares. Syros is considered a favorable pole of attraction throughout the year as each season dresses the already breathtaking scenery with its own colors and aromas, with its own beauties and contrasts always offering a special and unforgettable experience for all visitors.',
+      cardList: [["Region: ","South Aegean"],["Capital: ","Ermoupoli"],["Area: ","101.9 km2"],["Population: "," 21,507 people"]]
+    },
+    {
+      userName: "Daniel Mantzakos",
+      udacityForumUserName: "danielmantzakos", //daniel.mantzakos
+      placeName: "Parthenon, Athens",
+      altPlaceName: "Παρθενώνας",
+      description: "The Parthenon is considered as one of the world's greatest cultural monuments.",  
+      latLong:[37.971542, 23.726587],
+      imgUrl: "./img/parthenon.jpg",
+      country: "Greece",
+      styling: true,
+      customCard:false,
+      cardText: 'The Parthenon is a former temple, on the Athenian Acropolis, Greece, dedicated to the goddess Athena, whom the people of Athens considered their patron. To the Athenians who built it, the Parthenon and other Periclean monuments of the Acropolis, were seen fundamentally as a celebration of Hellenic victory over the Persian invaders and as a thanksgiving to the gods for that victory. Today, Parthenon attracts millions of tourists every year.',
+      cardList: [["Type: ","Temple"],["Architectural style: ","Classical"],["Construction started: ","447 BC"],["Completed: ","432 BC"]]
+    },
+    /************************
     *****CUSTOM STYLES*******
     ************************/
     {
@@ -182,20 +213,12 @@ const data = [
       styling: true,
       customCard:true
     },
+
     /************************
     ***end of CUSTOM STYLES**
     ************************/
-    {
-    userName: 'Katerina Makri',
-    udacityForumUserName: "kathrin023",
-    placeName: "Syros, Cyclades",
-    altPlaceName: "Σύρος, Κυκλάδες",
-    description: "Ermoúpoli is the island’s capital town and has been the first important trade and industrial centre of the country in the 19th century. Evidence of this glorious past can be seen on public buildings (the City Hall, the Customs Office, “Apollo” theatre), on the neoclassical houses and at the beautiful squares. Syros is considered a favorable pole of attraction throughout the year as each season dresses the already breathtaking scenery with its own colors and aromas, with its own beauties and contrasts always offering a special and unforgettable experience for all visitors.",
-    latLong:[37.4499982, 24.8999964],
-    imgUrl: "http://www.syrostriathlon.gr/images/Syros_Triathlon/Front_Page/front_page_3.jpg",
-    country: "Greece",
-    styling: true
-  },
+
+
 ];
 
 /***************************
@@ -268,8 +291,8 @@ function markerClick(e) {
     !markers[customId].customCard ? defaultAnimalCard() : customCard();
     function defaultAnimalCard() {
       $defaultCard.hide();
-      $styling.show();
       $('.customcard').hide();
+      $styling.show();
       const currentClass = markers[customId].udacityForumUserName;
       $styling.removeClass(defaultClass).addClass(currentClass);
       defaultClass = currentClass;
@@ -279,7 +302,7 @@ function markerClick(e) {
       $('.card-text').html(markers[customId].cardText);
       let listItems = $('.card-list-group li');
       for (let i = 0; i < 4; i++) {
-        const span = $('<span class="card-list-group-item">Diet:</span>').html(markers[customId].cardList[i][0]);//global?
+        const span = $('<span class="card-list-group-item"></span>').html(markers[customId].cardList[i][0]);//global?
         $(listItems[i]).html(markers[customId].cardList[i][1]).prepend(span);
       }
     }

@@ -265,7 +265,6 @@ Default Styles
  display: none;
 }
 
-<<<<<<< Updated upstream
 /************************
 *****CUSTOM STYLES*******
 ************************/
@@ -716,7 +715,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 .Tagathag span.list {
   font-weight: bold;
 }
-
+/*  κατερινα - συρος */
 .kathrin023 {
   margin: 0 auto;
   max-width: 390px;
@@ -736,6 +735,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   text-align: center;
   margin-top: 0px;
   margin-bottom: 11px;
+  /* font-family: 'Ubuntu', sans-serif; */
 }
 
 .kathrin023 img.card-img {
@@ -749,12 +749,55 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   padding: 25px;
   border-radius: 3px;
   background-color: #ffffff8f;
+  text-align: left;
+	line-height: 18px;
+	font-size: small;
+	border: 1px solid;
 }
 
 .kathrin023 .card-subtitle {
     font-size: medium;
     line-height: 21px;
+    font-style: italic;
+    margin: 0;
 }
+.kathrin023 span {
+	font-weight: bold;
+}
+/* DANIELMATZAKOS - PARTHENON danielmantzakos*/
+/* .card */
+.danielmantzakos {
+	width: 300px;
+	border-style: solid;
+	border-color: #cecece;
+	border-width: 1px;
+	margin: 40px auto;
+	padding: 10px;
+	box-shadow: 7px 7px #e6e6e6;
+}
+.danielmantzakos .card-subtitle{
+	font-style: italic;
+}
+.danielmantzakos .card-list-group-item{
+	font-weight: bold;
+}
+.danielmantzakos ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.danielmantzakos .card-body{
+	border-style: solid;
+	border-color: #cecece;
+	border-width: 1px;
+	padding: 10px;
+  text-align: justify;
+}
+/* .danielmantzakos img{
+	padding-bottom: 10px;
+	width: 300px;
+} */
 
 /******************** Add your style here *******************************/
 /* For example:
