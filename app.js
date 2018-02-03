@@ -147,6 +147,53 @@ const data = [
 // }
 // addContributor();
 
+//*****************foteini  we can add our skin codes here********************
+
+let body=$('body');
+let header=$('.header');
+const dropdown_menu=$('.dropdown-menu');
+dropdown_menu.on('click','a',function(event){
+  event.preventDefault();
+  let x=$(event.target).text();
+  if(x==="summer"){  //to x= θα είναι το όνομα του skin
+    body.removeClass();  //βγαζει προηγουμενο στυλ
+    body.addClass("summer");//εδώ θα είναι το όνομα του δικου μας class
+    header.css({"background-color": "transparent"});//εδώ βγάζει το background-color απο το header
+  }
+
+/*μπορειτε να κανετε copy paste και να συμπληρωσετε αντιστοιχα:
+
+else if(x===" skin's name"){
+body.removeClass();
+body.addClass("class name");
+header.css({"background-color": "transparent"});
+} */
+       else if(x==="winter"){
+         body.removeClass();
+       body.addClass("winter");
+     header.css({"background-color": "transparent"});
+         }
+
+
+
+
+       else {
+        header.css({"background-color": "#3f7aa2"})
+        body.removeClass();
+  }
+
+
+});
+
+
+//****************************************************************
+
+
+
+
+
+
+
 /****************************
 Leaflet - Initialize map
 ***************************/

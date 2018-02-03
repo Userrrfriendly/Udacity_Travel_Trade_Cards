@@ -412,3 +412,26 @@ nav a:hover, dropdown-item:hover, ul li:hover {
 .wrap {
   min-height: calc(100vh - 30px);
 }
+
+/***********foteini****************/
+
+
+.summer{
+
+    border: solid transparent;
+      border-image: url("./img/border-image-5.png");
+      border-image-slice: 12 12 12 12;
+       border-image-width: 12px 12px 12px 12px;
+       border-image-outset:0px;
+       border-image-repeat: repeat;
+   background: url("./img/summer_myrtos.jpg");
+    no-repeat center:center fixed !important;
+  background-size: cover !important;
+}
+
+.winter{
+  background: url("img/winter_mountain.jpeg");
+  no-repeat center:center fixed !important;
+background-size: cover !important;
+}
+
