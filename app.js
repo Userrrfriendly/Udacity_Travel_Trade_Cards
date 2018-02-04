@@ -134,7 +134,7 @@ const data = [
       altPlaceName: "Χανιά Κρήτη",
       description: "<strong>Crete is the place where Zeus, king of gods, was born!</strong><br>Since the ancient times, the city of Chania has faced many conquerors and the influences of many civilizations through time, evident on the city monuments. The beautiful city of Chania managed to preserve its original colors and historical character, despite the fast-growing tourist industry. It is considered as one of the most beautiful cities of Greece and the most picturesque city of Crete. The city of Chania is also characterized by a rich cultural life. A plethora of cultural events are organized every year (exhibitions, festivals, theatrical and musical performances, ect.)",
       latLong:[35.516253, 24.018549],
-      imgUrl: "http://www.publicdomainpictures.net/pictures/150000/velka/old-venetian-harbor-1454681052DYt.jpg",
+      imgUrl: "./img/old-venetian-harbor-1454681052DYt.jpg",
       country: "Greece",
       styling: false
     },
@@ -148,7 +148,7 @@ const data = [
       altPlaceName: "Σύρος, Κυκλάδες",
       description: "Ermoúpoli means “the city of Hermes”",  
       latLong:[37.4499982, 24.8999964],
-      imgUrl: "http://www.syrostriathlon.gr/images/Syros_Triathlon/Front_Page/front_page_3.jpg",
+      imgUrl: "./img/syros.jpg",
       country: "Greece",
       styling: true,
       customCard:false,

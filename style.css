@@ -284,7 +284,7 @@ Default Styles
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
+background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
    background-attachment: fixed;
 	/* background-position:center; */
 	background-repeat: no-repeat;
@@ -346,7 +346,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
+background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
    background-attachment: fixed;
 	/* background-position:center; */
 	background-repeat: no-repeat;
@@ -409,7 +409,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
+  background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
    background-attachment: fixed;
 	/* background-position:center; */
 	background-repeat: no-repeat;
@@ -478,7 +478,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   box-sizing: border-box;
   border-radius: 8px;
   padding: 6px;
-  background-image: url(https://image.ibb.co/gVCfeR/DSCN3032.jpg);
+  background-image: url('./img/backGroundImages/amorgosBG.jpg');
   background-size: 750px;
   opacity: 0.9;
   filter: alpha(opacity=40);
@@ -542,7 +542,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   box-sizing: border-box;
   border-radius: 8px;
   padding: 6px;
-  background-image: url(https://image.ibb.co/gVCfeR/DSCN3032.jpg);
+  background-image: url('./img/backGroundImages/amorgosBG.jpg');
   background-size: 750px;
   opacity: 0.9;
   filter: alpha(opacity=40);
@@ -657,7 +657,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   font-family: Helvetica, sans-serif;
   border: 1px solid;
   padding: 25px;
-  background-image: url(http://blog.thornyeternity.com/wp-content/uploads/2011/04/flow-blue-2.jpg);
+  background-image: url('./img/backGroundImages/flow-blue-2.jpg');
   background-position: center;
   background-size: cover;
   box-shadow: 6px 6px 5px 0px #cecece;
@@ -747,7 +747,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 0 0 5px 6px #ccc;
-  background-image: url(https://s26.postimg.org/lpbpvvcxl/glitter_background.jpg);
+  background-image: url('./img/backGroundImages/glitter_background.jpg');
 }
 
 .gfa61ga6dz6 .card-title {
