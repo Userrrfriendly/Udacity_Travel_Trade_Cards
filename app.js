@@ -145,14 +145,13 @@ const data = [
       userName: "Katerina Makri",
       udacityForumUserName: "kathrin023",
       placeName: "Syros, Cyclades",
-      altPlaceName: "Σύρος, Κυκλάδες",
-      description: "Ermoúpoli means “the city of Hermes”",  
+      altPlaceName: "Σύρος, Κυκλάδες",  
       latLong:[37.4499982, 24.8999964],
       imgUrl: "./img/syros.jpg",
       country: "Greece",
       styling: true,
       customCard:false,
-      cardText: 'Ermoúpoli is the island’s capital town and has been the first important trade and industrial centre of the country in the 19th century. Evidence of this glorious past can be seen on public buildings (the City Hall, the Customs Office, “Apollo” theatre), on the neoclassical houses and at the beautiful squares. Syros is considered a favorable pole of attraction throughout the year as each season dresses the already breathtaking scenery with its own colors and aromas, with its own beauties and contrasts always offering a special and unforgettable experience for all visitors.',
+      cardText: 'Ermoúpoli (means “the city of Hermes") is the island’s capital town and has been the first important trade and industrial centre of the country in the 19th century. Evidence of this glorious past can be seen on public buildings (the City Hall, the Customs Office, “Apollo” theatre), on the neoclassical houses and at the beautiful squares. Syros is considered a favorable pole of attraction throughout the year as each season dresses the already breathtaking scenery with its own colors and aromas, with its own beauties and contrasts always offering a special and unforgettable experience for all visitors.',
       cardList: [["Region: ","South Aegean"],["Capital: ","Ermoupoli"],["Area: ","101.9 km2"],["Population: "," 21,507 people"]]
     },
     {//mesolongi
