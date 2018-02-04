@@ -1,6 +1,7 @@
 #mapid {
     height: 100%;
     min-height: 40em;
+    /* max-height:600px;  */
 }
 #styling {
     display:none;
@@ -178,8 +179,7 @@ Default Styles
 
  /********************************** Card Styles ***************************/
 
-
-.ThomasZ {
+/* .ThomasZ {
   font-family: 'Great Vibes', black, cursive;
   border-radius: 15px;
   padding: 10px 15px;
@@ -225,16 +225,16 @@ Default Styles
 
 .ThomasZ .card-link {
  display: none;
-}
+} */
 
-/* Card no 3 */
-.ThomasZ_2 {
+/* Chalkidiki, Afytos 3 */
+.ThomasZ {
   border-radius: 15px;
   padding: 10px 15px;
   background-color: #ccf2ff ;
 }
 
-.ThomasZ_2 .card-title {
+.ThomasZ .card-title {
   font-family: "Comic Sans MS", cursive, sans-serif;
   margin: 15px;
   padding: 0;
@@ -242,11 +242,11 @@ Default Styles
   font-size: 30px;
 }
 
-.ThomasZ_2 img.card-img {
+.ThomasZ img.card-img {
   border-radius: 5px;
 }
 
-.ThomasZ_2 .card-body {
+.ThomasZ .card-body {
   margin: 25px 0;
   padding: 8px;
   font-size: 20px;
@@ -254,16 +254,20 @@ Default Styles
   line-height: 1.2em;
 }
 
-.ThomasZ_2 .card-subtitle {
+.ThomasZ .card-subtitle {
   text-align: center;
   font-size: 20px;
   font-family: "Comic Sans MS", cursive, sans-serif;
   font-style: italic;
 }
 
-.ThomasZ_2 .card-link {
+.ThomasZ .card-link {
  display: none;
 }
+.ThomasZ ul {
+  display: none;
+}
+
 
 /************************
 *****CUSTOM STYLES*******
@@ -275,7 +279,7 @@ Default Styles
 .ntina_t .place-card{
   font-family: 'Raleway', sans-serif;
   padding: 0 10px 10px 10px;
-  width:310px;
+  /* width:310px; */
   border-radius: 7px 7px 7px 7px;
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -301,7 +305,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 }
 .ntina_t .polaroid {
   position: relative;
-  width: 220px;
+  /* width: 220px; */
 }
 .ntina_t h2{
  text-align: center;
@@ -311,8 +315,8 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 }
 .ntina_t .polaroid img {
   padding: 20px; 
-  width: 290px;
-  height: 200px; 
+  /* width: 290px;
+  height: 200px;  */
   padding:2px;
   border: 10px solid #fff;
   border-bottom: 45px solid #fff;
@@ -337,7 +341,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 .ntina_t2 .place-card{
   font-family: 'Raleway', sans-serif;
   padding: 0 10px 10px 10px;
-  width:310px;
+  /* width:310px; */
   border-radius: 7px 7px 7px 7px;
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -363,7 +367,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 }
 .ntina_t2 .polaroid {
   position: relative;
-  width: 220px;
+  /* width: 220px; */
 }
 .ntina_t2 h2{
  text-align: center;
@@ -373,8 +377,8 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 }
 .ntina_t2 .polaroid img {
   padding: 20px; 
-  width: 290px;
-  height: 200px; 
+  /* width: 290px;
+  height: 200px;  */
   padding:2px;
   border: 10px solid #fff;
   border-bottom: 45px solid #fff;
@@ -395,81 +399,12 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
   padding: 0;
   list-style-type: none;
 }
- /* ntina_t2 - Tsarvouli Konstantina - KAVALA */
- /* .ntina_t2 .place-card{
-  font-family: 'Raleway', sans-serif;
-  padding: 0 10px 10px 10px;
-  width:310px;
-  border-radius: 7px 7px 7px 7px;
-  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
-   background-attachment: fixed;
-	background-position:center;
-	background-repeat: no-repeat;
-	background-size:cover;
-	overflow: auto;
-
-}
-
-.ntina_t2 .details{
-  border-radius: 25px;
-  padding:1px;
-  border:1px solid #9f9f9f;
-  padding: 0 10px 10px 10px;
-  margin-top: 15px;
-  vertical-align: top;
-  border-radius:0 0 1em 1em;
-  font-size:15px;
-  color:#364b4a;
- background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.64) 47%, rgba(237,237,237,0.24) 100%);
-}
-
-
-.ntina_t2 .polaroid {
-  position: relative;
-  width: 220px;
-}
- 
-
-.ntina_t2 h2{
- text-align: center;
- font-weight: bold;
- color: #0e2b3c;
- font: 400 50px/1'Kaushan Script', cursive;
-}
-
-.ntina_t2 .polaroid img {
-  padding: 20px; 
-  width: 290px;
-  height: 200px; 
-  padding:2px;
-  border: 10px solid #fff;
-  border-bottom: 45px solid #fff;
-  -webkit-box-shadow: 3px 3px 3px #777;
-     -moz-box-shadow: 3px 3px 3px #777;
-          box-shadow: 3px 3px 3px #777;
-}
-.ntina_t2 .italic{
-  font-style: italic;
-}
-.ntina_t2 span {
-	font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  color:#77804f ;
-}
-.ntina_t2 ul {
-  color:#364b4a ;
-  padding: 0;
-  list-style-type: none;
-} */
-
+ /* /ntina_t2 - Tsarvouli Konstantina - KAVALA */
 
 .xrisaant .place-card{
   font-family: 'Raleway', sans-serif;
   padding: 0 10px 10px 10px;
-  width:310px;
+  /* width:310px; */
   border-radius: 7px 7px 7px 7px;
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -499,7 +434,7 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 
 .xrisaant .polaroid {
   position: relative;
-  width: 220px;
+  /* width: 220px; */
 }
  
 
@@ -512,8 +447,8 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 
 .xrisaant .polaroid img {
   padding: 20px; 
-  width: 290px;
-  height: 200px; 
+  /* width: 290px;
+  height: 200px;  */
   padding:2px;
   border: 10px solid #fff;
   border-bottom: 45px solid #fff;
@@ -764,6 +699,9 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 .kathrin023 span {
 	font-weight: bold;
 }
+.kathrin023 ul {
+  display:none;
+}
 /* DANIELMATZAKOS - PARTHENON danielmantzakos*/
 /* .card */
 .danielmantzakos {
@@ -771,12 +709,17 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 	border-style: solid;
 	border-color: #cecece;
 	border-width: 1px;
-	margin: 40px auto;
+	margin: 0px auto;
 	padding: 10px;
 	box-shadow: 7px 7px #e6e6e6;
 }
+.danielmantzakos .card-img {
+  margin-bottom:1rem;
+  margin-top:.5rem;
+}
 .danielmantzakos .card-subtitle{
-	font-style: italic;
+  font-style: italic;
+  font-size: 1rem;
 }
 .danielmantzakos .card-list-group-item{
 	font-weight: bold;
@@ -798,7 +741,70 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
 	padding-bottom: 10px;
 	width: 300px;
 } */
+/* gfa61ga6dz6 George Alexandris  */
+.gfa61ga6dz6 {
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 6px #ccc;
+  background-image: url(https://s26.postimg.org/lpbpvvcxl/glitter_background.jpg);
+}
 
+.gfa61ga6dz6 .card-title {
+  font-family: 'Lato', sans-serif;
+  padding-left: 5px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+
+.gfa61ga6dz6  img.card-img {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.gfa61ga6dz6  .card-body {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #E0E0E0;
+}
+
+.gfa61ga6dz6  .card-subtitle {
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 1em 0;
+}
+
+.gfa61ga6dz6  .card-list-group {
+  font-family: 'Catamaran', sans-serif;
+  font-size: small;
+  list-style-type: none;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* display: none; */
+}
+
+.gfa61ga6dz6  .card-list-group span {
+  font-weight: bold;
+
+}
+
+.gfa61ga6dz6  .card-text {
+  font-family: 'Catamaran', sans-serif;
+  font-size: small;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 1em 0;
+}
+
+.gfa61ga6dz6  .card-link {
+display: none;
+}
 /******************** Add your style here *******************************/
 /* For example:
 
@@ -844,3 +850,22 @@ background-image:url("https://image.ibb.co/ehoDym/Trikalaclocktower.jpg");
     height: 30px;
   }
 }
+
+.summer {
+  border: solid transparent;
+  border-image: url("./img/border-image-5.png");
+  border-image-slice: 12 12 12 12;
+  border-image-width: 12px 12px 12px 12px;
+  border-image-outset:0px;
+  border-image-repeat: repeat;
+  background: url("./img/summer_myrtos.jpg");
+  /* no-repeat center: center fixed !important; */
+  background-size: cover !important;
+}
+.winter{
+background: url("img/winter_mountain.jpeg");
+/* no-repeat center:center fixed !important; */
+background-size: cover !important;
+}
+
+/* ABOUT PAGE */
