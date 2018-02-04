@@ -471,7 +471,9 @@ background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
 }
 /* end xrisaant */
 /*amorgos evigiannakou*/
-
+.transparent-background {
+  background-color:#fff0 !important;
+}
 .evigiannakou .card {
   width: 400px;
   margin: auto;
@@ -526,6 +528,9 @@ background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
   margin: 0;
   padding: 0;
 }
+.evigiannakou .customcard {
+  background-color: rgb(129, 9, 9) !important;
+}
 
 .evigiannakou .title {
   box-sizing: border-box;
@@ -546,6 +551,7 @@ background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
   background-size: 750px;
   opacity: 0.9;
   filter: alpha(opacity=40);
+  
 }
 
 .evigiannakou2 img {
@@ -602,12 +608,12 @@ background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
 
 /* thessaloniki Tagathag */
 .Tagathag .mycard{
-  width: 325px;
+  /* width: 325px; */
   margin: auto;
   background: linear-gradient(black, blue);
   border-radius: 10px;
   box-shadow: 10px 10px 40px -4px rgba(0,0,0,0.75);
-  height: auto;
+  /* height: auto; */
   padding: 0.5px 0 0.5px 0;
 }
 
@@ -620,11 +626,13 @@ background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
 }
 
 .Tagathag img {
-  width: 300px;
-  height: auto;
+  /* width: 300px; */
+  /* height: auto; */
   border: thin solid #d6d4d4;
   border-radius: 10px;
-  margin: 12.5px;
+  /* margin: 12.5px; */
+  display:block;
+  
 }
 
 .Tagathag .info-border{
@@ -676,6 +684,9 @@ background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
 .kathrin023 img.card-img {
     border-radius: 5px;
 }
+/* .kathrin023 .card-descripion {
+  display:none;
+} */
 
 .kathrin023 .card-body {
   margin-top: 17px;
@@ -693,6 +704,7 @@ background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
 .kathrin023 .card-subtitle {
     font-size: medium;
     line-height: 21px;
+    display:none;
 /*    font-style: italic;
     margin: 0;*/
 }

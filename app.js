@@ -67,7 +67,8 @@ const data = [
     latLong:[41.285892, 23.035583],
     imgUrl: "./img/Ano-Poroia.JPG", //"./img/Ano-Poroia.jpg", https://image.ibb.co/m1PiUR/Ano_Poroia.jpg
     country: "Greece",
-    styling: false
+    styling: false,
+    custom:false
   },
   {
     userName: 'Thodoris Pliakas',
@@ -100,6 +101,7 @@ const data = [
     latLong:[40.098651,23.436987],
     imgUrl: "./img/Afytos.jpg",
     country: "Greece",
+    cardText: '',
     styling: true,
     customCard:false
   },
@@ -146,6 +148,7 @@ const data = [
       udacityForumUserName: "kathrin023",
       placeName: "Syros, Cyclades",
       altPlaceName: "Σύρος, Κυκλάδες",  
+      description: "",
       latLong:[37.4499982, 24.8999964],
       imgUrl: "./img/syros.jpg",
       country: "Greece",
