@@ -41,7 +41,7 @@ const data = [
     udacityForumUserName:'tsigourof_ben6oqe',
     placeName:'Patmos, Chora',
     altPlaceName:'Πάτμος, Χώρα',
-    description:'Patmos is a small Greek island in the Aegean Sea, most famous for being the location of both the vision of and the writing of the Christian Bible\'s Book of Revelation.<br>On the highest point of the island is located the picturesque traditional settlement Chora and the Monastery of Saint John the Theologian which along with the Cave of the Apocalypse were declared World Heritage Sites by UNESCO in 1999. If you choose Patmos as your travel destination you will find crystal clear beaches, beautifull landscape, dozens of monasteries, and a sense of tranquillity that surrounds the island like a magical veil.',
+    description:"Patmos is a small Greek island in the Aegean Sea, most famous for being the location of both the vision of and the writing of the Christian Bible's Book of Revelation.    On the highest point of the island is located the picturesque traditional settlement Chora and the Monastery of Saint John the Theologian which along with the Cave of the Apocalypse were declared World Heritage Sites by UNESCO in 1999. If you choose Patmos as your travel destination you will find crystal clear beaches, beautiful landscape, dozens of monasteries, and a sense of tranquility that surrounds the island like a magical veil.",
     latLong:[37.30903, 26.54765],
     imgUrl:'./img/patmos.jpg',
     country:'Greece',
@@ -118,7 +118,7 @@ const data = [
     customCard:true
   },
    {
-     userName: 'Anastasios Agathaggelou', //not required but will probably added somewher in the page in a latter update
+     userName: 'Anastasios Agathaggelou',  
      udacityForumUserName: "Tagathag",
      placeName: "Thessaloniki",
      altPlaceName: "Θεσσαλονίκη",
@@ -168,6 +168,21 @@ const data = [
       cardText: 'Ermoúpoli (means “the city of Hermes") is the island’s capital town and has been the first important trade and industrial centre of the country in the 19th century. Evidence of this glorious past can be seen on public buildings (the City Hall, the Customs Office, “Apollo” theatre), on the neoclassical houses and at the beautiful squares. Syros is considered a favorable pole of attraction throughout the year as each season dresses the already breathtaking scenery with its own colors and aromas, with its own beauties and contrasts always offering a special and unforgettable experience for all visitors.',
       cardList: [["Region: ","South Aegean"],["Capital: ","Ermoupoli"],["Area: ","101.9 km2"],["Population: "," 21,507 people"]]
     },
+    // {
+    //   //rodes
+    //   userName: "",
+    //   udacityForumUserName: "",
+    //   placeName: "Rhodes",
+    //   altPlaceName: "Ρόδος",  
+    //   description: "The 4th largest island of Greece!",
+    //   latLong:[],
+    //   imgUrl: "",
+    //   country: "Greece",
+    //   styling: true,
+    //   customCard:false,
+    //   cardText: 'Rhodes is a "must" if you want to visit Greece! It has a lot of different destinations that include sightseeing, historical statues and more..! The most popular places to visit are',
+    //   cardList: [["x: ","The Palace of the Grand Master in the Old Town"],["y: ","Lindos"],["z: ","Ialissós"],["x: ","The area of Petaloúdes"]]
+    // },
     {//mesolongi
       userName: "George Alexandris",
       udacityForumUserName: "gfa61ga6dz6", //gfa61.ga6dz6
