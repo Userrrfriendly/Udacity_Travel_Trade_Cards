@@ -547,5 +547,6 @@ $('button.up').on('click', function() {
  ***************************/
 //Maybe add a feaure so that a user can place two images in a single pin...
 //...by clicking on the card image the next one will toggle
+//list on contributors: apart from zooming in to the pin it should also oopen the card
 
   
