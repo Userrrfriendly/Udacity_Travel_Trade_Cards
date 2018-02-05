@@ -471,9 +471,7 @@ background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
 }
 /* end xrisaant */
 /*amorgos evigiannakou*/
-.transparent-background {
-  background-color:#fff0 !important;
-}
+
 .evigiannakou .card {
   width: 400px;
   margin: auto;
@@ -852,6 +850,11 @@ display: none;
 }
 
 *******************************************************************/
+/* background correction class*/
+.transparent-background {
+  background-color:#fff0 !important;
+}
+/* media queries */
 @media (min-width: 250px) {
   #footer {
     height: 50px;

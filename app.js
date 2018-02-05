@@ -140,6 +140,17 @@ const data = [
       country: "Greece",
       styling: false
     },
+    {
+      userName:'Foteini Kollia',
+      udacityForumUserName:'foteinikolliagvt',
+      placeName:'Delos',
+      altPlaceName:'Δήλος',
+      description:'Just a stone\'s throw from cosmopolitan Mykonos, Delos is the holy island of ancient Greece, a place imposing, bare of vegetation but exceptionally brilliant under the sunlight. It is the birthplace of Apollo and Artemis, according to mythology.',
+      latLong:[37.395603, 25.270252],
+      imgUrl:'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Temple_of_Isis%2C_Delos_01.jpg/1024px-Temple_of_Isis%2C_Delos_01.jpg',
+      country:'Greece',
+      styling: false
+    },
     /************************
     *****ANIMAL CARD TEMPLATES*******
     ************************/
