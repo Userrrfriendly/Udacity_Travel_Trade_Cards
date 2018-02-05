@@ -151,6 +151,18 @@ const data = [
       country:'Greece',
       styling: false
     },
+    {
+      userName: 'Konstantinos Tsinganos',
+      udacityForumUserName:'kostastsig.94',
+      placeName:'Patras',
+      altPlaceName:'Πάτρα',
+      description:'Patras is Greece’s third-largest city and the regional capital of Western Greece. Dubbed as Greece’s Gate to the West, Patras is a commercial hub, while its busy port is a nodal point for trade and communication with Italy and the rest of Western Europe. The city has two public universities and one Technological Institute, hosting a large student population and rendering Patras an important scientific centre with a field of excellence in technological education. The Rio-Antirio bridge connects Patras’ easternmost suburb of Rio to the town of Antirrio, connecting the Peloponnese peninsula with mainland Greece. Every year, in February, the city hosts one of Europe’s largest carnivals: notable features of the Patras Carnival include its mammoth satirical floats and balls and parades, enjoyed by hundreds of thousands of visitors in a Mediterranean climate. Patras is also famous for supporting an indigenous cultural scene active mainly in the performing arts and modern urban literature. It was European Capital of Culture in 2006.',
+      latLong:[38.25, 21.733333],
+      imgUrl:'http://www.discovergreece.com/~/media/images/highlight-large-images/az/p/patra/view-of-centre-of-patras-castle-hill.ashx?w=820&h=483&crop=1',
+      country:'Greece',
+      styling: false
+    },
+    
     /************************
     *****ANIMAL CARD TEMPLATES*******
     ************************/
@@ -268,7 +280,7 @@ const data = [
       country: "Greece",
       styling: true,
       customCard:true
-    },
+    }
 
     /************************
     ***end of CUSTOM STYLES**
