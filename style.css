@@ -815,6 +815,51 @@ background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
 .gfa61ga6dz6  .card-link {
 display: none;
 }
+
+/* Virginia Rhodes virginiasverkiouwfi*/
+.virginiasverkiouwfi  {
+  border: 2px solid #ffc45f;
+  border-radius: 8px;
+  max-width: 350px;
+  /* width: 310px;
+  height: 570px; */
+  background-color: #ffc45f;
+  box-shadow: 5px 2px #6b635b;
+}
+
+.virginiasverkiouwfi .card-title {
+  margin-left: 110px;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 30px;
+}
+
+.virginiasverkiouwfi img {
+  width: 300px;
+  height: 200px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.virginiasverkiouwfi .note1 {
+  margin-left: 48px;
+  margin-top: 10px;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.virginiasverkiouwfi .note2,
+.virginiasverkiouwfi ul,
+.virginiasverkiouwfi .card-text {
+  margin-left: 13px;
+  margin-top: 10px;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.virginiasverkiouwfi span {
+  display: none; 
+}
 /******************** Add your style here *******************************/
 /* For example:
 

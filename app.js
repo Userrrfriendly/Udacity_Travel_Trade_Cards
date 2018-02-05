@@ -11,7 +11,6 @@ let defaultClass = 'default';
 let xyOnClick = false;
 const $pinButton = $('<button type="button" class="btn btn-outline-dark mb-1 mt-1">xalkidiki den exei</button>'); //currently has no point of existance - probably will be removed
 const data = [
-  {
     //{
    //To add a new pin on the map (with default-bootstrap-style-card)
    //Uncomment the following lines and change the values
@@ -25,7 +24,7 @@ const data = [
    // country: "Greece"
    // styling: false
    //},
-
+  {
     userName:'Veniamin Tsigourof',
     udacityForumUserName:'tsigourof_ben6oqe',
     placeName:'Thassos, Ancient Quarries',
@@ -103,7 +102,8 @@ const data = [
     country: "Greece",
     cardText: '',
     styling: true,
-    customCard:false
+    customCard:false,
+    cardList: [["",""],["",""],["",""],["",""]]
   },
     {
     userName: 'Christina-Angeliki Antoniou',
@@ -168,21 +168,21 @@ const data = [
       cardText: 'Ermoúpoli (means “the city of Hermes") is the island’s capital town and has been the first important trade and industrial centre of the country in the 19th century. Evidence of this glorious past can be seen on public buildings (the City Hall, the Customs Office, “Apollo” theatre), on the neoclassical houses and at the beautiful squares. Syros is considered a favorable pole of attraction throughout the year as each season dresses the already breathtaking scenery with its own colors and aromas, with its own beauties and contrasts always offering a special and unforgettable experience for all visitors.',
       cardList: [["Region: ","South Aegean"],["Capital: ","Ermoupoli"],["Area: ","101.9 km2"],["Population: "," 21,507 people"]]
     },
-    // {
-    //   //rodes
-    //   userName: "",
-    //   udacityForumUserName: "",
-    //   placeName: "Rhodes",
-    //   altPlaceName: "Ρόδος",  
-    //   description: "The 4th largest island of Greece!",
-    //   latLong:[],
-    //   imgUrl: "",
-    //   country: "Greece",
-    //   styling: true,
-    //   customCard:false,
-    //   cardText: 'Rhodes is a "must" if you want to visit Greece! It has a lot of different destinations that include sightseeing, historical statues and more..! The most popular places to visit are',
-    //   cardList: [["x: ","The Palace of the Grand Master in the Old Town"],["y: ","Lindos"],["z: ","Ialissós"],["x: ","The area of Petaloúdes"]]
-    // },
+    {
+      //rodes
+      userName: "Virginia Sverkiou",
+      udacityForumUserName: "virginiasverkiouwfi",
+      placeName: "Rhodes",
+      altPlaceName: "Ρόδος",  
+      description: '<div class="note1">The 4th largest island of Greece!</div>' + '<div class="note2">Rhodes is a "must" if you want to visit Greece! It has a lot of different destinations that include sightseeing, historical statues and more..! The most popular places to visit are:</div>',
+      latLong:[36.077285, 28.072477],
+      imgUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Sunrise_at_the_Island_of_Rhodes%2C_Greece.jpg",
+      country: "Greece",
+      styling: true,
+      customCard:false,
+      cardText: '<em>One extra tip:</em> You can take the boat and visit the beautiful island Symi, to discover its wonderful beaches!',
+      cardList: [["x: ","The Palace of the Grand Master in the Old Town"],["y: ","Lindos"],["z: ","Ialissós"],["x: ","The area of Petaloúdes"]]
+    },
     {//mesolongi
       userName: "George Alexandris",
       udacityForumUserName: "gfa61ga6dz6", //gfa61.ga6dz6
