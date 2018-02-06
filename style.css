@@ -604,6 +604,132 @@ background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
   text-align: center;
 }
 
+/*  .evigiannakou3 - korfu1 */
+.evigiannakou3 {
+  max-width: 530px;
+  border-radius: 8px;
+  padding: 6px;
+  background-image: url(https://image.ibb.co/ddmCym/20160522_201103.jpg);
+  background-size: 650px;
+  opacity: 0.9;
+  filter: alpha(opacity=40);
+  box-shadow: 6px 8px 5px #888;
+  border-radius: 18px;
+}
+
+.evigiannakou3 img {
+  margin: auto;
+  display: block;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  border-radius: 18px;
+}
+
+.evigiannakou3 .item {
+  font-weight: bold;
+}
+
+.evigiannakou3 .list {
+  list-style-type: none;
+  margin: auto;
+  list-style-position: outside;
+}
+
+.evigiannakou3 .introduction {
+  font-style: italic;
+}
+
+.evigiannakou3 .section {
+  box-sizing: border-box;
+  border: 2px solid #ff7f50;
+  margin: auto;
+  border-radius: 10px;
+  border-spacing: 1px 1px;
+  width: 400px;
+  padding: 6px;
+  background-color: #f4d5a5;
+  opacity: 0.8;
+  position: relative;
+  font-family: "Times";
+}
+
+.evigiannakou3 .title {
+  box-sizing: border-box;
+  font-family: "Palatino Linotype";
+  font-size: 40px;
+  color: #1e8a9d;
+  opacity: 0.9;
+  text-align: center;
+}
+/*.evigiannakou4  corfu2 */
+.evigiannakou4  {
+  max-width: 530px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 6px;
+  background-image: url(https://image.ibb.co/ddmCym/20160522_201103.jpg);
+  background-size: 600px;
+  opacity: 0.9;
+  filter: alpha(opacity=40);
+  box-shadow: 6px 8px 5px #888;
+  background-color: #74daf1;
+  border-radius: 18px;
+}
+
+.evigiannakou4 img {
+  margin: auto;
+  display: block;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  border-radius: 18px;
+}
+
+.evigiannakou4 .item {
+  font-weight: bold;
+}
+
+.evigiannakou4 .list {
+  list-style-type: none;
+  margin: auto;
+  list-style-position: outside;
+}
+
+.evigiannakou4 .introduction {
+  font-style: italic;
+}
+
+.evigiannakou4 .section {
+  box-sizing: border-box;
+  border: 2px solid #ff7f50;
+  margin: auto;
+  border-radius: 10px;
+  border-spacing: 1px 1px;
+  width: 400px;
+  padding: 6px;
+  background-color: #f4d5a5;
+  opacity: 0.8;
+  position: relative;
+  font-family: "Times";
+}
+
+.evigiannakou4 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.evigiannakou4 .title {
+  box-sizing: border-box;
+  font-family: "Palatino Linotype";
+  font-size: 40px;
+  color: #1e8a9d;
+  opacity: 0.9;
+  text-align: center;
+}
 /* thessaloniki Tagathag */
 .Tagathag .mycard{
   /* width: 325px; */
@@ -828,20 +954,21 @@ display: none;
 }
 
 .virginiasverkiouwfi .card-title {
-  margin-left: 110px;
+  /* margin-left: 110px; */
   font-family: 'Cormorant Garamond', sans-serif;
   font-size: 30px;
+  margin: 0px auto; 
 }
 
 .virginiasverkiouwfi img {
   max-width: 350px;
   max-height: 250px;
-  margin-left: 5px;
+  /* margin-left: 5px; */
   margin-top: 10px;
 }
 
 .virginiasverkiouwfi .note1 {
-  margin-left: 48px;
+  /* margin-left: 48px; */
   margin-top: 10px;
   font-family: 'Cormorant Garamond', sans-serif;
   font-weight: 700;
@@ -851,7 +978,7 @@ display: none;
 .virginiasverkiouwfi .note2,
 .virginiasverkiouwfi ul,
 .virginiasverkiouwfi .card-text {
-  margin-left: 13px;
+  /* margin-left: 13px; */
   margin-top: 10px;
   font-family: 'Cormorant Garamond', sans-serif;
   font-weight: 700;

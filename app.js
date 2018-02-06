@@ -186,7 +186,7 @@ const data = [
       udacityForumUserName: "virginiasverkiouwfi",
       placeName: "Rhodes",
       altPlaceName: "Ρόδος",  
-      description: '<div class="note1">The 4th largest island of Greece!</div>' + '<div class="note2">Rhodes is a "must" if you want to visit Greece! It has a lot of different destinations that include sightseeing, historical statues and more..! The most popular places to visit are:</div>',
+      description: '<div class="note1 text-center">The 4th largest island of Greece!</div>' + '<div class="note2 text-center">Rhodes is a "must" if you want to visit Greece! It has a lot of different destinations that include sightseeing, historical statues and more..! The most popular places to visit are:</div>',
       latLong:[36.077285, 28.072477],
       imgUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Sunrise_at_the_Island_of_Rhodes%2C_Greece.jpg",
       country: "Greece",
@@ -280,8 +280,27 @@ const data = [
       country: "Greece",
       styling: true,
       customCard:true
+    },
+    {
+      userName: 'Evi Giannakou',
+      udacityForumUserName: "evigiannakou3",
+      placeName: "Corfu",
+      altPlaceName: "Κέρκυρα",
+      latLong:[39.624158, 19.904837],
+      country: "Greece",
+      styling: true,
+      customCard:true
+    },
+    {
+      userName: 'Evi Giannakou',
+      udacityForumUserName: "evigiannakou4",
+      placeName: "Corfu",
+      altPlaceName: "Κέρκυρα",
+      latLong:[39.754601, 19.694385],
+      country: "Greece",
+      styling: true,
+      customCard:true
     }
-
     /************************
     ***end of CUSTOM STYLES**
     ************************/
@@ -560,5 +579,6 @@ $('button.up').on('click', function() {
 //Maybe add a feaure so that a user can place two images in a single pin...
 //...by clicking on the card image the next one will toggle
 //list on contributors: apart from zooming in to the pin it should also oopen the card
+//on small screens by clicking on the pin it should 'scroll' the page to the card
 
   
