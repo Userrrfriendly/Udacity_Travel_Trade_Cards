@@ -1,3 +1,1058 @@
-#mapid { 
-    height: 400px;
+#mapid {
+    height: 100%;
+    min-height: 40em;
+    /* max-height:600px;  */
 }
+#styling {
+    display:none;
+}
+
+/* #defaultCard {
+  display:none;
+} */
+
+.header {
+    font-family: monospace;
+    background-color: #3f7aa2;
+    color: #fff;
+    font-size: 28px;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.hidden {
+    display: none;
+}
+
+.list-group-item:hover {
+    cursor: pointer;
+}
+
+/******************
+Default Styles
+************************/
+  /* Bootstrap Card styling overide */
+
+  .card {
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+  }
+
+  .card-body {
+    padding: 0; /* changed */
+  }
+
+  .card-title {
+    margin-bottom: 0; /* changed */
+  }
+
+  .card-subtitle {
+    margin-top: 0; /* changed */
+    margin-bottom: 0;
+  }
+
+  .card-link:hover {
+    text-decoration: none;
+  }
+
+  .card-link + .card-link {
+    margin-left: 0; /* changed */
+  }
+
+  .card-img {
+    width: 100%;
+    /* border-radius: 0; changed */
+  }
+
+  ul {
+    margin-top: 0;
+    margin-bottom: 0; /* changed */
+  }
+
+  /* Number of columns for different screen widths */
+
+  @media (min-width: 576px) {
+      .card-columns {
+          -webkit-column-count: 1;
+          -moz-column-count: 1;
+          column-count: 1;
+      }
+     
+        #fotter {
+          height: 10px;
+        }
+      
+  }
+
+  @media (min-width: 768px) {
+      .card-columns {
+          -webkit-column-count: 2;
+          -moz-column-count: 2;
+          column-count: 2;
+      }
+  }
+
+  @media (min-width: 992px) {
+      .card-columns {
+          -webkit-column-count: 3;
+          -moz-column-count: 3;
+          column-count: 3;
+      }
+  }
+
+  /* Making any card linkable without changing the styling, please don't change */
+
+  .card-switch {
+  color: inherit;
+  text-decoration: none;
+  }
+
+  .card-switch:hover {
+  color: inherit;
+  text-decoration: none;
+  }
+
+  .card-switch {
+  color: inherit;
+  text-decoration: none;
+  }
+
+  .card-switch:hover {
+  color: inherit;
+  text-decoration: none;
+  }
+
+  @media screen and (max-width: 769px) {
+      .card {
+          margin-top: 5em;
+      }
+      #mapid {
+        margin-top: 2em;
+      }
+  }
+
+  nav a, ul li {
+      color: #242021;
+  }
+  /*****  scss overrides  *****/
+  nav a:hover, dropdown-item:hover, ul li.list-group-item:hover {
+    background-color: #242021 !important;
+    color: #fff !important;
+ }
+
+  .bg-warning {
+      background-color: #fff !important;
+  }
+
+  .nav-pills .show > .nav-link {
+      background-color: #242021 !important;
+  }
+
+  .header {
+      padding: 20px 0px !important;
+  }
+
+  .nav {
+      background-color: #fff;
+      border-radius: 4px;
+  }
+
+  .card-block {
+      background: #fff;
+      padding: 20px 20px;
+      text-align: justify;
+  }
+
+  #footer {
+      height: 30px;
+      background-color: #2b516b;
+      color: #fff;
+      text-align: center
+  }
+
+  .wrap {
+    min-height: calc(100vh - 30px);
+  }
+
+ /********************************** Card Styles ***************************/
+
+/* .ThomasZ {
+  font-family: 'Great Vibes', black, cursive;
+  border-radius: 15px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  background-image: url("https://n6-img-fp.akamaized.net/free-photo/grunge-paper-background_1048-6689.jpg?size=338&ext=jpg");
+  box-shadow: 5px 7px 20px #dda04f;
+}
+
+.ThomasZ .card-title {
+  font-family: "Times New Roman", Times, serif;
+  margin: 1em 0;
+  padding:10px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 15px black;
+  color:black;
+  text-shadow: 2px 2px 10px #dda04f;
+  background: url("https://image.freepik.com/free-photo/grunge-paper-background_1048-6689.jpg");
+}
+
+.ThomasZ img.card-img {
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #fcb455;
+}
+
+.ThomasZ .card-body {
+  background: url("https://image.freepik.com/free-photo/grunge-paper-background_1048-6689.jpg");
+  margin: 25px 0;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 2px 2px 10px #dda04f;
+  line-height: 1.2em;
+  box-shadow: 0px 2px 15px black;
+}
+
+.ThomasZ .card-subtitle {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.ThomasZ .card-link {
+ display: none;
+} */
+
+/* Chalkidiki, Afytos 3 */
+.ThomasZ {
+  border-radius: 15px;
+  padding: 10px 15px;
+  background-color: #ccf2ff ;
+}
+
+.ThomasZ .card-title {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 15px;
+  padding: 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.ThomasZ img.card-img {
+  border-radius: 5px;
+}
+
+.ThomasZ .card-body {
+  margin: 25px 0;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.ThomasZ .card-subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-style: italic;
+}
+
+.ThomasZ .card-link {
+ display: none;
+}
+.ThomasZ ul {
+  display: none;
+}
+
+
+/************************
+*****CUSTOM STYLES*******
+************************/
+.customcard {
+ display:none; 
+}
+/* ntina_t - Tsarvouli Konstantina - KAVALA */
+.ntina_t .place-card{
+  font-family: 'Raleway', sans-serif;
+  padding: 0 10px 10px 10px;
+  /* width:310px; */
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
+   background-attachment: fixed;
+	/* background-position:center; */
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow: auto;
+}
+.ntina_t .details{
+  border-radius: 25px;
+  padding:1px;
+  border:1px solid #9f9f9f;
+  padding: 0 10px 10px 10px;
+  margin-top: 15px;
+  vertical-align: top;
+  border-radius:0 0 1em 1em;
+  font-size:15px;
+  color:#364b4a;
+ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.64) 47%, rgba(237,237,237,0.24) 100%);
+}
+.ntina_t .polaroid {
+  position: relative;
+  /* width: 220px; */
+}
+.ntina_t h2{
+ text-align: center;
+ font-weight: bold;
+ color: #0e2b3c;
+ font: 400 50px/1'Kaushan Script', cursive;
+}
+.ntina_t .polaroid img {
+  padding: 20px; 
+  /* width: 290px;
+  height: 200px;  */
+  padding:2px;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+.ntina_t .italic{
+  font-style: italic;
+}
+.ntina_t span {
+	font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color:#77804f ;
+}
+.ntina_t ul {
+  color:#364b4a ;
+  padding: 0;
+  list-style-type: none;
+}
+/* samothraki */
+.ntina_t2 .place-card{
+  font-family: 'Raleway', sans-serif;
+  padding: 0 10px 10px 10px;
+  /* width:310px; */
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
+   background-attachment: fixed;
+	/* background-position:center; */
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow: auto;
+}
+.ntina_t2 .details{
+  border-radius: 25px;
+  padding:1px;
+  border:1px solid #9f9f9f;
+  padding: 0 10px 10px 10px;
+  margin-top: 15px;
+  vertical-align: top;
+  border-radius:0 0 1em 1em;
+  font-size:15px;
+  color:#364b4a;
+ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.64) 47%, rgba(237,237,237,0.24) 100%);
+}
+.ntina_t2 .polaroid {
+  position: relative;
+  /* width: 220px; */
+}
+.ntina_t2 h2{
+ text-align: center;
+ font-weight: bold;
+ color: #0e2b3c;
+ font: 400 50px/1'Kaushan Script', cursive;
+}
+.ntina_t2 .polaroid img {
+  padding: 20px; 
+  /* width: 290px;
+  height: 200px;  */
+  padding:2px;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+.ntina_t2 .italic{
+  font-style: italic;
+}
+.ntina_t2 span {
+	font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color:#77804f ;
+}
+.ntina_t2 ul {
+  color:#364b4a ;
+  padding: 0;
+  list-style-type: none;
+}
+ /* /ntina_t2 - Tsarvouli Konstantina - KAVALA */
+
+.xrisaant .place-card{
+  font-family: 'Raleway', sans-serif;
+  padding: 0 10px 10px 10px;
+  /* width:310px; */
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  background-image:url("./img/backGroundImages/Trikalaclocktower.jpg");
+   background-attachment: fixed;
+	/* background-position:center; */
+	background-repeat: no-repeat;
+	background-size:cover;
+	overflow: auto;
+
+}
+
+.xrisaant .details{
+  border-radius: 25px;
+  padding:1px;
+  border:1px solid #9f9f9f;
+  padding: 0 10px 10px 10px;
+  margin-top: 15px;
+  vertical-align: top;
+  border-radius:0 0 1em 1em;
+  font-size:15px;
+  color:#364b4a;
+ background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,0.64) 47%, rgba(237,237,237,0.24) 100%);
+}
+
+
+.xrisaant .polaroid {
+  position: relative;
+  /* width: 220px; */
+}
+ 
+
+.xrisaant h2{
+ text-align: center;
+ font-weight: bold;
+ color: #0e2b3c;
+ font: 400 50px/1'Kaushan Script', cursive;
+}
+
+.xrisaant .polaroid img {
+  padding: 20px; 
+  /* width: 290px;
+  height: 200px;  */
+  padding:2px;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+     -moz-box-shadow: 3px 3px 3px #777;
+          box-shadow: 3px 3px 3px #777;
+}
+.xrisaant .italic{
+  font-style: italic;
+}
+.xrisaant span {
+	font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color:#77804f ;
+}
+.xrisaant ul {
+  color:#364b4a ;
+  padding: 0;
+  list-style-type: none;
+}
+/* end xrisaant */
+/*amorgos evigiannakou*/
+
+.evigiannakou .card {
+  width: 400px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 6px;
+  background-image: url('./img/backGroundImages/amorgosBG.jpg');
+  background-size: 750px;
+  opacity: 0.9;
+  filter: alpha(opacity=40);
+}
+
+.evigiannakou img {
+  margin: auto;
+  display: block;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  border-radius: 18px;
+}
+
+.evigiannakou .item {
+  font-weight: bold;
+}
+
+.evigiannakou .list {
+  list-style-type: none;
+  margin: auto;
+  list-style-position: outside;
+}
+
+.evigiannakou .introduction {
+  font-style: italic;
+}
+
+.evigiannakou .section {
+  box-sizing: border-box;
+  border: 2px solid #ff7f50;
+  margin: auto;
+  border-radius: 10px;
+  border-spacing: 1px 1px;
+  /* width: 400px; */
+  padding: 6px;
+  background-color: #f4d5a5;
+  opacity: 0.8;
+  position: relative;
+  font-family: "Times";
+}
+
+.evigiannakou ul {
+  margin: 0;
+  padding: 0;
+}
+.evigiannakou .customcard {
+  background-color: rgb(129, 9, 9) !important;
+}
+
+.evigiannakou .title {
+  box-sizing: border-box;
+  font-family: "Palatino Linotype";
+  font-size: 40px;
+  color: #1e8a9d;
+  opacity: 0.9;
+  text-align: center;
+}
+/* amorgos second card by evigiannakou2 */
+.evigiannakou2 .card {
+  width: 400px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 6px;
+  background-image: url('./img/backGroundImages/amorgosBG.jpg');
+  background-size: 750px;
+  opacity: 0.9;
+  filter: alpha(opacity=40);
+  
+}
+
+.evigiannakou2 img {
+  margin: auto;
+  display: block;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  border-radius: 18px;
+}
+
+.evigiannakou2 .item {
+  font-weight: bold;
+}
+
+.evigiannakou2 .list {
+  list-style-type: none;
+  margin: auto;
+  list-style-position: outside;
+}
+
+.evigiannakou2 .introduction {
+  font-style: italic;
+}
+
+
+.evigiannakou2 .section {
+  box-sizing: border-box;
+  border: 2px solid #ff7f50;
+  margin: auto;
+  border-radius: 10px;
+  border-spacing: 1px 1px;
+  padding: 6px;
+  background-color: #f4d5a5;
+  opacity: 0.8;
+  position: relative;
+  font-family: "Times";
+}
+
+.evigiannakou2 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.evigiannakou2 .title {
+  box-sizing: border-box;
+  font-family: "Palatino Linotype";
+  font-size: 40px;
+  color: #1e8a9d;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/*  .evigiannakou3 - korfu1 */
+.evigiannakou3 {
+  max-width: 530px;
+  border-radius: 8px;
+  padding: 6px;
+  background-image: url(https://image.ibb.co/ddmCym/20160522_201103.jpg);
+  background-size: 650px;
+  opacity: 0.9;
+  filter: alpha(opacity=40);
+  box-shadow: 6px 8px 5px #888;
+  border-radius: 18px;
+}
+
+.evigiannakou3 img {
+  margin: auto;
+  display: block;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  border-radius: 18px;
+}
+
+.evigiannakou3 .item {
+  font-weight: bold;
+}
+
+.evigiannakou3 .list {
+  list-style-type: none;
+  margin: auto;
+  list-style-position: outside;
+}
+
+.evigiannakou3 .introduction {
+  font-style: italic;
+}
+
+.evigiannakou3 .section {
+  box-sizing: border-box;
+  border: 2px solid #ff7f50;
+  margin: auto;
+  border-radius: 10px;
+  border-spacing: 1px 1px;
+  width: 400px;
+  padding: 6px;
+  background-color: #f4d5a5;
+  opacity: 0.8;
+  position: relative;
+  font-family: "Times";
+}
+
+.evigiannakou3 .title {
+  box-sizing: border-box;
+  font-family: "Palatino Linotype";
+  font-size: 40px;
+  color: #1e8a9d;
+  opacity: 0.9;
+  text-align: center;
+}
+/*.evigiannakou4  corfu2 */
+.evigiannakou4  {
+  max-width: 530px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 6px;
+  background-image: url(https://image.ibb.co/ddmCym/20160522_201103.jpg);
+  background-size: 600px;
+  opacity: 0.9;
+  filter: alpha(opacity=40);
+  box-shadow: 6px 8px 5px #888;
+  background-color: #74daf1;
+  border-radius: 18px;
+}
+
+.evigiannakou4 img {
+  margin: auto;
+  display: block;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  position: relative;
+  border-radius: 18px;
+}
+
+.evigiannakou4 .item {
+  font-weight: bold;
+}
+
+.evigiannakou4 .list {
+  list-style-type: none;
+  margin: auto;
+  list-style-position: outside;
+}
+
+.evigiannakou4 .introduction {
+  font-style: italic;
+}
+
+.evigiannakou4 .section {
+  box-sizing: border-box;
+  border: 2px solid #ff7f50;
+  margin: auto;
+  border-radius: 10px;
+  border-spacing: 1px 1px;
+  width: 400px;
+  padding: 6px;
+  background-color: #f4d5a5;
+  opacity: 0.8;
+  position: relative;
+  font-family: "Times";
+}
+
+.evigiannakou4 ul {
+  margin: 0;
+  padding: 0;
+}
+
+.evigiannakou4 .title {
+  box-sizing: border-box;
+  font-family: "Palatino Linotype";
+  font-size: 40px;
+  color: #1e8a9d;
+  opacity: 0.9;
+  text-align: center;
+}
+/* thessaloniki Tagathag */
+.Tagathag .mycard{
+  /* width: 325px; */
+  margin: auto;
+  background: linear-gradient(black, blue);
+  border-radius: 10px;
+  box-shadow: 10px 10px 40px -4px rgba(0,0,0,0.75);
+  /* height: auto; */
+  padding: 0.5px 0 0.5px 0;
+}
+
+.Tagathag .heading{
+ padding-left: 1em;
+ padding-top: 1em;
+ color: #fff;
+ margin: 12.5px 0 1px 0;
+ border: none;
+}
+
+.Tagathag img {
+  /* width: 300px; */
+  /* height: auto; */
+  border: thin solid #d6d4d4;
+  border-radius: 10px;
+  /* margin: 12.5px; */
+  display:block;
+  
+}
+
+.Tagathag .info-border{
+  border: thin solid #d6d4d4;
+  padding: 0 1em 0 1em;
+  margin: 0 12.5px 12.5px 12.5px;
+  border-radius: 10px;
+  background-color: #fff;
+  height:300px;
+  overflow:scroll;
+}
+
+.Tagathag #fact{
+  font-style: italic;
+  text-align: center;
+}
+
+.Tagathag ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.Tagathag span.list {
+  font-weight: bold;
+}
+/*  κατερινα - συρος */
+.kathrin023 {
+  margin: 0 auto;
+  max-width: 390px;
+  font-family: Helvetica, sans-serif;
+  border: 1px solid;
+  padding: 25px;
+  background-image: url('./img/backGroundImages/flow-blue-2.jpg');
+  background-position: center;
+  background-size: cover;
+  box-shadow: 6px 6px 5px 0px #cecece;
+}
+
+.kathrin023 .card-title {
+  font-weight: bold;
+  font-size: xx-large;
+  color: #fffffffa;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 11px;
+  /* font-family: 'Ubuntu', sans-serif; */
+}
+
+.kathrin023 img.card-img {
+    border-radius: 5px;
+}
+/* .kathrin023 .card-descripion {
+  display:none;
+} */
+
+.kathrin023 .card-body {
+  margin-top: 17px;
+  line-height: 21px;
+  border: 1px solid;
+  padding: 25px;
+  border-radius: 3px;
+  background-color: #ffffff8f;
+/*  text-align: left;
+	line-height: 18px;
+	font-size: small;
+	border: 1px solid;*/
+}
+
+.kathrin023 .card-subtitle {
+    font-size: medium;
+    line-height: 21px;
+    display:none;
+/*    font-style: italic;
+    margin: 0;*/
+}
+/*.kathrin023 span {
+	font-weight: bold;
+}*/
+.kathrin023 ul {
+  display:none;
+}
+/* DANIELMATZAKOS - PARTHENON danielmantzakos*/
+/* .card */
+.danielmantzakos {
+	width: 300px;
+	border-style: solid;
+	border-color: #cecece;
+	border-width: 1px;
+	margin: 0px auto;
+	padding: 10px;
+	box-shadow: 7px 7px #e6e6e6;
+}
+.danielmantzakos .card-img {
+  margin-bottom:1rem;
+  margin-top:.5rem;
+}
+.danielmantzakos .card-subtitle{
+  font-style: italic;
+  font-size: 1rem;
+}
+.danielmantzakos .card-list-group-item{
+	font-weight: bold;
+}
+.danielmantzakos ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.danielmantzakos .card-body{
+	border-style: solid;
+	border-color: #cecece;
+	border-width: 1px;
+	padding: 10px;
+  text-align: justify;
+}
+/* .danielmantzakos img{
+	padding-bottom: 10px;
+	width: 300px;
+} */
+/* gfa61ga6dz6 George Alexandris  */
+.gfa61ga6dz6 {
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 6px #ccc;
+  background-image: url('./img/backGroundImages/glitter_background.jpg');
+}
+
+.gfa61ga6dz6 .card-title {
+  font-family: 'Lato', sans-serif;
+  padding-left: 5px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+
+.gfa61ga6dz6  img.card-img {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.gfa61ga6dz6  .card-body {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #E0E0E0;
+}
+
+.gfa61ga6dz6  .card-subtitle {
+  font-style: italic;
+  font-size: 0.8em;
+  margin: 1em 0;
+}
+
+.gfa61ga6dz6  .card-list-group {
+  font-family: 'Catamaran', sans-serif;
+  font-size: small;
+  list-style-type: none;
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* display: none; */
+}
+
+.gfa61ga6dz6  .card-list-group span {
+  font-weight: bold;
+
+}
+
+.gfa61ga6dz6  .card-text {
+  font-family: 'Catamaran', sans-serif;
+  font-size: small;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 1em 0;
+}
+
+.gfa61ga6dz6  .card-link {
+display: none;
+}
+
+/* Virginia Rhodes virginiasverkiouwfi*/
+.virginiasverkiouwfi  {
+  border: 2px solid #ffc45f;
+  border-radius: 8px;
+  max-width: 400px;
+  /* width: 310px;
+  height: 570px; */
+  background-color: #ffc45f;
+  box-shadow: 5px 2px #6b635b;
+}
+
+.virginiasverkiouwfi .card-title {
+  /* margin-left: 110px; */
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 30px;
+  margin: 0px auto; 
+}
+
+.virginiasverkiouwfi img {
+  max-width: 350px;
+  max-height: 250px;
+  /* margin-left: 5px; */
+  margin-top: 10px;
+}
+
+.virginiasverkiouwfi .note1 {
+  /* margin-left: 48px; */
+  margin-top: 10px;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.virginiasverkiouwfi .note2,
+.virginiasverkiouwfi ul,
+.virginiasverkiouwfi .card-text {
+  /* margin-left: 13px; */
+  margin-top: 10px;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.virginiasverkiouwfi span {
+  display: none; 
+}
+/******************** Add your style here *******************************/
+/* For example:
+
+.your-udacityForumUserName {
+  border: 1px solid #BEBEBE;
+  padding:10px;
+  background-color: #F0E68C;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2)
+}
+
+.your-udacityForumUserName .card-title {
+  font-family: "Times New Roman";
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+
+.your-udacityForumUserName img.card-img {
+  background: white;
+}
+
+.your-udacityForumUserName .card-body {
+  margin-top: 5px;
+  border:1px solid #D3D3D3;
+  padding: 25px 10px;
+  background-color: #f3eba5;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.2)
+}
+
+.your-udacityForumUserName .card-subtitle {
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+*******************************************************************/
+/* background correction class*/
+.transparent-background {
+  background-color:#fff0 !important;
+}
+/* media queries */
+@media (min-width: 250px) {
+  #footer {
+    height: 50px;
+  }
+}
+@media (min-width: 400px) {
+  #footer {
+    height: 30px;
+  }
+}
+
+.summer {
+  border: solid transparent;
+  border-image: url("./img/border-image-5.png");
+  border-image-slice: 12 12 12 12;
+  border-image-width: 12px 12px 12px 12px;
+  border-image-outset:0px;
+  border-image-repeat: repeat;
+  background: url("./img/summer_myrtos.jpg");
+  /* no-repeat center: center fixed !important; */
+  background-size: cover !important;
+}
+.winter{
+background: url("img/winter_mountain.jpeg");
+/* no-repeat center:center fixed !important; */
+background-size: cover !important;
+}
+
+/* ABOUT PAGE */

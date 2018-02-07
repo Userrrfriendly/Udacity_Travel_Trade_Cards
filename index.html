@@ -12,27 +12,263 @@
     integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
     crossorigin=""/>
     <link rel="stylesheet" href="style.css">
-    <title>Hello, map! :p </title>
+    <title>#greek Udacity Team Project</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lakki+Reddy|Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700" rel="stylesheet">
   </head>
+
   <body>
-    <h1 class='text-center'>Hello, map! ;) </h1>
-    <div class='container'>
+
+      <div class="wrap">
+    <h1 class='text-center header mb-2 pb-1'>Welcome to the <strong>#Greek-Team Udacity</strong> Travelling Card Project </h1>
+    <div class='container-fluid'>
       <div class='row'>
-        <div class='col-md-8'>
+        <div class='col-md-2'>
+          <!-- <button id='xyButton' type="button" class="btn btn-success">Get Coordinates<br> from map</button> -->
+          <!-- start of sidemenu -->
+            <nav class="nav flex-column nav-pills">
+                <a class="nav-link text-center" id='xyButton' href="#">Get Coordinates From Map</a>
+                <li class="nav-item dropdown text-center">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Change Skin</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item disabled" href="#">summer</a>
+                      <a class="dropdown-item disabled" href="#">winter</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Default Skin</a>
+                    </div>
+                  </li>
+                <a class="nav-link text-center" href="about.html">About</a>
+                <a id="toggleContributorsBtn" class="nav-link text-center" href="#">List of Contributors</a>
+            </nav>
+            <hr>
+            <ul id="listOfContributors" class="list-group text-center hidden">
+                <button class="btn btn-light up"><i class="fas fa-arrow-circle-up"></i></button>
+                <li class="list-group-item contributor"></li>
+                <li class="list-group-item contributor"></li>
+                <li class="list-group-item contributor"></li>
+                <li class="list-group-item contributor"></li>
+                <li class="list-group-item contributor"></li>
+                <button class="btn btn-light down mb-1"><i class="fas fa-arrow-circle-down"></i></button>
+            </ul>
+          <!-- /end of sidemenu -->
+        </div>
+        <div class='col-md-6'>
             <div class='mx-auto' id="mapid"></div>
-        </div>  
-        <div class='col-md-4'>
+        </div>
+        <!-- Default Style Card -->
+        <div id='defaultCard' class='col-md-4'>
           <div class="card mx-auto  bg-warning mb-3 text-center" style="width: 20rem;">
             <img class="card-img-top" id='cardImage' src="./img/udacity.png" alt="Card image cap">
               <div class="card-block">
-                <h4 class="card-title" id='cardTitle'>Travel - Trading Card</h4>
-                <p class="card-text" id = 'cardText'>This is an open source project made by students of Google Challenge Scholarship: Front-End Web Dev. The purpose of this project is to further develop our skills by contributing to this project ;P. <br> Click on a marker on the map to expand the holiday trading card!<br> You can contribute to this Open Source project on <a href='https://github.com/' target='blank'>https://github.com/</></p>
+                <h4 class="card-title" id='cardTitle'>Travelling Card Project</h4>
+                <p class="card-text" id = 'cardText'>This is an open source project made by students of <a href='https://www.udacity.com/google-scholarships'>Google Udacity Developer Challenge</a>: Web Developer Path. The idea was conceived by students from the #greek slack channel. The purpose of this project is to further develop our skills by contributing to this project ;P. <br> Click on a marker on the map to expand the Information Card!<br> You can contribute to this Open Source project on <a href='https://github.com/Userrrfriendly/Udacity_Travel_Trade_Cards' target='blank'>GitHub</a></p>
               </div>
             </div>
-        </div> 
+        </div>
+        <!-- end  Default Style -->
+        <!-- Start Animal Card -->
+        <div id="styling" class="card mb-4 col-md-4 default">
+            <h2 class="card-title"></h2>
+            <img class="card-img" src="#" alt="#">
+            <div class="card-body">
+              <h3 class="card-subtitle"></h3>
+              <ul class="card-list-group">                
+                <li><span class="card-list-group-item"></span></li>
+                <li><span class="card-list-group-item"></span></li>
+                <li><span class="card-list-group-item"></span></li>
+                <li><span class="card-list-group-item"></span></li>
+              </ul>
+              <p class="card-text"></p>
+            </div><!-- /.card-body -->
+        </div>
+
+        <!-- /End Animal Card  -->
+        <!-- start of custom cards -->
+        <div class="card mb-4 col-md-4 customcard transparent-background ntina_t ">
+          <div class="place-card">
+            <!-- your favorite place's name goes here -->
+            <h2>- Kavala- </h2>
+            <!-- your favorite place's image goes here -->
+            <div class="polaroid">
+            <img class='card-img' src="./img/kabala.jpg" alt="Kavala">
+            </div>
+            <div class="details">
+              <!-- your favorite animal's interesting fact goes here -->
+              <p class="italic">Kavala is amphitheatrically built on the slopes of Mt. Symvolo, making it one of the most beautiful cities in Greece. Its location near Egnatia and its port gives Kavala its strategic and economic importance."</p>
+              <ul>
+              <!-- your favorite place's list items go here -->
+                <li><span >Population </span>: 70,501</li>
+                <li><span >Area</span>: 112.6 km2</li>
+                <li><span >Administrative region</span>: East Macedonia and Thrace</li>
+                <li><span >Festivals</span>: </li> Cosmopolis, Ilios ke Petra (Sun and Stone)(July), Kavala AirSea Show, Wood Water Wild Festival.
+              </ul>
+              <!-- your favorite places's description goes here -->
+              <p>"Its oldest neighborhood is Panagia, which has been uninterruptedly inhabited since the 7th century BC.The most important sights  are the Castle, the Acropolis, the Imaret and the old Lighthouse at the end of Theodorou Pavlidou str. It was named as'Mecca of tobacco' because from 1918 onwards operated in Kavala around 50 tobacco companies and there were about 160 tobacco warehouses. There is a tobacco museum nowadays. It is also known for its beautiful beaches"
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- /End Custom Card  -->
+<!-- new custom card  trikala Christina-Angeliki Antoniou  xrisaant-->
+        <div class="card mb-4 col-md-4 customcard transparent-background xrisaant ">
+          <div class="place-card">
+            <h2>- Trikala -</h2>
+          <div class="polaroid">
+          <img class='card-img' src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Lithaiosrivertrikala.jpg" alt="Trikala">
+          </div>
+          <div class="details">
+            <p class="italic">Trikala (Greek: Τρίκαλα) is a city in northwestern Thessaly, Greece. The region of Trikala has been inhabited since prehistoric times, with the first indications of permanent settlement been uncovered in the cave of Theopetra, and dating back to approx. 49,000 BC!</p>
+            <ul>
+              <li><span >Population </span>: 81,355 </li>
+              <li><span >Area</span>: 607.59 km2</li>
+              <li><span >Administrative region</span>: Thessaly</li>
+              <li><span >Sights</span>: Temble Asklepieion of Trikke, Byzantine Castle build by Justinian,Osman Shah Mosque designed by Mimar Sinan ,Old City of Trikala, Meteora, Lithaios river and the Central Bridge</li>
+            </ul>
+            <p>The city of Trikala is built on the ancient city of Trikka or Trikke, which was founded around the 3rd millennium BC . The city straddles the Lithaios river,which is a tributary of Pineios and took its name from the nymph Trikke, daughter of Penaeus, or according to others, daughter of the river god Asopus. It was considered to be the birthplace and main residence of the healing god Asclepius and is mentioned in Homer's Iliad as having participated in the Trojan War. <br>
+            Trikala region has a distinctive geology including Meteora, an UNESCO World Heritage Site, home to 24 ancient Orthodox Christian monasteries precariously perched on top of a complex network of sandstone boulders,the Forests of Pili,the Pindus mountain villages and the ski resorts of Pertouli.
+            <br>Nowdays Trikala has the distinction of being the first “smart city” in Greece, integrating technology-powered solutions into the daily life of the municipality and delivering government services to citizens through e-governance
+          </p>
+          </div>
+          </div>
+        </div>
+<!-- end of trikala Christina-Angeliki Antoniou  xrisaant -->
+<!-- amorgos 1st card evigiannakou -->
+<div class="card mb-4 col-md-4 customcard transparent-background evigiannakou">
+  <div class="card">
+      <!-- your favorite island's name goes here -->
+      <h2 class="title">Amorgos</h2>
+      <!-- your favorite island's image goes here -->
+      <img src="https://image.ibb.co/dHZFDm/Untitled_1.jpg" alt="Amorgos island" width="300">
+          <img src="https://image.ibb.co/bAUCTm/DSCN3189_a.jpg" alt="Amorgos island" width="300">
+      <div class="section">
+        <!-- your favorite island's interesting fact goes here -->
+        <p class="introduction">Amorgos (Greek: pronounced [amorɣos]) is the easternmost island of the Cyclades island group, and the nearest island to the neighboring Dodecanese island group in Greece.
+  Since the end of the 4th millennium BC there have been traces of human presence in Amorgos.
+  Amorgos is an ideal hiking destination. There are paths that start and / or end up in a settlement and offer the visitor breathtaking landscapes.</p>
+        <ul>
+          <!-- your favorite island's list items go here -->
+          <li class="list"><span class="item">Location: </span>Cyclades, Aegean Sea</li>
+          <li class="list"><span class="item">Population:</span> 1,973 (2011 census)</li>
+          <li class="list"><span class="item">Interesting site:</span> Monastery of 11th century</li>
+          <li class="list"><span class="item">Popular Beach:</span> Agia Anna</li>
+        </ul>
+        <!-- references -->
+        <hr>
+                  <footer>
+              <sup>Text source: Wikipedia / Photos credit: Evi Giannakou</sup> </footer>
       </div>
+    </div>
+  </div>
+<!-- end of amorgos -->
+<!-- amorgos second card evigiannakou-->
+<div class="card mb-4 col-md-4 customcard transparent-background evigiannakou2">
+  <div class="card">
+		<!-- your favorite island's name goes here -->
+		<h2 class="title">Amorgos</h2>
+		<!-- your favorite island's image goes here -->
+		<img src="https://image.ibb.co/g4fxb6/DSCN3457.jpg" alt="Amorgos island" width="300">
+		<div class="section">
+			<!-- your favorite island's interesting fact goes here -->
+			<p class="introduction">Amorgos features a lot of remnants of ancient civilizations. At the time of Archaic Greece, there were three independent city-states there. They are believed to have featured autonomous constitutions but the same currency. Amorgos is distinguished by the size and quality of the walls surrounding the city of Arkesini, by the ancient towers whose remains are scattered all over the island, by the ancient tombs, the stone tools, the inscriptions, the vases and by other antiquities.</p>
+			
+				<!-- your favorite island's list items go here -->
+        <div class="list"><span class="item">The island became widely known from Luc Besson's film <em>"The Big Blue"</em>. Agia Anna beach and the monastery of Panagia Hozoviotissa are featured in the film.</div>
+		
+			<!-- your favorite island's description goes here -->
+			<p>The monastery of Panagia Hozoviotissa is situated on the cliff side, northeast of Chora. It was built early in the second millennium in order to protect an icon, dated back to 812, from intruders.</p>
+          <p>One of its most popular beaches is Agia Anna, situated close to the monastery and well-known for its crystal blue waters which are ideal for diving! </p>
+         <!-- references --> 
+          <hr>
+          <footer>
+            <sup>Text source: Wikipedia / Photos credit: Evi Giannakou</sup> </footer>
+		</div>
+  </div>
+  </div>
+<!-- end of second card of amorgos -->
+<!-- korfu1 third card by evigiannakou -->
+        <div class="card mb-4 col-md-4 customcard evigiannakou3 transparent-background ">
+          <h2 class="title">Corfu</h2>
+          <img src="https://image.ibb.co/gbxudm/20161211_143917.jpg" alt="Corfu island" width="300">
+          <img src="https://image.ibb.co/mLXEYm/20170210_155129.jpg" alt="Corfu island" width="300">
+          <div class="section">
+            <p class="introduction">Taking a walk inside the old town you will be amazed by the buildings which have a neoclassic influence. Then, let yourself be lost, wandering in the the famous alleyways of Campiello, with washing lines hanging above you!</p>
+            <div class="list"><span class="item">The old town of Corfu is included in UNESCO's World Heritage List. It is one of the highlighted locations, which the modern traveller should visit!</div>
+            <p>Some of Corfu's trademarks are actually other islands! The well known tiny island Pontikonisi (translated as Mouse Island) is a tree-lined rock which only holds the Pantokrator's Monastery. Nowadays, the rock is a natural museum and every visit is forbidden in order to protect the natural environment. Next to it, the famous Vlacherna islet holds another monastery and is connected to the mainland by a narrow causeway. </p>
+            <p>One of its most popular beaches is Canal d'Amour in Sidari. The myth says that if you swim there you will find your soul mate! </p>
+            <hr>
+            <footer>
+              <sup>Text source: Wikipedia / Photos credit: Evi Giannakou</sup> 
+            </footer>
+            </div>
+        </div>
+<!-- /end korfu1 third card by evigiannakou -->
+<!-- corfu2 4th card by evigiannakou -->
+<div class="card mb-4 col-md-4 evigiannakou4 customcard transparent-background">
+  <h2 class="title">Corfu</h2>
+  <img src="https://image.ibb.co/hSaTom/20161213_165303.jpg" alt="Corfu island" width="300">
+  <img src="https://image.ibb.co/isAsg6/20170204_153639.jpg" alt="Corfu island" width="300">
+<div class="section">
+  <p class="introduction">Corfu (Greek: Κέρκυρα, pronounced [Kérkyra]) is the second largest of the Ionian islands. Along with its small satellite islands, it forms the northwesternmost part of Greece.
+The history of the island is strongly bound with the greek history starting from Greek mythology. The island of Corfu is identified as the Country of Phaeacians in Homer's Odyssey, the place where Odysseus was found shipwrecked from Nausika, the daughter of King Alkinoos.</p>
+  <ul>
+    <li class="list"><span class="item">Location: </span>Ionian islands, Ionian Sea</li>
+    <li class="list"><span class="item">Population:</span> 104,371 (2011 census)</li>
+    <li class="list"><span class="item">Interesting sites:</span> Old town, Old & New Fortress, Museum of Asian Art, Achilleion, Mon Repos, Kanoni, Pontikonisi</li>
+    <li class="list"><span class="item">Popular Beaches:</span> Palaiokastritsa, Canal d'Amour, Sidari, Dasia, Ipsos</li>
+  </ul>
+  <hr>
+  <footer>
+  <sup>Text source: Wikipedia / Photos credit: Evi Giannakou</sup> </footer>
+</div>
+</div>
+<!-- /end corfu2 4th card by evigiannakou -->
+<!-- thessaloniki Tagathag-->
+<div class="card mb-4 col-md-4 customcard transparent-background Tagathag">
+  <div class="mycard">
+    <h3 class="heading">Thessaloniki</h3>
+    <img class = 'my-2 mx-auto' src="img/thessaloniki.jpg" alt="Thessaloniki">
+    <div class="info-border">
+      <p id='fact'>The city was founded around 315 BC by the King Cassander of Macedon, on or near the site of the ancient town of Therma and 26 other local villages. He named it after his wife Thessalonike, a half-sister of Alexander the Great and princess of Macedon as daughter of Philip II. Under the kingdom of Macedon the city retained its own autonomy and parliament and evolved to become the most important city in Macedon.</p>
+      <ul class='list'>
+        <li><span class="list">Name</span>: Thessaloniki</li>
+        <li><span class="list">Population</span>: 1,104,460</li>
+        <li><span class="list">Location</span>: Nothern Greece, Macedonia</li>
+        <li><span class="list">Founded</span>: 315BC </li>
+      </ul>
+      <p>Thessaloniki,  also familiarly known as Thessalonica or Salonica, is the second-largest city in Greece, with over 1 million inhabitants in its metropolitan area, and the capital of Macedonia, the administrative region of Central Macedonia and the Decentralized Administration of Macedonia and Thrace.</p>
+    </div>
+  </div>
+</div>
+<!-- end of thessaloniki -->
+<!-- σαμοθρακη -->
+<div class="card mb-4 col-md-4 customcard transparent-background ntina_t2">
+      <div class="place-card">
+        <h2>-Samothrace- </h2>
+    <div class="polaroid">
+
+    <img class='card-img' src="./img/samothraki.jpg" alt="Samothrace">
+    </div>
+    <div class="details">
+    <p class="italic">Samothrace is a beautiful island, located in the northern Aegean sea. Widely known for the sculpture Winged Victory of Samothrace, which is currently in Louvre Museum</p>
+    <ul>
+    <li><span >Population </span>: 2,859</li>
+    <li><span >Area</span>: 178.0 km2</li>
+    <li><span >Administrative region</span>: East Macedonia and Thrace</li>
+    <li><span >Worth visiting</span>: </li> The Sanctuary of the Great Gods, The Archaeological Museum, The three-aisled Early Christian basilica, 
+    </ul>
+    <p> In ancient times the Kaviria mysteries was of great importance. Palaiopoli is the main archaeological site, 6,5 km outside Kamariotissa,the island's port. The natural beauty of Samothrace is also worth mentioning. Many streams(the main is the river Fonias which means murderer) flow from mount Saos through the forest all the way to the sea, forming on their way waterfalls and stone basins, also called as "vathres". The wild scenery continues throughout the whole island. The beaches are pebbled with crystal waters. 
+    </p>
+    </div>
+      </div>
+</div>
+<!-- /σαμοθρακη -->
+    </div> <!--end row  -->
     </div> <!--end container  -->
-     
+    </div>
+    <div id="footer">
+        <span>Greek-Team Udacity - Front-end Developer Challenge 2017</span>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script

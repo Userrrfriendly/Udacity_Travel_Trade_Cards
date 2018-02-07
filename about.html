@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
+    <style>
+      #link_bar a { padding: 48px; font-size: 22px; }
+      #link_bar a:visited { color:#fff; background-color: #fff; }
+      #ul_contributors li { font-family: arial; display: inline-block; padding:20px; }
+      .about_container { position: relative; width: 100%; }
+      .about_image { display: block; height: auto; width: 200px; height: 200px; }
+      .overlay { position: absolute; bottom: 0; left: 0; right: 0; background-color: #3f7aa2; overflow: hidden; width: 200px; height: 0; transition: .5s ease; border-radius: 50%; }
+      .about_container:hover .overlay { height: 100%; }
+      .overlay_text { color: white;  position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  -ms-transform: translate(-50%, -50%);  white-space: nowrap; }
+    </style>
+  </head>
+
+  <body class='text-center '>
+
+    <div id="link_bar">
+      <div class='header mb-2 pb-1'>
+        <h1><strong>About..</strong>
+          <a href="https://discussions.udacity.com/t/greek-team-project/550915" target="_blank">Discussions Forum</a>
+          <a href="https://fewd-challenge.slack.com/messages/C9099H0KU" target="_blank">Slack Chanel</a>
+          <a href="https://github.com/Userrrfriendly/Udacity_Travel_Trade_Cards" target="_blank">GitHub</a>
+        </h1>
+      </div>
+    </div>
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-4">#Greek-Team Udacity Travelling Card Project</h1>
+          <p class="lead">Thanks to Udacity and the Google Developer Challenge a lot of different people from different countries and continents have met here and created a wonderful community, so why not share some pictures and basic information about the place we live, historical monuments, sites of archeological interest or simply our favourite travel destinations. Each contributor can post one or multiple cards that will be pinned on the map, by clicking on the marker the card with info will pop up! Sounds fun? welcome aboard ;p</p>
+        </div>
+    </div>
+    <div class='container'>
+
+    <br><p><i>Udacity Travelling Card Project</i> is an open source project made by <a href="https://fewd-challenge.slack.com/messages/C9099H0KU" target="_blank">#team-greek-project</a> community.
+      <!-- <br>The purpose of this project is to further develop our skills by contributing to this project, anyone with his capability.</p><hr> -->
+    <!-- Colloborators -->
+      <h3 style="color:#3f7aa2">Collaborators</h3>
+        <ul id="ul_contributors" type="none">
+          <li>
+            <div class="about_container">
+              <img class="about_image rounded-circle" src="./img/veniamin_tsigourof.jpg" alt="Veniamin_Tsigourof_image">
+              <div class="overlay">
+                  <div class="overlay_text"><h6><strong>Veniamin Tsigourof</strong></h6><p style="font-size:14px">tsigourof_ben6oqe<br>(Udacity's Forum User Name)</p></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="about_container">
+              <img class="about_image rounded-circle" src="./img/thodoris_pliakas.jpg" alt="Thodoris_Pliakas_image">
+              <div class="overlay">
+                <div class="overlay_text"><h6><strong>Thodoris Pliakas</strong></h6><p style="font-size:14px">pliakas<br>(Udacity's Forum User Name)</p></div>
+              </div>
+            </div>
+         </li>
+         <li>
+           <div class="about_container">
+             <img class="about_image rounded-circle" src="./img/thomas_zegos.jpg" alt="Thomas_Zegos_image">
+             <div class="overlay">
+               <div class="overlay_text"><h6><strong>Thomas Zegos</strong></h6><p style="font-size:14px">ThomasZ<br>(Udacity's Forum User Name)</p></div>
+             </div>
+           </div>
+         </li>
+          <li>
+            <div class="about_container">
+              <img class="about_image rounded-circle" src="./img/foteinikollia.png" alt="FOTEINI KOLLIA">
+              <div class="overlay">
+                <div class="overlay_text"><h6><strong>Foteini Kollia</strong></h6><p style="font-size:14px">foteinikolliavgt<br>(Udacity's Forum User Name)</p></div>
+          </li>
+        </ul>
+        <hr>
+    <!--Contributors -->
+      <h3 style="color:#3f7aa2;">Contributors</h3>
+      <h4>Full list of contributors coming soon...</h4>
+        <!-- <ul id="ul_contributors" type="none">
+          <li><img class="rounded-circle" src="./img/xrisaant.png" alt="Christina_Antoniou_image" width="250px" height="170px">
+            <h6><strong>Christina Angeliki Antoniou</strong></h6><p style="font-size:14px">Udacity's Forum: xrisaant</p></li>
+          <li><img class="rounded-circle" src="./img/ntina_t.png" alt="Ntina_T_image" width="250px" height="170px">
+            <h6><strong>Ntina T</strong></h6><p style="font-size:14px">Udacity's Forum: ntina_t</p></li>
+          <li><img class="rounded-circle" src="./img/elenica.99426rl6.jpg" alt="Eleni_Nistikaki_image" width="250px" height="170px">
+            <h6><strong>Eleni Nistikaki</strong></h6><p style="font-size:14px">Udacity's Forum: elenica.99426rl6</p> </li>
+          <li><img class="rounded-circle" src="./img/kathrin023.jpg" alt="Katerina_Makri_image" width="250px" height="170px">
+            <h6><strong>Katerina Makri</strong></h6><p style="font-size:14px">Udacity's Forum: kathrin023</p> </li>
+        </ul> -->
+        <hr>
+      </div>
+
+    <form>
+      <input class='btn btn-info mb-3' type="button" value="Return to Home Page" onclick="history.back(-1)">
+    </form>
+    <div id="footer">
+      <span>Greek-Team Udacity - Front-end Developer Challenge 2017</span>
+  </div>
+</body>
+</html>
