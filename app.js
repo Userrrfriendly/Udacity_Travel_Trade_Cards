@@ -24,6 +24,17 @@ const data = [
    // country: "Greece"
    // styling: false
    //},
+   {
+    userName: 'Ania', //not required but will probably added somewher in the page in a latter update
+    udacityForumUserName: "amierzwinska",
+    placeName: "Nowy Świat, Warsaw",
+    altPlaceName: "Warszawa",
+    latLong:[52.234014, 21.019072],
+    description: "Nowy Świat, translating to New World, is a beautiful street in the heart of Polish capital Warsaw. Visit the place in summer to enjoy a walk along it without car traffic as you head for the Old Town or lively the party scene alongside the Vistula River.",
+    imgUrl: "https://static.pexels.com/photos/772839/pexels-photo-772839.jpeg",
+    country: "Poland",
+    styling: false
+  },
   {
     userName:'Veniamin Tsigourof',
     udacityForumUserName:'tsigourof_ben6oqe',
@@ -118,7 +129,7 @@ const data = [
     customCard:true
   },
    {
-     userName: 'Anastasios Agathaggelou',  
+     userName: 'Anastasios Agathaggelou',
      udacityForumUserName: "Tagathag",
      placeName: "Thessaloniki",
      altPlaceName: "Θεσσαλονίκη",
@@ -162,7 +173,7 @@ const data = [
       country:'Greece',
       styling: false
     },
-    
+
     /************************
     *****ANIMAL CARD TEMPLATES*******
     ************************/
@@ -170,7 +181,7 @@ const data = [
       userName: "Katerina Makri",
       udacityForumUserName: "kathrin023",
       placeName: "Syros, Cyclades",
-      altPlaceName: "Σύρος, Κυκλάδες",  
+      altPlaceName: "Σύρος, Κυκλάδες",
       description: "",
       latLong:[37.4499982, 24.8999964],
       imgUrl: "./img/syros.jpg",
@@ -185,7 +196,7 @@ const data = [
       userName: "Virginia Sverkiou",
       udacityForumUserName: "virginiasverkiouwfi",
       placeName: "Rhodes",
-      altPlaceName: "Ρόδος",  
+      altPlaceName: "Ρόδος",
       description: '<div class="note1 text-center">The 4th largest island of Greece!</div>' + '<div class="note2 text-center">Rhodes is a "must" if you want to visit Greece! It has a lot of different destinations that include sightseeing, historical statues and more..! The most popular places to visit are:</div>',
       latLong:[36.077285, 28.072477],
       imgUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Sunrise_at_the_Island_of_Rhodes%2C_Greece.jpg",
@@ -214,7 +225,7 @@ const data = [
       udacityForumUserName: "danielmantzakos", //daniel.mantzakos
       placeName: "Parthenon, Athens",
       altPlaceName: "Παρθενώνας",
-      description: "The Parthenon is considered as one of the world's greatest cultural monuments.",  
+      description: "The Parthenon is considered as one of the world's greatest cultural monuments.",
       latLong:[37.971542, 23.726587],
       imgUrl: "./img/parthenon.jpg",
       country: "Greece",
@@ -229,7 +240,7 @@ const data = [
       udacityForumUserName: "danielmantzakos", //daniel.mantzakos
       placeName: "Sparta",
       altPlaceName: "Σπάρτη",
-      description: "Around 650 BC, Sparta rose to become the dominant military land-power in ancient Greece.",  
+      description: "Around 650 BC, Sparta rose to become the dominant military land-power in ancient Greece.",
       latLong:[37.0735338,22.4121275],
       imgUrl: "./img/sparta.jpg",
       country: "Greece",
@@ -321,7 +332,7 @@ dropdown_menu.on('click','a',function(event){
     body.removeClass();
     body.addClass("class name");
     header.css({"background-color": "transparent"});
-    } 
+    }
     else if(x==="winter"){
       body.removeClass();
       body.addClass("winter");
@@ -580,5 +591,3 @@ $('button.up').on('click', function() {
 //...by clicking on the card image the next one will toggle
 //list on contributors: apart from zooming in to the pin it should also oopen the card
 //on small screens by clicking on the pin it should 'scroll' the page to the card
-
-  
