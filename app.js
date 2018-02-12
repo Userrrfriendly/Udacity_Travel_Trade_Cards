@@ -1,4 +1,4 @@
-const mymap = L.map('mapid').setView([39.00496, 22.9248], 6);
+const mymap = L.map('mapid').setView([39.0, 22.9], 4);
 const $styling = $('#styling');
 const $defaultCard = $('#defaultCard');
 const $listOfContributors = $('#listOfContributors');
