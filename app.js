@@ -25,7 +25,7 @@ const data = [
    // styling: false
    //},
    {
-    userName: 'Ania', //not required but will probably added somewher in the page in a latter update
+    userName: 'Ania',  
     udacityForumUserName: "amierzwinska",
     placeName: "Nowy Świat, Warsaw",
     altPlaceName: "Warszawa",
