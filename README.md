@@ -3,7 +3,7 @@ A project started by the #greek community of Google Challenge Scholarship: Front
 
 ***********
 **Early Preview**
-![preview](https://lh3.googleusercontent.com/MXruZRa68whFa8MxLXN1l1xznaLt1V9GtdFFnm7BA1PeLNuFCocZGQh7ljLkiS6auF53POCh1cS3s6Vz8-L0agXNzjASS2OD3YRjKiuSdP-6ZGeLhQwbgpmoSCnpSNyE24zniEPY_SWDz22DQJagxZsLPK_HEpUQt7X_jbthmk1NhDPDuxIGuv0GMZOluBzVmWJGs_o9dNEatnG1i7x7cU31Hcyh5s4_DHnKiAUvg_1R9i4cgYyrrEkNVaZb0WPs60DwrGGywkr21vd-P2RamXZgN-amWX8keRieN-EI0PcQ3w4gNmXYSYDl1-qJSXd7NSxNqm9UyEIHO1mRAJoMvRt5T9xyfHtxkyYhBL4fffzYzOc-9_1L8zOS7t_cUoLIVTo3yCKizqDiPHh65hAXxeCwGd5AzayCf5oL8l4t9rMV1hCaNBsMleBAh12qlpeUyjEsE9-RwIfYxxnieBbj9vmYP-wqw3XBccvK4vZCvcf20aIMx4USP7qcAs6e24FYxI9-L03uLJaF4JF7FGEBz7Xo9c29sWqgq84_dzj7SygClpxiLBq9QF7VYG5o-HTYFMktH29Ep8xeG6h5t53PwW2eV1uVl8Q2-TO-YS8=w815-h414-no)
+![preview](img/early_preview.png)
 ***********
 
 To create a new pin and a new card just add a new entry in the const data that is in app.js
